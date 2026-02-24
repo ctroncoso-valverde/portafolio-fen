@@ -254,7 +254,7 @@ function ScreenProfile({data,onContinue,onError}){
       <div className="ph"><div className="av">{ini}</div><div><h2 className="pn">{tc(data.name)}</h2><p className="pe">{data.email}</p></div></div>
       <div className="pg">
         <div className="pf"><span className="fl">Unidad</span><span className="fv">{data.unidad||"(sin asignar)"}</span></div>
-        <div className="pf"><span className="fl">Contrato</span><span className="fv">{data.contrato||"(sin asignar)"}</span></div>
+        <div className="pf"><span className="fl">Planta</span><span className="fv">{data.contrato?data.contrato.replace(/ \(FT\)| \(PT\)/g,''):"(sin asignar)"}</span></div>
         <div className="pf"><span className="fl">Grado</span><span className="fv">{data.gradoDetalle||data.grado||"(sin asignar)"}</span></div>
       </div>
       <div className="act-col">
