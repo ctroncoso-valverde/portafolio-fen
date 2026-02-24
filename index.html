@@ -472,14 +472,17 @@ function ScreenAdd({data,rut,onSave,onCancel}){
   </div></div></div>;
 }
 
-function ScreenError({onBack}){
+function ScreenError({onBack,onContinue}){
   return <div className="main"><Header email=""/><div className="cnt"><div className="card card-c">
     <div style={{fontSize:48,marginBottom:16}}>📧</div>
     <h2 className="st">Solicitud de corrección</h2>
     <p className="ss">Para solicitar correcciones en sus datos base, envíe un correo a:</p>
     <p className="em-hi">c.troncosovalverde@uandresbello.edu</p>
     <p className="ss">Indique su RUT, el dato a corregir y la información correcta.</p>
-    <button className="btn-o" style={{marginTop:24}} onClick={onBack}>← Volver al inicio</button>
+    <div style={{marginTop:24,display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
+      <button className="btn-p" style={{maxWidth:300}} onClick={onContinue}>Continuar al portafolio →</button>
+      <button className="btn-o" onClick={onBack}>← Volver al inicio</button>
+    </div>
   </div></div></div>;
 }
 
@@ -527,7 +530,7 @@ function App(){
     case "portfolio":return <ScreenPortfolio data={data} rut={rut} pending={pending} reports={reports} setReports={setReports}
       onAdd={()=>setScr("add")} onDoneSent={()=>setScr("done")} onDoneEmpty={()=>setScr("doneEmpty")}/>;
     case "add":return <ScreenAdd data={data} rut={rut} onSave={addActivity} onCancel={()=>setScr("portfolio")}/>;
-    case "error":return <ScreenError onBack={reset}/>;
+    case "error":return <ScreenError onBack={reset} onContinue={()=>setScr("portfolio")}/>;
     case "done":return <ScreenDone data={data} onBack={reset}/>;
     case "doneEmpty":return <ScreenDoneEmpty data={data} onBack={reset}/>;
     default:return <ScreenLogin db={db} onSearch={search} onNewUser={(r)=>{setRut(r);setScr("newuser")}}/>;
