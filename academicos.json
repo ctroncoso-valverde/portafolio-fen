@@ -1,13 +1,13 @@
 {
   "10058008-K": {
-    "name": "MARIA JOSE MATUS DE LA PARRA YELINCIC",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MARÍA JOSÉ MATUS DE LA PARRA YELINCIC",
+    "email": "m.matusdelaparra@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -45,12 +45,12 @@
   "10105226-5": {
     "name": "ALEJANDRO URZUA VERA",
     "email": "al.urzua@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -117,14 +117,14 @@
     ]
   },
   "10127270-2": {
-    "name": "Jorge Francisco Emilio Etchegoyen  Solar",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JORGE ETCHEGOYEN SOLAR",
+    "email": "j.etchegoyensolar@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -168,12 +168,12 @@
   "10147736-3": {
     "name": "JUAN CARLOS CABROL BAGNARA",
     "email": "j.cabrol@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -205,13 +205,13 @@
   },
   "10204284-0": {
     "name": "ESTEBAN PABLO SEGUEL TORO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "e.segueltoro@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -273,12 +273,12 @@
   "10208386-5": {
     "name": "ALEJANDRO GODOY",
     "email": "a.godoyvillalobos@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "pub_libro",
@@ -323,12 +323,12 @@
   "10264802-1": {
     "name": "FELIPE VICENTE OELCKERS ALJARO",
     "email": "felipe.oelckers@unab.cl",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Competitividad Empresarial y Territorial, Innovación y Sostenibilidad",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -738,13 +738,13 @@
   },
   "10265589-3": {
     "name": "ALVARO VIDAL PALOMO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "a.vidalpalomo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -794,12 +794,12 @@
   "10266196-6": {
     "name": "PAULINA ELGUETA MIRANDA",
     "email": "p.elguetamiranda@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Metodologias para la Docencia en Educacion Superior",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -850,12 +850,12 @@
   "10276700-4": {
     "name": "GONZALO EDUARDO ESCOBAR ELEXPURU",
     "email": "g.escobarelexpuru@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Derecho y Administracion de Empresas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -960,12 +960,12 @@
   "10287396-3": {
     "name": "MARCO ANTONIO RIVAS NÚÑEZ",
     "email": "m.rivasnuez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -1009,13 +1009,13 @@
   },
   "10328204-7": {
     "name": "DINO DENEGRI DELGADO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "d.denegridelgado@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion de e-Business",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1047,12 +1047,12 @@
   "10330383-4": {
     "name": "ARIEL ADRIÁN YÉVENES SUBIABRE",
     "email": "a.yevenessubiabre@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -1137,14 +1137,14 @@
     ]
   },
   "10340593-9": {
-    "name": "KAREM ISABEL BAHAMONDES ROBLES",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "KAREN BAHAMONDES",
+    "email": "k.bahamondes@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion m/Finanzas y Contabilidad",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1218,12 +1218,12 @@
   "10367050-0": {
     "name": "LUIS GONZALO VERGARA MALDONADO",
     "email": "l.vergaramaldonado@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -1266,14 +1266,14 @@
     ]
   },
   "10376522-6": {
-    "name": "PATRICIO A. ALVEAL BALBOA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "PATRICIO ALEJANDRO ALVEAL BALBOA",
+    "email": "p.alveal@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1323,14 +1323,14 @@
     ]
   },
   "10397410-0": {
-    "name": "RENE FRANCISCO NANJARI RICOTTI",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "RENE NANJARI RICOTTI",
+    "email": "r.nanjariricotti@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion FinancieraAdministracion m/Gestion en Comercializacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1353,15 +1353,27 @@
       }
     ]
   },
+  "10544951-8": {
+    "name": "NELSON JAVIER DÍAZ BRAVO",
+    "email": "n.dazbravo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Financiera",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "10560288-K": {
     "name": "JUAN LUIS CORREA ALLAMAND",
     "email": "j.correaallamand@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -1476,14 +1488,14 @@
     ]
   },
   "10561389-K": {
-    "name": "MARIA ALEJANDRA PETOUR ANWANDTER",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MARÍA ALEJANDRA PETOUR ANWANDTER",
+    "email": "m.petouranwandter@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1543,14 +1555,14 @@
     ]
   },
   "10592815-7": {
-    "name": "JOSÉ MIGUEL QUERO VALENZUELA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JOSÉ QUERO VALENZUELA",
+    "email": "j.quero@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1593,13 +1605,13 @@
   },
   "10596762-4": {
     "name": "ARNALDO ANTONIO RAMOS REYES",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "a.ramosreyes@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -1631,12 +1643,12 @@
   "10602973-3": {
     "name": "ROBERTO ANTONIO CARVAJAL RAMOS",
     "email": "r.carvajal@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESCUELA CONTADOR AUDITOR",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -1678,15 +1690,27 @@
       }
     ]
   },
+  "10619693-1": {
+    "name": "ANDRES NUÑEZ TIRAPEGUI",
+    "email": "and.nunez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "10637769-3": {
     "name": "LEONARDO GABRIEL ZUÑIGA ALVAREZ",
     "email": "l.zuigaalvarez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -1755,12 +1779,12 @@
   "10659814-2": {
     "name": "HERNAN GONZALO VERDUGO SCARABELLO",
     "email": "h.verdugo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -1793,12 +1817,12 @@
   "10682511-4": {
     "name": "VERENA VALESKA SAFFA MUGA",
     "email": "v.saffamuga@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion de Recursos Humanos",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -1809,15 +1833,51 @@
     ],
     "expLaboral": []
   },
+  "10740312-4": {
+    "name": "CARLOS GARCIA BRUN",
+    "email": "carlos.garciab@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "10741147-K": {
+    "name": "GREGORY ALEXANDER CRAWFORD HARNECKER",
+    "email": "g.crawfordharnecker@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "10753660-4": {
+    "name": "CARLOS EDUARDO FLORES CASTEX",
+    "email": "c.florescastex@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "10797459-8": {
     "name": "LUIS FELIPE VERGARA MALDONADO",
     "email": "lui.vergara@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Audiovisual y Publicidad",
+    "unidad": "OTRA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -2052,14 +2112,14 @@
     ]
   },
   "10809365-K": {
-    "name": "NESTOR ALEJANDRO POBLETE ROMERO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "NÉSTOR ALEJANDRO POBLETE  ROMERO",
+    "email": "n.pobleteromero@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -2094,15 +2154,27 @@
       }
     ]
   },
+  "10813168-3": {
+    "name": "ANDRES EDUARDO VERGARA MENDEZ",
+    "email": "a.vergaramendez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "10837380-6": {
     "name": "ELENA PÉREZ SILVA",
     "email": "e.perez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -2213,12 +2285,12 @@
   "10861768-3": {
     "name": "EDUARDO BARRUETO MERCADO",
     "email": "e.barruetomercado@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado (ABD)",
+    "gradoDetalle": "Doctorado (ABD) en Derecho y Administracion de Empresas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "part_comite",
@@ -2442,13 +2514,13 @@
   },
   "10883997-K": {
     "name": "SONIA ELIZABETH RIVERA GUZMAN",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "so.rivera@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Psicologia Clinica",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -2486,12 +2558,12 @@
   "10890703-7": {
     "name": "PEDRO PABLO GODOY LOPEZ",
     "email": "ped.godoy@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -2512,12 +2584,12 @@
   "10958490-8": {
     "name": "CARLOS RENE PALMA AGUILAR",
     "email": "c.palmaaguilar@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -2556,12 +2628,12 @@
   "10973807-7": {
     "name": "ALEJANDRO ENRIQUE BÓRQUEZ CALDERÓN",
     "email": "al.borquez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Desarrollo Curricular y Proyectos Educativos",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -2690,12 +2762,12 @@
   "10976305-5": {
     "name": "MARCELO FRANCISCO GUTIERREZ DELGADO",
     "email": "m.gutierrezdelgado1@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Estrategica y Evaluacion de Proyectos",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -2784,15 +2856,27 @@
     ],
     "expLaboral": []
   },
+  "10983229-4": {
+    "name": "MARCELA VIVIANA MIRANDA VALENZUELA",
+    "email": "m.mirandavalenzuela@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "10984242-7": {
     "name": "CLAUDIA GUZMÁN GUZMÁN",
     "email": "claudia.guzman@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion para el Servicio Publico",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -2803,15 +2887,27 @@
     ],
     "expLaboral": []
   },
+  "11139879-8": {
+    "name": "JAIME ALEJANDRO HERNANDEZ GUZMAN",
+    "email": "jai.hernandez@uandresbello.edu",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Psicologia del Trabajo",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "11185759-8": {
-    "name": "Claudia Carolina Inostroza  Paredes",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CLAUDIA CAROLINA INOSTROZA PAREDES",
+    "email": "c.inostrozaparedes@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gerencia y Politicas Publicas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -2859,14 +2955,14 @@
     ]
   },
   "11364629-2": {
-    "name": "HORACIO A. POBLETE SOTO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "HORACIO AUGUSTO POBLETE SOTO",
+    "email": "h.pobletesoto@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Educacion m/Docencia para la Educacion Superior",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -2958,12 +3054,12 @@
   "11415863-1": {
     "name": "JAVIER LABBE CID",
     "email": "ja.labbe@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economic Evaluation for HEalth Technology Assessment",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -3001,12 +3097,12 @@
   "11620655-2": {
     "name": "OSCAR IVAN SOTO DÍAZ",
     "email": "o.sotodaz@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion m/Finanzas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -3017,15 +3113,27 @@
     ],
     "expLaboral": []
   },
+  "11624703-8": {
+    "name": "JUAN ALEJANDRO LAZO  TORRES",
+    "email": "al.lazo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas Aplicadas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "11654746-5": {
-    "name": "RODOLFO TORO GUTIÉRREZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "RODOLFO TORO GUTIERREZ",
+    "email": "rod.toro@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Financiera",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -3049,14 +3157,14 @@
     ]
   },
   "11680298-8": {
-    "name": "NELLY ANGÉLICA FREIRE IBÁÑEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "NELLY ANGÉLICA FREIRE IBAÑEZ",
+    "email": "n.freireibaez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Docencia para la Educacion Superior",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -3082,12 +3190,12 @@
   "11682308-K": {
     "name": "JUAN ALEJANDRO GALLEGOS MARDONES",
     "email": "j.gallegosmardones@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Ciencias de la Ingenieria",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -3174,12 +3282,12 @@
   "11740133-2": {
     "name": "RONALDO BRUNA VILLENA",
     "email": "e.bruna@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -3277,13 +3385,13 @@
   },
   "11828262-0": {
     "name": "LUIS ERWIN ADRIAZOLA PILGRIN",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "l.adriazolapilgrin@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -3297,12 +3405,12 @@
   "11828930-7": {
     "name": "CLAUDIO DE LA HORRA DONOSO",
     "email": "c.delahorra@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Responsabilidad Social Empresarial",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -3387,14 +3495,14 @@
     ]
   },
   "11830323-7": {
-    "name": "RODRIGO M. CALDERÓN AROS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "RODRIGO MAURICIO CALDERÓN AROS",
+    "email": "r.caldernaros@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -3419,13 +3527,13 @@
   },
   "11843359-9": {
     "name": "JUAN DOMINGO CAMPOS NUÑEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "j.camposnuez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -3487,12 +3595,12 @@
   "11884019-4": {
     "name": "FELIPE CARVAJAL MERY",
     "email": "f.carvajalmery@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -3547,14 +3655,14 @@
     ]
   },
   "11896257-5": {
-    "name": "JUAN C. EGAÑA GARCIA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JUAN CARLOS EGAÑA GARCIA",
+    "email": "j.egaagarcia@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Politica y Gestion de Gobierno",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -3748,12 +3856,12 @@
   "11946041-7": {
     "name": "RONY ARTURO CASTILLO ALARCÓN",
     "email": "r.castilloalarcon@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -3804,12 +3912,12 @@
   "12023913-9": {
     "name": "CLAUDIO ALEJANDRO PAVEZ SALAS",
     "email": "c.pavezsalas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion y Organizacion de Empresas",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -3839,15 +3947,51 @@
       }
     ]
   },
+  "12080863-K": {
+    "name": "JESSICA BASCUÑAN VERDUGO",
+    "email": "j.bascuanverdugo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Coaching, Inteligencia Emocional y PNL",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "12096496-8": {
+    "name": "RONALD ABDUL ALARCON NUÑEZ",
+    "email": "r.alarconnuez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "12246525-K": {
+    "name": "ALVARO MAURICIO POLANCO CARVAJAL",
+    "email": "a.polancocarvajal@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "12251408-0": {
     "name": "ANDRES TOLOSA HABIT",
     "email": "a.tolosa@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en International Business",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -3904,12 +4048,12 @@
   "12409549-2": {
     "name": "MANUEL ALEJANDRO VASQUEZ NEIRA",
     "email": "manu.vasquez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Control y Gestion de Riesgo Corporativo",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -3948,12 +4092,12 @@
   "12464978-1": {
     "name": "ENRIQUE ALBERTO VALENZUELA TORO",
     "email": "e.valenzuelatoro@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion de Organizaciones",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "conf_ext",
@@ -4010,12 +4154,12 @@
   "12491720-4": {
     "name": "CLAUDIA ALEJANDRA MEZA SAGREGO",
     "email": "c.mezasagredo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -4114,12 +4258,12 @@
   "12501931-5": {
     "name": "CHRISTIAN CÁCERES FUENTES",
     "email": "c.caceresfuentes@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -4148,15 +4292,27 @@
     ],
     "expLaboral": []
   },
+  "12659820-3": {
+    "name": "PATRICIO ALEJANDRO MUÑOZ MONTENEGRO",
+    "email": "p.muozmontenegro@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "12661628-7": {
     "name": "CRISTIAN ALEJANDRO PALMA BARRUETO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "c.palmabarrueto@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Docencia para la Educacion Superior",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -4198,14 +4354,14 @@
     ]
   },
   "12696502-8": {
-    "name": "HÉCTOR H. HIDALGO PÉREZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "HÉCTOR HUGO HIDALGO PÉREZ",
+    "email": "hect.hidalgo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Financiera",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -4284,13 +4440,13 @@
   },
   "12720554-K": {
     "name": "JORGE FRANCISCO MARTINEZ DRAGO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "j.martinezdrago@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -4345,13 +4501,13 @@
   },
   "12796039-9": {
     "name": "CRISTIAN MOISÉS SELMAN SOTO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "c.selmansoto@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Behavioral Economics",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -4383,12 +4539,12 @@
   "12812618-K": {
     "name": "LUIS FELIPE MADARIAGA BECERRA",
     "email": "lu.madariaga@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -4433,12 +4589,12 @@
   "12845417-9": {
     "name": "RAFAEL ALONSO DE LA HORRA DONOSO",
     "email": "r.delahorra@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Docencia para la Educacion Superior",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -4525,12 +4681,12 @@
   "12922353-7": {
     "name": "ROBINSON SÁEZ LAZO",
     "email": "r.sezlazo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Docencia Universitaria",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -4557,12 +4713,12 @@
   "12963640-8": {
     "name": "CRISTIAN ANDRÉS TRONCOSO VALVERDE",
     "email": "c.troncosovalverde@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "part_comite",
@@ -4763,12 +4919,12 @@
   "12969124-7": {
     "name": "JOSE NAVARRETE OYARCE",
     "email": "jose.navarrete@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Derecho y Administracion de Empresas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -4943,14 +5099,14 @@
     ]
   },
   "12980735-0": {
-    "name": "CHRISTIAN MUNDACA  CONTRERAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CHRISTIAN IVAN MUNDACA CONTRERAS",
+    "email": "c.mundacacontreras1@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -4980,14 +5136,14 @@
     ]
   },
   "13015820-K": {
-    "name": "FRANCO A. ULLOA FUENTES",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "FRANCO ULLOA FUENTES",
+    "email": "f.ulloafuentes@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5042,13 +5198,13 @@
   },
   "13019125-8": {
     "name": "DANOR ALEJANDRO FIGUEROA HORMAZABAL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "dano.figueroa@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5067,13 +5223,13 @@
   },
   "13020168-7": {
     "name": "GONZALO ENCINA TAPIA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "g.encina@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Quantitative Methods",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5091,14 +5247,14 @@
     ]
   },
   "13027403-K": {
-    "name": "María Alejandra Casado Santander",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "ALEJANDRA CASADO SANTANDER",
+    "email": "a.casadosantander@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Comunicacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5122,14 +5278,14 @@
     ]
   },
   "13039823-5": {
-    "name": "VICTOR M. MARTINEZ ARMIJO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "VICTOR MARTINEZ ARMIJO",
+    "email": "v.martinezarmijo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion y Direccion de Empresas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5161,12 +5317,12 @@
   "13051385-9": {
     "name": "JOSEF GILIBERTO RODRIGUEZ",
     "email": "j.gilibertorodriguez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -5192,12 +5348,12 @@
   "13066026-6": {
     "name": "JUAN PEDRO EBERHARD AGUIRRE",
     "email": "j.eberhardaguirre@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "part_comite",
@@ -5236,12 +5392,12 @@
   "13070818-8": {
     "name": "CRISTIAN ANTONIO COSER BLANCO",
     "email": "c.coserblanco@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Contabilidad y Auditoria",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -5253,14 +5409,14 @@
     "expLaboral": []
   },
   "13071473-0": {
-    "name": "FRANCISCO J. ORELLANA BARAHONA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "FRANCISCO ORELLANA BARAHONA",
+    "email": "f.orellana@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5356,14 +5512,14 @@
     ]
   },
   "13103788-0": {
-    "name": "IVÁN RODRIGO ROA NOVA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "IVAN RODRIGO ROA NOVA",
+    "email": "i.roanova@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5415,12 +5571,12 @@
   "13105592-7": {
     "name": "HUGO MORAGA FLORES",
     "email": "hug.moraga@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia y Empresas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "conf_ext",
@@ -5615,12 +5771,12 @@
   "13129067-5": {
     "name": "CAROLINA PARADA GAVILAN",
     "email": "c.paradagavilan@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Sociologia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "media_regular",
@@ -5725,12 +5881,12 @@
   "13135552-1": {
     "name": "RICARDO FUENTES LAMA",
     "email": "r.fuenteslama@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -5942,13 +6098,13 @@
   },
   "13235147-3": {
     "name": "FRANCISCO JAVIER BRITO GALLEGOS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "f.brito@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [],
     "expLaboral": [
       {
@@ -5980,12 +6136,12 @@
   "13242617-1": {
     "name": "CRISTIÁN NELSON LLANOS RIVAS",
     "email": "c.llanosrivas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -6010,14 +6166,14 @@
     ]
   },
   "13251534-4": {
-    "name": "HUMBERTO H. PAREDES CALDERON",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "HUMBERTO PAREDES CALDERON",
+    "email": "hu.paredes@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -6061,12 +6217,12 @@
   "13258155-K": {
     "name": "JESÚS UNANUE MANRÍQUEZ",
     "email": "j.unanuemanriquez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Educacion y Sociedad",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "media_regular",
@@ -6163,14 +6319,14 @@
     ]
   },
   "13268223-2": {
-    "name": "XIMENA ANDREA  CABELLO HERRERA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "XIMENA ANDREA CABELLO HERRERA",
+    "email": "x.cabelloherrera@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -6196,12 +6352,12 @@
   "13271969-1": {
     "name": "RUBEN VEGA VALENZUELA",
     "email": "r.vegavalenzuela@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "conf_ext",
@@ -6212,15 +6368,27 @@
     ],
     "expLaboral": []
   },
+  "13298458-1": {
+    "name": "JORGE PACHECO HERRERA",
+    "email": "jor.pacheco@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "13302166-3": {
     "name": "GUSTAVO ALFREDO PÉREZ PÉREZ",
     "email": "g.prezprez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -6336,13 +6504,13 @@
   },
   "13306449-4": {
     "name": "FLOR MARLENE HIDALGO MARQUEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "fl.hidalgo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -6397,13 +6565,13 @@
   },
   "13310068-7": {
     "name": "VIOLETA ALEJANDRA TORRES SEPULVEDA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "v.torressepulveda@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Innovacion. Tecnologia y Emprendimiento",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -6439,14 +6607,14 @@
     ]
   },
   "13396838-5": {
-    "name": "JOEL ESTEBAN ÑANCO OPAZO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JOEL ÑANCO OPAZO",
+    "email": "j.nanco@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -6464,14 +6632,14 @@
     ]
   },
   "13433706-0": {
-    "name": "FERNANDO GARCÍA LURASCHI ",
+    "name": "FERNANDO GARCÍA LURASCHI",
     "email": "f.garcaluraschi@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -6485,12 +6653,12 @@
   "13434206-4": {
     "name": "MARIA ELENA ARZOLA GONZALEZ",
     "email": "m.arzolagonzalez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gobierno y Cultura de las Organizaciones",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -6589,12 +6757,12 @@
   "13450573-7": {
     "name": "BENJAMIN VILLENA ROLDAN",
     "email": "b.villenaroldan@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "media_regular",
@@ -6753,12 +6921,12 @@
   "13453627-6": {
     "name": "CARLOS LUIS GÓMEZ PANTOJA",
     "email": "c.gomezpantoja@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Ciencias m/Computacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -6863,12 +7031,12 @@
   "13457054-7": {
     "name": "MARIA PILAR VARELA LANUZA",
     "email": "m.varelalanuza@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA in Hospitality",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -6918,13 +7086,13 @@
   },
   "13482302-K": {
     "name": "MARCIA GLORIA VILLARROEL PALMA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "ma.villarroel@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -6968,12 +7136,12 @@
   "13498969-6": {
     "name": "MARJORIE DE LOURDES JIMÉNEZ PÉREZ",
     "email": "mar.jimenez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -7027,15 +7195,27 @@
       }
     ]
   },
+  "13612106-5": {
+    "name": "GISELA BERNARDA VALENZUELA ESCALONA",
+    "email": "g.valenzuelaescalona@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "13650335-9": {
     "name": "ALEJANDRO BRAVO DIAZ",
     "email": "alejan.bravo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Aplicada",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -7103,13 +7283,13 @@
   },
   "13653119-0": {
     "name": "EDUARDO GUAJARDO SALAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "e.guajardosalas@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion de Marketing",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -7177,12 +7357,12 @@
   "13672193-3": {
     "name": "ANDRES VIO VEAS",
     "email": "a.vioveas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "media_regular",
@@ -7233,12 +7413,12 @@
   "13672636-6": {
     "name": "RENÉ ALEJANDRO FERNÁNDEZ MONTT",
     "email": "r.fernandezmontt@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -7287,14 +7467,14 @@
     ]
   },
   "13677158-2": {
-    "name": "ADRIAN ALEJANDRO SOTO  PUENTES",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "ADRIAN ALEJANDRO SOTO PUENTES",
+    "email": "a.sotopuentes@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -7326,12 +7506,12 @@
   "13687523-K": {
     "name": "NATALIA BERNAL OLIVA",
     "email": "n.bernaloliva@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -7345,12 +7525,12 @@
   "13724519-1": {
     "name": "GONZALO ARNALDO OLIVARI ALOMAR",
     "email": "g.olivarialomar@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ciencias de la Administracion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -7430,13 +7610,13 @@
   },
   "13829207-K": {
     "name": "XIMENA SOLEDAD CASTILLO RIVAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "x.castillo@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -7468,12 +7648,12 @@
   "13831008-6": {
     "name": "HECTOR ULISES CATALAN SALAZAR",
     "email": "h.catalansalazar@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Compliance Officer",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -7487,12 +7667,12 @@
   "13845732-K": {
     "name": "PATRICIA ANDREA TOLEDO ZUÑIGA",
     "email": "p.toledozuniga@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Derecho",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -7594,14 +7774,14 @@
     "expLaboral": []
   },
   "13851726-8": {
-    "name": "Gonzalo Andrés  De la Fuente Latorre",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "GONZALO ANDRÉS DE LA FUENTE LATORRE",
+    "email": "g.delafuentelatorre@UANDRESBELLO.EDU",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion m/Finanzas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -7633,12 +7813,12 @@
   "13870597-8": {
     "name": "PEDRO RAFAEL ROJO DIAZ",
     "email": "p.rojodiaz@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Aplicada",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -7690,12 +7870,12 @@
   "13878754-0": {
     "name": "GALO ALBERTO HERRERA BAQUEDANO",
     "email": "g.herrerabaquedano1@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion de Orgnaizaciones",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -7842,12 +8022,12 @@
   "13882986-3": {
     "name": "ROBERTO ANDRES MUNITA MORGAN",
     "email": "r.munitamorgan@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Political Management",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -8015,15 +8195,27 @@
       }
     ]
   },
+  "13901826-5": {
+    "name": "JOSÉ CHACANA PARRA",
+    "email": "j.chacanaparra@UANDRESBELLO.EDU",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en International Political Economy and Development",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "13904546-7": {
-    "name": "JOSE I. CUEVAS LABRA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JOSÉ IGNACIO CUEVAS LABRA",
+    "email": "josei.cuevas@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -8037,12 +8229,12 @@
   "13933464-7": {
     "name": "FELIX BERRIOS THEODULOZ",
     "email": "f.berriostheoduloz@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -8080,12 +8272,12 @@
   "13943962-7": {
     "name": "OSVALDO PALMA RUBIO",
     "email": "os.palma@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Financiera",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -8122,13 +8314,13 @@
   },
   "13950934-K": {
     "name": "CESAR FABIAN CAMPOS GONZALEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "c.camposgonzalez2@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Control de Gestion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -8145,15 +8337,27 @@
       }
     ]
   },
+  "13976101-4": {
+    "name": "RODRIGO IGNACIO DIAZ CORRAL",
+    "email": "r.diazcorral@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Management",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "13989431-6": {
-    "name": "DANIELA GUARDA MARTÍNEZ ",
+    "name": "DANIELA GUARDA MARTÍNEZ",
     "email": "d.guardamartinez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -8378,12 +8582,12 @@
   "13989499-5": {
     "name": "ALEXIS IGNACIO ARANCIBIA BAHAMONDES",
     "email": "a.arancibiabahamonde@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -8397,12 +8601,12 @@
   "13989829-K": {
     "name": "RODRIGO ILABACA DEVIA",
     "email": "r.ilabacadevia@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -8528,6 +8732,18 @@
       }
     ]
   },
+  "13990081-2": {
+    "name": "RODRIGO ANDRES ZUÑIGA ANGULO",
+    "email": "r.zunigaangulo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Comunicacion y Marketing",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "13994507-10": {
     "name": "JOSE ANTONIO TAPIA MURGAS",
     "email": "",
@@ -8549,13 +8765,13 @@
   },
   "13994507-7": {
     "name": "JOSE ANTONIO TAPIA MURGAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "j.tapiamurgas@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -8607,12 +8823,12 @@
   "14024089-3": {
     "name": "YUSEF DAVID HADI MANRIQUEZ",
     "email": "y.hadimanriquez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Comunicacion Estrategica, Marketing y Negocios",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "org_seminario",
@@ -8799,14 +9015,14 @@
     ]
   },
   "14063531-6": {
-    "name": "Evelyn Andrea Salgado Salgado",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "EVELYN SALGADO SALGADO",
+    "email": "e.salgadosalgado@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Desarrollo Curricular y Proyectos Educativos",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -8835,15 +9051,27 @@
       }
     ]
   },
+  "14120536-6": {
+    "name": "MARYLU  NICOLE FORTTES FUENZALIDA",
+    "email": "m.forttesfuenzalida@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Media Management",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "14144289-9": {
     "name": "MARÍA PAZ BRAVO BRICEÑO",
     "email": "mariap.bravo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -8864,12 +9092,12 @@
   "14144380-1": {
     "name": "JORGE ROJAS VALLEJOS",
     "email": "jorgeh.rojas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -9038,14 +9266,14 @@
     ]
   },
   "14149725-1": {
-    "name": "Lilian Marlene  Aquiles  Contreras",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "LILIAN MARLENE AQUILES CONTRERAS",
+    "email": "l.aquilescontreras@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Recursos Humanos y Habilidades Directivas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -9105,14 +9333,14 @@
     ]
   },
   "14155638-K": {
-    "name": "RODRIGO ULLOA ROZAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "RODRIGO ALEJANDRO ULLOA ROZAS",
+    "email": "r.ulloa@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Comercial y Marketing",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -9141,15 +9369,27 @@
       }
     ]
   },
+  "14159461-3": {
+    "name": "CRISTIAN SANDOVAL SEPÚLVEDA",
+    "email": "c.sandovalseplveda@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Investment and Finance",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "14208020-6": {
     "name": "IGNACIO ANDRÉS MUÑOZ ERNST",
     "email": "i.muozernst@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -9194,12 +9434,12 @@
   "14306399-2": {
     "name": "JORGE MARIO AGUILAR CABRERA",
     "email": "j.aguilarcabrera@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "proy_innov_doc",
@@ -9268,12 +9508,12 @@
   "14368456-3": {
     "name": "CRISTIAN NORMAN SAAVEDRA ACUÑA",
     "email": "cristi.saavedra@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Innovacion Tecnologica y Emprendimiento",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -9406,14 +9646,14 @@
     ]
   },
   "14373705-5": {
-    "name": "CLAUDIO E. DURÁN OLIVARES",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CLAUDIO ELADIO DURÁN OLIVARES",
+    "email": "c.durnolivares@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Publica",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -9445,12 +9685,12 @@
   "14414025-7": {
     "name": "NELSON DAVID LAY RABY",
     "email": "n.layraby@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Sociologia",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -9585,12 +9825,12 @@
   "14436139-3": {
     "name": "MACARENA DEL PILAR VERA MESSER",
     "email": "m.veramesser@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -9626,14 +9866,14 @@
     "expLaboral": []
   },
   "14504689-0": {
-    "name": "PAULINA MARCELA ÁVILA BARROS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "PAULINA MARCELA AVILA BARROS",
+    "email": "p.avilabarros@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Data Science",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -9683,12 +9923,12 @@
   "14513490-0": {
     "name": "MANUEL EDMUNDO CEA ACEVEDO",
     "email": "man.cea@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -9916,15 +10156,27 @@
       }
     ]
   },
+  "14582132-0": {
+    "name": "RAFAEL ANTONIO RIQUELME MELLA",
+    "email": "r.riquelmemella@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "14661579-1": {
     "name": "ROBERTO ENRIQUE JALÓN GARDELLA",
     "email": "roberto.jalon@unab.cl",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10041,12 +10293,12 @@
   "14664106-7": {
     "name": "JOSE LUIS LIMA REINA",
     "email": "j.limareina@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10139,12 +10391,12 @@
   "14714165-3": {
     "name": "JOSÉ GUILLERMO DÍAZ GAMARRA",
     "email": "j.dazgamarra@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10186,15 +10438,27 @@
       }
     ]
   },
+  "15068475-7": {
+    "name": "CRISTÓBAL ALFONSO TAPIA ALMONACID",
+    "email": "c.tapiaalmonacid1@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributaria",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "15093451-6": {
     "name": "WALDO CANALES ARANCIBIA",
     "email": "w.canalesarancibia@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Investigacion de las Ciencias de la Educacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10214,12 +10478,12 @@
   "15098716-4": {
     "name": "MARY-ANN COOPER VILLAGRÁN",
     "email": "m.coopervillagrn@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Marketing in Sustainable Destinations",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10406,14 +10670,14 @@
     ]
   },
   "15184587-8": {
-    "name": "DENIS MAURICIO",
+    "name": "DENIS MAURICIO MUÑOZ FIGUEROA",
     "email": "denis.munoz@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Aplicada",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -10507,12 +10771,12 @@
   "15331942-1": {
     "name": "MARCO GUILLERMO OPAZO BASÁEZ",
     "email": "m.opazobasez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Ciencias Economicas y Empresariales",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10695,12 +10959,12 @@
   "15340755-K": {
     "name": "VANESSA NATALIA TOLEDO CABEZAS",
     "email": "n.toledocabezas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -10723,15 +10987,27 @@
     ],
     "expLaboral": []
   },
+  "15341971-K": {
+    "name": "CARLOS ALFREDO VALDERAS SALAZAR",
+    "email": "c.valderassalazar@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion de Negocios",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "15358326-9": {
     "name": "CARLOS HERNÁN APARICIO PUENTES",
     "email": "c.apariciopuentes@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10832,15 +11108,27 @@
     ],
     "expLaboral": []
   },
+  "15407546-1": {
+    "name": "ALONSO RODRIGO DIAZ DELGADO",
+    "email": "a.diazdelgado@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion y Emprendimiento Tecnologico",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "15456323-7": {
     "name": "LUIS RAFAEL PAREDES CARRASCO",
     "email": "l.paredescarrasco@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10885,12 +11173,12 @@
   "15550824-8": {
     "name": "SEBASTIAN RICARDO HOPE LOPEZ",
     "email": "s.hopelopez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho Internacional, Comercio e Inversiones",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -10902,14 +11190,14 @@
     "expLaboral": []
   },
   "15589235-8": {
-    "name": "FRANCISCO JAVIER ORMAZABAL CACERES ",
+    "name": "FRANCISCO JAVIER ORMAZABAL CACERES",
     "email": "o.franciscojavier@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Financiera",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -10921,14 +11209,14 @@
     "expLaboral": []
   },
   "15720920-5": {
-    "name": "GABRIELA RIVEROS  ORIOL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "GABRIELA ORIOL RIVEROS ORIOL",
+    "email": "g.riverosoriol@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion dre Negocios",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -11006,14 +11294,14 @@
     ]
   },
   "15771061-3": {
-    "name": "MARÍA JOSÉ RIVERA JOFRÉ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MARIA JOSE RIVERA JOFRE",
+    "email": "m.riverajofre@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria de los Negocios",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -11063,12 +11351,12 @@
   "15775852-7": {
     "name": "IGNACIO ESNAOLA VIDAL",
     "email": "i.esnaolavidal@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Investigacion Aplicada",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -11119,12 +11407,12 @@
   "15807907-0": {
     "name": "FRANCESCA ANDREA MACHIAVELLO NARVAÉZ",
     "email": "n.francescaandreamac@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia de los Recursos Naturales y Medio Ambiente",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -11202,15 +11490,27 @@
       }
     ]
   },
+  "15918744-6": {
+    "name": "JAIME ANDRÉS  MAGALLANES CASTRO",
+    "email": "j.magallanescastro@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "15919295-4": {
     "name": "MARIA CELESTE MORA ESCOBAR",
     "email": "mar.mora@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -11310,12 +11610,12 @@
   "16029132-K": {
     "name": "CARLOS PATRICIO MORENO SOLORZA",
     "email": "carlo.moreno@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "media_regular",
@@ -11366,12 +11666,12 @@
   "16142872-8": {
     "name": "MARIA STEFANIA PARETI PETRUCCELLI",
     "email": "s.pareti@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia y Gestion de Empresas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -11470,12 +11770,12 @@
   "16145517-2": {
     "name": "EMILIO ENRIQUE MARTÍNEZ PEÑAILILLO",
     "email": "e.martinezp@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -11597,12 +11897,12 @@
   "16153035-2": {
     "name": "ANTONIO RODOLGO GUZMAN RIBERA",
     "email": "r.antoniorodolfoguzm@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -11692,12 +11992,12 @@
   "16356954-K": {
     "name": "CAMILO TULIO CORNEJO ORELLANA",
     "email": "t.cornejoorellana@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -11763,15 +12063,27 @@
       }
     ]
   },
+  "16368910-3": {
+    "name": "DANIELA LEPORI SEPULVEDA",
+    "email": "f.lepori@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Marketing",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "16376750-3": {
-    "name": "HECTOR L. TAPIA CERDA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "HECTOR TAPIA CERDA",
+    "email": "h.tapiacerda@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -11855,14 +12167,14 @@
     ]
   },
   "16391065-9": {
-    "name": "Claudio Balbontin Coñue",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CLAUDIO BALBONTIN COÑUE",
+    "email": "c.balbontincoue@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Control de Gestion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -11929,13 +12241,13 @@
   },
   "16424756-2": {
     "name": "ALVARO ALEXIS CAMPOS LOBOS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "a.camposlobos@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MARKETING E INTELIGENCIA DE MERCADO",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -11972,13 +12284,13 @@
   },
   "16427535-3": {
     "name": "RAFAEL IGNACIO BUSTOS ORTIZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "ra.bustos@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -12004,12 +12316,12 @@
   "16448144-1": {
     "name": "EVELYN LORETO LARA OSORIO",
     "email": "e.laraosorio@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -12023,12 +12335,12 @@
   "16475355-7": {
     "name": "ALEJANDRO ESTEBAN PORMA LEIVA",
     "email": "a.pormaleiva@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -12054,12 +12366,12 @@
   "16479172-6": {
     "name": "SEBASTIAN JOSE ANSALDO RIQUELME",
     "email": "s.ansaldo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Communications",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -12194,12 +12506,12 @@
   "16532599-0": {
     "name": "JORGE ANTONIO SABAT SILVA",
     "email": "j.sabatsilva@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Business Administration",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "media_regular",
@@ -12253,15 +12565,27 @@
       }
     ]
   },
+  "16554158-8": {
+    "name": "RAUL EDUARDO GOMEZ ESCOBAR",
+    "email": "r.gomezescobar@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "16742511-9": {
     "name": "DIEGO GUERRERO SALINAS",
     "email": "d.guerrerosalinas1@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Laws",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -12275,12 +12599,12 @@
   "16755420-2": {
     "name": "MARCELA ALEJANDRA RODRIGUEZ BORBARAN",
     "email": "marce.rodriguez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -12310,14 +12634,14 @@
     "expLaboral": []
   },
   "16761117-6": {
-    "name": "HECTOR EMILIO GARRIDO VIDAL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "HÉCTOR EMILIO GARRIDO VIDAL",
+    "email": "h.garridovidal@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Docencia para la Educacion Superior",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -12343,12 +12667,12 @@
   "16764889-4": {
     "name": "JAIME ANTONIO VERA PEÑA",
     "email": "j.verapea@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas Corporativas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "sup_tesis",
@@ -12447,12 +12771,12 @@
   "16840751-3": {
     "name": "CAMILA ANDREA GARRIDO FLORES",
     "email": "camila.garrido@unab.cl",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -12485,12 +12809,12 @@
   "16877877-5": {
     "name": "DIANA BUSTAMANTE GARRIDO",
     "email": "di.bustamante@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado (ABD)",
+    "gradoDetalle": "Doctorado (ABD) en Finanzas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -12529,12 +12853,12 @@
   "16939233-1": {
     "name": "CRISTIAN ALFREDO AGUILAR NAVARRETE",
     "email": "c.aguilarnavarrete@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Innovacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -12585,12 +12909,12 @@
   "16958918-6": {
     "name": "SOFIA CONSTANZA OLGUIN GARCIA",
     "email": "s.olguingarcia@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Diseño Avanzado",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -12629,12 +12953,12 @@
   "17022350-0": {
     "name": "DIEGO ALEJANDRO VASQUEZ DIAZ",
     "email": "d.vasquezdiaz@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado (ABD)",
+    "gradoDetalle": "Doctorado (ABD) en Desarrollo Sostenible",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -12697,12 +13021,12 @@
   "17026903-9": {
     "name": "IVAN ESTEBAN GUTIERREZ MARTINEZ",
     "email": "i.gutierrezmartinez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Estadistica",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -12753,12 +13077,12 @@
   "17027956-5": {
     "name": "ANDRES ANTONIO RUBIO RIVERA",
     "email": "a.rubiorivera@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Psicologia",
+    "unidad": "OTRA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "diseno_ed_ejec",
@@ -12815,12 +13139,12 @@
   "17042371-2": {
     "name": "SALVADOR IGNACIO LAGOS GUTIERREZ",
     "email": "s.lagosgutierrez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "clase_ed_ejec",
@@ -12865,12 +13189,12 @@
   "17061208-6": {
     "name": "LORETO ALEJANDRA OPORTUS URIBE",
     "email": "l.oportusuribe@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion y Direccion de Empresas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -12890,12 +13214,12 @@
   "17064005-5": {
     "name": "CLAUDIA ALEJANDRA JARAMILLO QUEUPUNAHUEL",
     "email": "cl.jaramillo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Sustentable de Destinos y Proyectos",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -12928,12 +13252,12 @@
   "17076175-8": {
     "name": "JOSÉ ANTONIO VALLEJOS DONOSO",
     "email": "j.vallejosdonoso@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -12970,14 +13294,14 @@
     ]
   },
   "17248987-7": {
-    "name": "JOSE MIGUEL LEYTON ALLENDE",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JOSÉ MIGUEL LEYTON ALLENDE",
+    "email": "j.leytonallende@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13001,14 +13325,14 @@
     ]
   },
   "17269719-4": {
-    "name": " JAVIER ANTONIO GUZMAN VARAS",
+    "name": "JAVIER ANTONIO GUZMAN VARAS",
     "email": "j.guzmanvaras@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Psicologia del Deporte",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -13019,15 +13343,27 @@
     ],
     "expLaboral": []
   },
+  "17328340-7": {
+    "name": "DAVID ESTEBAN BAEZA CASTRO",
+    "email": "d.baezacastro@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "17348112-8": {
     "name": "CAMILA ANGELICA JARA MUNDACA",
     "email": "c.jaramundaca@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas Aplicadas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -13041,12 +13377,12 @@
   "17516790-0": {
     "name": "CAMILO PEDRERO OSORIO",
     "email": "c.pedrero@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -13064,14 +13400,14 @@
     "expLaboral": []
   },
   "17568744-0": {
-    "name": "GUSTAVO GUZMAN PIZARRO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "GUSTAVO ALEXIS GUZMÁN PIZARRO",
+    "email": "gust.guzman@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13085,12 +13421,12 @@
   "17673370-5": {
     "name": "PASCALE LABRA PONCE DE LEÓN",
     "email": "p.labraponcedelen@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado (ABD)",
+    "gradoDetalle": "Doctorado (ABD) en Analisis Economico",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -13120,14 +13456,14 @@
     "expLaboral": []
   },
   "17701680-2": {
-    "name": "SEBASTIAN GONZALEZ  MASSARDO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "SEBASTIAN GONZALEZ MASSARDO",
+    "email": "s.gonzalezmassardo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13157,14 +13493,14 @@
     ]
   },
   "17707710-0": {
-    "name": "Sebastian Alejandro  Flores  Figueroa",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "SEBASTIÁN ALEJANDRO FLORES FIGUEROA",
+    "email": "s.floresfigueroa@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Analisis Economico",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13202,12 +13538,12 @@
   "17984911-9": {
     "name": "JEFFREY MICHAEL MORALES SAAVEDRA",
     "email": "j.moralessaavedra2@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado (ABD)",
+    "gradoDetalle": "Doctorado (ABD) en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -13234,12 +13570,12 @@
   "18019882-2": {
     "name": "CAMILA FIGUEROA RAMÍREZ",
     "email": "c.figueroaramirez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Formulacion y Evaluacion de Proyectos",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "extension_com",
@@ -13275,15 +13611,27 @@
       }
     ]
   },
+  "18055893-4": {
+    "name": "SEBASTIAN AGUSTIN INOSTROZA JIMENEZ",
+    "email": "s.inostrozajimenez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Analisis Economico",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "18081516-3": {
-    "name": "DIEGO NICOLÁS ELORZA  RIVERA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "DIEGO NICOLÁS ELORZA RIVERA",
+    "email": "d.elorzarivera@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion y Emprendimiento Tecnologico",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13315,12 +13663,12 @@
   "18252647-9": {
     "name": "DIEGO IGNACIO RIVERA MARTINEZ",
     "email": "d.riveramartinez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Innovacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "extension_com",
@@ -13334,12 +13682,12 @@
   "18277230-5": {
     "name": "PABLO IGNACIO MORALES CORTEZ",
     "email": "p.moralescortez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributaria",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -13435,15 +13783,51 @@
       }
     ]
   },
+  "18392009-K": {
+    "name": "MATIAS IGNACIO REYES AMENABAR",
+    "email": "m.reyesamenabar@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "18527670-8": {
+    "name": "DIEGO FELIPE TELLO CÓRDOVA",
+    "email": "d.tellocrdova@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Aplicada",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "18540960-0": {
+    "name": "SEBASTIÁN IGNACIO GONZÁLEZ PÉREZ",
+    "email": "s.gonzalezperez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas e Inversiones",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "18626148-8": {
     "name": "ROBERTO BRITO VARGAS",
     "email": "r.britovargas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Emprendimiento e Innovacion Social",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -13463,12 +13847,12 @@
   "18638522-5": {
     "name": "FLORENCIA TERESITA FLEN ROSSI",
     "email": "f.flenrossi@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado (ABD)",
+    "gradoDetalle": "Doctorado (ABD) en Sociologia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -13518,12 +13902,12 @@
   "18931940-1": {
     "name": "BENJAMIN WALDO DE VIDTS VILA",
     "email": "b.devidtsvila@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Innovacion y Emprendimiento",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -13540,15 +13924,51 @@
     ],
     "expLaboral": []
   },
+  "19151317-7": {
+    "name": "ORELLA SIMONA VIGNOLI VALENZUELA",
+    "email": "o.vignolivalenzuela@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Marketing",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "19151999-K": {
+    "name": "STEFANO ANGELO BRUZZONE CASTILLO",
+    "email": "s.bruzzonecastillo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "19463407-2": {
+    "name": "JUAN PABLO RUBIO HERNANDEZ",
+    "email": "j.rubiohernandez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "19488346-3": {
-    "name": "MAXIMILIANO JOSÉ OSORIO GARCÍA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MAXIMILIANO JOSE OSORNO GARCIA",
+    "email": "m.osoriogarcia@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en International Management",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13572,14 +13992,14 @@
     ]
   },
   "19567467-1": {
-    "name": "ANTONIETA LETELIER  KAID",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "ANTONIETA LETELIER KAID",
+    "email": "a.letelierkaid@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -13599,12 +14019,12 @@
   "19609853-4": {
     "name": "ERNESTO JESÚS CANALES GONZÁLEZ",
     "email": "e.canalesgonzalez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Internacional en Direccion y Gestion Hotelera",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "conf_ext",
@@ -13652,15 +14072,27 @@
       }
     ]
   },
+  "21804079-9": {
+    "name": "SÍMONAS GALARRETA SESKUS",
+    "email": "s.galarretaseskus@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "21821504-1": {
     "name": "NICOLAS FERNANDO GARRIDO GARRIDO",
     "email": "n.garrido2@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -13728,12 +14160,12 @@
   "22070825-K": {
     "name": "ANA PILARTE DONAIRE",
     "email": "a.pilartedonaire@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -13796,12 +14228,12 @@
   "22171456-3": {
     "name": "DIEGO VALDA CHOQUE",
     "email": "d.valdachoque@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -13827,12 +14259,12 @@
   "23146826-9": {
     "name": "LUCIANA MITJAVILA",
     "email": "l.mitjavila@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -13979,12 +14411,12 @@
   "23158076-K": {
     "name": "JUAN MARTIN IRETA SANCHEZ",
     "email": "j.iretasnchez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Administracion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -14022,12 +14454,12 @@
   "23434761-6": {
     "name": "MARIA DEL PILAR CASTRO VILLACORTA",
     "email": "m.castrovillacorta@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -14078,12 +14510,12 @@
   "23486622-2": {
     "name": "CARLA GUADALUPI",
     "email": "c.guadalupi@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "conf_ext",
@@ -14169,13 +14601,13 @@
   },
   "24044258-2": {
     "name": "EZEQUIEL BENEIT OLIVA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "e.benetoliva@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -14231,12 +14663,12 @@
   "24248464-9": {
     "name": "MANUEL AURELIO CHONG FUENTES",
     "email": "m.chongfuentes@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia de Recursos Naturales y Medio Ambiente",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -14335,12 +14767,12 @@
   "24505983-3": {
     "name": "CARLOS JOSE PEREZ GONZALEZ",
     "email": "c.perezgonzalez4@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -14367,6 +14799,18 @@
         "desc": "A Model of Banking Without Fiat Money @ Seminario UC"
       }
     ],
+    "expLaboral": []
+  },
+  "24754176-4": {
+    "name": "BRUNO ANIBAL FRESSONE FRESSONE",
+    "email": "b.fressone@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas Corporativas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
     "expLaboral": []
   },
   "25285537-8": {
@@ -14421,12 +14865,12 @@
   "29524705-3": {
     "name": "TOMÁS GUANZIROLI",
     "email": "t.guanziroli@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -14507,12 +14951,12 @@
   "5012985-3": {
     "name": "RENATO BALBONTIN SANHUEZA",
     "email": "R.BALBONTIN@UANDRESBELLO.EDU",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia y Empresa",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -14563,13 +15007,13 @@
   },
   "5631760-0": {
     "name": "CARLOS ARAVENA BRAVO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "c.aravenabravo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -14586,15 +15030,27 @@
       }
     ]
   },
+  "5815834-8": {
+    "name": "FERNANDO JUAN PABLO GRAN TRONI",
+    "email": "f.grantroni@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "6227094-2": {
     "name": "RODRIGO BLANCH CARRIZO",
     "email": "r.blanchcarrizo@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -14661,14 +15117,14 @@
     ]
   },
   "6234162-9": {
-    "name": "ADRIAN ALFONSO BRAVO CARRASCO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "ADRIAN ALFONSO BRAVO  CARRASCO",
+    "email": "a.bravocarrasco@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -14694,12 +15150,12 @@
   "6385513-8": {
     "name": "ALEX IVAN MEDINA GIACOMOZZI",
     "email": "a.medinagiacomozzi@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Finanzas y Contabilidad",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "editor_revista",
@@ -14790,14 +15246,14 @@
     ]
   },
   "6487340-7": {
-    "name": "MARCO A. GATICA MONTECINOS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MARCO GATICA MONTECINOS",
+    "email": "m.gatica@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Marketing Aplicado",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -14853,12 +15309,12 @@
   "6492372-2": {
     "name": "VÍCTOR MAURICIO VALENZUELA VILLAGRA",
     "email": "vict.valenzuela@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Comercio Exterior",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -14955,14 +15411,14 @@
     ]
   },
   "6522358-9": {
-    "name": "JUAN C. RUIZ SUBIABRE",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JUAN RUIZ SUBIABRE",
+    "email": "jua.ruiz@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion y Organizacion de Empresas",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -14986,14 +15442,14 @@
     ]
   },
   "6562487-7": {
-    "name": "IGNACIO NICULCAR VARGAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "IGNACIO VICENTE NICULCAR VARGAS",
+    "email": "i.niculcar@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingeneria Informatica",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15052,6 +15508,18 @@
       }
     ]
   },
+  "6640103-0": {
+    "name": "FRANCISCO JAVIER ARGOTE MAGNERE",
+    "email": "f.argotemagnere@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Financiera",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "6735190-8": {
     "name": "JORGE HERNAN PASTEN SANCHEZ",
     "email": "",
@@ -15103,13 +15571,13 @@
   },
   "6919403-6": {
     "name": "PATRICIO QUINTANA ORTIZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "p.quintanaortiz@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15171,12 +15639,12 @@
   "7018664-0": {
     "name": "CRISTIAN GALVEZ BOIZARD",
     "email": "cris.galvez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -15206,15 +15674,27 @@
       }
     ]
   },
+  "7026339-4": {
+    "name": "JOSÉ MANUEL CICHERO SANTOS",
+    "email": "j.cicherosantos@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ciencias Militares m/Gestion Estrat en Disuacion y Defensa",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "7027902-9": {
     "name": "RODRIGO JAVIER MUÑOZ MOUKARZEL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "r.muozmoukarzel@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15246,12 +15726,12 @@
   "7035803-4": {
     "name": "FELIPE BALMACEDA MAHNS",
     "email": "f.balmacedamahns@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -15340,15 +15820,39 @@
     ],
     "expLaboral": []
   },
+  "7048561-3": {
+    "name": "JORGE EDUARDO CONTRERAS HERNANDEZ",
+    "email": "j.contrerashernand1@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "7140818-3": {
+    "name": "GERMAN IVAN PEREZ MATINEZ",
+    "email": "g.perezmartinez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "7179583-7": {
     "name": "FERNANDO EDUARDO MOCOCAIN ACUÑA",
     "email": "f.mococainacua@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Comunicaciones",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -15362,12 +15866,12 @@
   "7208112-9": {
     "name": "GALO ALFREDO LOPEZ ZUÑIGA",
     "email": "ga.lopez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion de Organizaciones m/Recursos Humanos",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -15404,14 +15908,14 @@
     ]
   },
   "7387805-5": {
-    "name": "CLAUDIO ENRIQUE. PARRA RETAMAL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CLAUDIO ENRIQUE PARRA RETAMAL",
+    "email": "c.parraretamal@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion de Organizaciones m/Recursos Humanos",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15465,14 +15969,14 @@
     ]
   },
   "7517025-4": {
-    "name": "JUAN ENRIQUE RAMIREZ OYARZUN",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "JUAN RAMIREZ OYARZUN",
+    "email": "ju.ramirez@uandresbello.edu",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Educacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15503,13 +16007,13 @@
   },
   "7522249-1": {
     "name": "MARCELA CABALLERO MENA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "m.caballero@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Educacion Superior",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15547,12 +16051,12 @@
   "7627921-7": {
     "name": "PEDRO LAY GAJARDO",
     "email": "p.lay@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion y Organizacion de Empresa Internacional",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -15619,14 +16123,14 @@
     ]
   },
   "7686103-K": {
-    "name": "ORLANDO A. TORO ARAYA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "ORLANDO ALFREDO TORO ARAYA",
+    "email": "o.toroaraya@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15668,14 +16172,14 @@
     ]
   },
   "7745773-9": {
-    "name": "MARIA YOLANDA CABRERA GONZALEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MARÍA YOLANDA CABRERA GONZÁLEZ",
+    "email": "m.cabrera1@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Project Management",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15724,13 +16228,13 @@
   },
   "7813235-3": {
     "name": "LEONARDO PATRICIO CONTRERAS RIVERA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "leo.contreras@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Energetica",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -15780,12 +16284,12 @@
   "7813721-5": {
     "name": "MAURICIO DONOSO VARGAS",
     "email": "m.donosovargas@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -15914,12 +16418,12 @@
   "7908555-3": {
     "name": "EDMUNDO BUDINICH CORTADA",
     "email": "e.budinichcortada@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -15985,15 +16489,27 @@
       }
     ]
   },
+  "8027379-7": {
+    "name": "ENRIQUE SILVA SUTHERLAND",
+    "email": "e.silvasutherland@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "8053386-1": {
-    "name": "LUIS BARAONA DEL PEDREGAL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "LUIS ENRIQUE BARAONA DEL PEDREGAL",
+    "email": "l.baraonadelpedregal@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -16025,12 +16541,12 @@
   "8123610-0": {
     "name": "CLAUDIO GIORGI BRAGA",
     "email": "c.giorgibraga@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -16087,12 +16603,12 @@
   "8144337-8": {
     "name": "PATRICIO ALEJANDRO AROCA GONZALEZ",
     "email": "p.arocagonzalez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -16208,12 +16724,12 @@
   "8184766-5": {
     "name": "RAUL DEL VALLE AREVALO",
     "email": "r.delvalle@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -16257,12 +16773,12 @@
   "8204804-9": {
     "name": "ELIZABETH FRESE BRUNO",
     "email": "e.fresebruno@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "org_seminario",
@@ -16337,12 +16853,12 @@
   "8322153-4": {
     "name": "ARIEL MELLER ROSENBLUT",
     "email": "a.mellerrosenblut@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -16409,14 +16925,14 @@
     ]
   },
   "8350228-2": {
-    "name": "CRISTIAN M. MACHO URIBE",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CRISTIÁN MANUEL RAMÓN MACHO URIBE",
+    "email": "c.machouribe@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -16460,12 +16976,12 @@
   "8399929-2": {
     "name": "CHRISTIAN BEHM SEPULVEDA",
     "email": "c.behmsepulveda@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "media_regular",
@@ -16564,12 +17080,12 @@
   "8402796-0": {
     "name": "VICTOR RUBIO CARDENAS",
     "email": "vi.rubio@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "sup_tesis",
@@ -16596,12 +17112,12 @@
   "8408187-6": {
     "name": "JOSE MANUEL REBOLLEDO CACERES",
     "email": "j.rebolledocaceres@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Administracion y Economia de Empresas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -16636,15 +17152,27 @@
     ],
     "expLaboral": []
   },
+  "8450338-K": {
+    "name": "ROLANDO ANTONIO URRUTIA MORALES",
+    "email": "r.urrutiamorales@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Control de Gestion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "8455768-4": {
-    "name": "XIMENA PATRICIA GAMBRA ACLE",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "XIMENA GAMBRA ACLE",
+    "email": "x.gambraacle@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -16715,15 +17243,27 @@
       }
     ]
   },
+  "8459685-K": {
+    "name": "GEORGE ALEXANDER ZALAQUETT GONZALEZ",
+    "email": "george.zalaquett@gmail.com",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "8486289-4": {
     "name": "RODOLFO WALTER ARISMENDI GUKOWSKI",
     "email": "r.arismendigukowski@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Pedagogia Universitaria",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -16756,12 +17296,12 @@
   "8517349-9": {
     "name": "ERNESTO BRUNA",
     "email": "e.bruna@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Derecho Laboral",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -16774,13 +17314,13 @@
   },
   "8527278-0": {
     "name": "GERMAN ADOLFO PUENTES BELMAR",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "g.puentes@uandresbello.edu",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Politicas Sociales",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -16817,13 +17357,13 @@
   },
   "8529258-7": {
     "name": "ROBERTO EDUARDO VARAS PINTO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "ro.varas@uandresbello.edu",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -16867,12 +17407,12 @@
   "8539658-7": {
     "name": "CARLOS ALBERTO ACEITUNO VILLALOBOS",
     "email": "c.aceituno@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Finanzas",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
@@ -16923,12 +17463,12 @@
   "8647317-8": {
     "name": "CLAUDIA BRANE SCHERMAN BADÍA",
     "email": "c.scherman@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "extension_com",
@@ -16954,12 +17494,12 @@
   "8648879-5": {
     "name": "CLAUDIO ENRIQUE LAPOSTOL VARGAS",
     "email": "c.lapostol@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -16998,12 +17538,12 @@
   "8683633-5": {
     "name": "JUAN PABLO NAVARRETE PAMPLONA",
     "email": "j.navarretepamplona@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -17054,12 +17594,12 @@
   "8687436-9": {
     "name": "CARLOS ENRIQUE PINTO CANDIA",
     "email": "carlos.pinto@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -17335,15 +17875,39 @@
       }
     ]
   },
+  "8721525-3": {
+    "name": "RICARDO MARCHANT SILVA",
+    "email": "r.marchantsilva@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia Agraria",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
+  "8739700-9": {
+    "name": "VICTOR ALEJANDRO CIFUENTES SANTANDER",
+    "email": "v.cifuentessantander@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "8750048-9": {
-    "name": "OMAR E. ROJAS BRITO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "OMAR EDGARDO ROJAS BRITO",
+    "email": "o.rojasbrito@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Estrategica Publica y Desarrollo Local",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17393,12 +17957,12 @@
   "8778595-5": {
     "name": "EDUARDO ACUÑA DURAN",
     "email": "e.acuaduran@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Administracion",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SA",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -17470,16 +18034,35 @@
       }
     ]
   },
+  "8829351-7": {
+    "name": "GONZALO ANDRES AGUIRRE DIAZ",
+    "email": "g.aguirrediaz@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Financiera",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "8852287-7": {
     "name": "PEDRO RETAMAL VILLAGRA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
-    "evidencias": [],
+    "email": "pe.retamal@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [
+      {
+        "code": "puesto_directorio",
+        "cat": "Vinculación y Debate Público",
+        "year": "2019",
+        "desc": "Gerente General"
+      }
+    ],
     "expLaboral": [
       {
         "cargo": "Agente Sucursal Rancagua",
@@ -17513,34 +18096,15 @@
       }
     ]
   },
-  "8852287-7\t": {
-    "name": "PEDRO RETAMAL VILLAGRA",
-    "email": "pe.retamal@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
-    "evidencias": [
-      {
-        "code": "puesto_directorio",
-        "cat": "Vinculación y Debate Público",
-        "year": "2019",
-        "desc": "Gerente General"
-      }
-    ],
-    "expLaboral": []
-  },
   "8887526-5": {
     "name": "HECTOR ENRIQUE SOTO GARRIDO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "h.sotogarrido@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Ingenieria Industrial",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17617,15 +18181,27 @@
       }
     ]
   },
+  "8959346-8": {
+    "name": "PAULA ANDREA OSORIO VÁSQUEZ",
+    "email": "p.osoriovsquez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia y Direccion Internacional de la Empresa",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "8966374-1": {
-    "name": "SERGIO ANTONIO SILVA SILVA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "SERGIO SILVA SILVA",
+    "email": "s.silvasilva@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Metodologiasw para la Docencia en Educacion Superior",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17661,14 +18237,14 @@
     ]
   },
   "9014213-5": {
-    "name": "VERONICA PATRICIA RADEMACHER LIZANA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "VERONICA RADEMACHER LIZANA",
+    "email": "r.veronicapatricia@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Inteligencia Emocional Multidisciplinaria",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17692,14 +18268,14 @@
     ]
   },
   "9043776-3": {
-    "name": "CLAUDIO CASTILLO  ROJAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CLAUDIO ERWIN CASTILLO ROJAS",
+    "email": "c.castillorojas2@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributaria",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17795,14 +18371,14 @@
     ]
   },
   "9122238-8": {
-    "name": "KATHERINE PATRICIA ALVAREZ RUF",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "KATHERINE ALVAREZ RUF",
+    "email": "kat.alvarez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Educacional",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17857,13 +18433,13 @@
   },
   "9148463-3": {
     "name": "TONY RICARDO GUNCKEL SANDOVAL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "t.gunckelsandoval@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Comunicacion Estrategica",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17929,14 +18505,14 @@
     ]
   },
   "9189505-6": {
-    "name": "CHRISTIAN R. REVECO RAVANAL",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "CHRISTIAN RENZO REVECO RAVANAL",
+    "email": "ch.reveco@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Educacion Superior",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -17985,13 +18561,13 @@
   },
   "9245344-8": {
     "name": "IVAN EDUARDO MONTECINOS CISTERNAS",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "iv.montecinos@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18005,12 +18581,12 @@
   "9256050-3": {
     "name": "FELIPE VARELA GANA",
     "email": "fel.varela@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -18041,14 +18617,14 @@
     ]
   },
   "9335944-5": {
-    "name": "NICOLAS E. IGLESIAS GARCIA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "NICOLAS IGLESIAS GARCIA",
+    "email": "n.iglesiasgarcia@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion Financiera",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18168,14 +18744,14 @@
     ]
   },
   "9339876-9": {
-    "name": "PAULA C. SUCRE CERDA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "PAULA CECILIA SUCRE CERDA",
+    "email": "p.sucre@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Control de Gestion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18230,13 +18806,13 @@
   },
   "9339877-7": {
     "name": "ANDREA SUCRE CERDA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "a.sucre@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion del Comercio Internacional",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18280,12 +18856,12 @@
   "9384849-7": {
     "name": "EDUARDO CAMILO CASTRO IBAÑEZ",
     "email": "e.acuaduran@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Desarrollo Economico y Politicas Publicas",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [
       {
         "code": "org_seminario",
@@ -18370,14 +18946,14 @@
     ]
   },
   "9403629-1": {
-    "name": "MIGUEL ANGEL VALLEJOS SANCHEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MIGUEL ÁNGEL VALLEJOS SÁNCHEZ",
+    "email": "mig.vallejos@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "IP",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18431,14 +19007,14 @@
     ]
   },
   "9409109-8": {
-    "name": "RAFAEL DAVID LEVY ABDALA",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "RAFAEL LEVY ABDALA",
+    "email": "r.levyabdala@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion Empresarial",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18463,13 +19039,13 @@
   },
   "9412138-8": {
     "name": "GONZALO FRANCISCO PONCE GONZÁLEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "g.poncegonzlez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18501,12 +19077,12 @@
   "9529368-9": {
     "name": "MARITZA MARIELA SILVA ACUÑA",
     "email": "marit.silva@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Educacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -18526,12 +19102,12 @@
   "9572813-8": {
     "name": "MARIA PIA MONREAL PEREZ",
     "email": "m.monrealperez@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Direccion de Marketing",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "part_comite",
@@ -18582,12 +19158,12 @@
   "9586130-K": {
     "name": "JOE FRANK ARMIJO BAUDRAND",
     "email": "j.armijobaudrand@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Profesional/Licenciado",
+    "gradoDetalle": "Profesional/Licenciado",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "puesto_directorio",
@@ -18598,15 +19174,27 @@
     ],
     "expLaboral": []
   },
+  "9612976-9": {
+    "name": "JAVIERA VASQUEZ",
+    "email": "manu.vasquez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
+    "evidencias": [],
+    "expLaboral": []
+  },
   "9638144-1": {
-    "name": "CORTES CASTRO LUIS FRANCISCO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "LUS FRANCISCO CORTES CASTRO",
+    "email": "c.luisfrancisco@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Estudios Internacionales",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18648,14 +19236,14 @@
     ]
   },
   "9649703-2": {
-    "name": "MARCELA TOPAZ GONZALEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "MARCELA VERÓNICA TOPAZ GONZÁLEZ",
+    "email": "m.topaz@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Consultoria y Coaching Orgnaizacional",
+    "unidad": "ESC. ING. ADM. DE EMPRESAS",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18759,12 +19347,12 @@
   "9667200-4": {
     "name": "CRISTIAN RODRIGO CISTERNA ARAVENA",
     "email": "c.cisternaaravena@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Administracion de Negocios Internacionales",
+    "unidad": "ESC. ING. TURISMO Y HOTELERÍA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Participating",
+    "clasificacion": "SP",
     "evidencias": [
       {
         "code": "pub_paper",
@@ -18783,13 +19371,13 @@
   },
   "9668329-4": {
     "name": "MARIO ALEJANDRO NAVARRO SOTO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "mario.navarro@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18863,12 +19451,12 @@
   "9713483-9": {
     "name": "ERIC SALINAS MAYNE",
     "email": "e.salinasmayne@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Gestion m/Control",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "media_regular",
@@ -18893,13 +19481,13 @@
   },
   "9752555-2": {
     "name": "PAZ HIDALGO ASTUDILLO",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "email": "p.hidalgoastudillo@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Comercio y Finanzas Internacionales",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18947,14 +19535,14 @@
     ]
   },
   "9821350-3": {
-    "name": "ROSA I. SÁNCHEZ HENRÍQUEZ",
-    "email": "",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "name": "ROSA SÁNCHEZ HENRÍQUEZ",
+    "email": "r.sanchezhenriquez@uandresbello.edu",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en Tributacion",
+    "unidad": "ESC. CONTADOR AUDITOR",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "PA",
     "evidencias": [],
     "expLaboral": [
       {
@@ -18980,12 +19568,12 @@
   "9909995-K": {
     "name": "CLAUDIA ALEJANDRA BRAVO OLIVARES",
     "email": "c.bravoolivares@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Magíster",
+    "gradoDetalle": "Magíster en MBA",
+    "unidad": "OTRA",
+    "contrato": "Adjunto (PT)",
+    "suficiencia": "Supporting",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "panelista_foro",
@@ -18999,12 +19587,12 @@
   "9963625-4": {
     "name": "JULIO JOSÉ GUZMÁN COX",
     "email": "j.guzmncox@uandresbello.edu",
-    "grado": "",
-    "gradoDetalle": "",
-    "unidad": "",
-    "contrato": "",
-    "suficiencia": "",
-    "clasificacion": "",
+    "grado": "Doctorado",
+    "gradoDetalle": "Doctorado en Economia",
+    "unidad": "ESC. INGENIERÍA COMERCIAL",
+    "contrato": "Regular (FT)",
+    "suficiencia": "Participating",
+    "clasificacion": "A",
     "evidencias": [
       {
         "code": "cargo_academico",
