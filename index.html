@@ -291,15 +291,15 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
   const sendAll=()=>{
     const ts=new Date().toISOString().slice(0,19).replace(/[T:]/g,'-');
     // Build unified CSV
-    const rows=[["RUT","NombreCompleto","Email","Tipo_Registro","TipoActividad","TipoActividad_Desc","Anio","Descripcion","Comentarios","ExpCargo","ExpEmpresa","ExpInicio","ExpFin","ExpVigente","Error_Reportado","FechaRegistro"]];
+    const rows=[["RUT","NombreCompleto","Email","Tipo_Registro","TipoActividad","TipoActividad_Desc","Anio","Descripcion","EnlaceEvidencia","Comentarios","ExpCargo","ExpEmpresa","ExpInicio","ExpFin","ExpVigente","Error_Reportado","FechaRegistro"]];
     pending.forEach(p=>{
-      rows.push([rut,data.name,data.email,"NUEVA_ACTIVIDAD",p.actType,CL[p.actType]||p.actType,p.year||'',p.isExp?'':p.description,p.comments||'',p.expCargo||'',p.expEmpresa||'',p.expInicio||'',p.expVigente?'Vigente':(p.expFin||''),p.expVigente?'Sí':'No','',new Date().toISOString()]);
+      rows.push([rut,data.name,data.email,"NUEVA_ACTIVIDAD",p.actType,CL[p.actType]||p.actType,p.year||'',p.isExp?'':p.description,p.evidenceLink||'',p.comments||'',p.expCargo||'',p.expEmpresa||'',p.expInicio||'',p.expVigente?'Vigente':(p.expFin||''),p.expVigente?'Sí':'No','',new Date().toISOString()]);
     });
     reports.forEach(r=>{
       if(r.isExp){
-        rows.push([rut,data.name,data.email,"ERROR_REPORTADO","exp_laboral","Experiencia Laboral",r.item.inicio||'',r.item.cargo||'','','',r.item.empresa||'','','','',r.msg,new Date().toISOString()]);
+        rows.push([rut,data.name,data.email,"ERROR_REPORTADO","exp_laboral","Experiencia Laboral",r.item.inicio||'',r.item.cargo||'','','','',r.item.empresa||'','','','',r.msg,new Date().toISOString()]);
       }else{
-        rows.push([rut,data.name,data.email,"ERROR_REPORTADO",r.item.code,CL[r.item.code]||r.item.code,r.item.year||'',r.item.desc||'','','','','','','',r.msg,new Date().toISOString()]);
+        rows.push([rut,data.name,data.email,"ERROR_REPORTADO",r.item.code,CL[r.item.code]||r.item.code,r.item.year||'',r.item.desc||'','','','','','','','',r.msg,new Date().toISOString()]);
       }
     });
     downloadCSV(rows,`portafolio_${rut}_${ts}.csv`);
@@ -315,6 +315,7 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
         }else{
           body+=`${CL[p.actType]||p.actType}${p.year?` (${p.year})`:""}: ${p.description}\n`;
         }
+        if(p.evidenceLink)body+=`   Evidencia: ${p.evidenceLink}\n`;
         if(p.comments)body+=`   Comentario: ${p.comments}\n`;
         body+=`\n`;
       });
@@ -331,7 +332,7 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
         body+=`   Error: ${r.msg}\n\n`;
       });
     }
-    body+=`Se adjunta CSV de respaldo.\n\nSaludos.`;
+    body+=`Se adjunta CSV de respaldo. Si tiene documentos de evidencia adicionales (certificados, PDFs, resoluciones), por favor adjúntelos a este correo.\n\nSaludos.`;
     const nAct=pending.length;const nErr=reports.length;
     const parts=[];
     if(nAct)parts.push(`${nAct} actividad${nAct>1?"es":""}`);
@@ -359,6 +360,7 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
         <div style={{marginTop:8,fontSize:12,color:"#3b82f6"}}>
           {pending.map((p,i)=><div key={i} style={{padding:"2px 0"}}>
             • {p.isExp?`Exp. laboral: ${p.expCargo} — ${p.expEmpresa}`:`${CL[p.actType]||p.actType}${p.year?` (${p.year})`:""}`}
+            {p.evidenceLink&&<span style={{color:"#2563eb"}}> 🔗</span>}
           </div>)}
         </div>
       </div>}
@@ -428,13 +430,15 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
 function ScreenAdd({data,rut,onSave,onCancel}){
   const [at,setAt]=useState("");const [yr,setYr]=useState("");const [desc,setDesc]=useState("");const [cm,setCm]=useState("");
   const [ec,setEc]=useState("");const [ee,setEe]=useState("");const [ei,setEi]=useState("");const [ef,setEf]=useState("");const [ev,setEv]=useState(false);
+  const [link,setLink]=useState("");
   const isExp=at==="exp_laboral";
   const ok=isExp?(ec&&ee&&ei):(at&&desc);
   const save=()=>{
     if(!ok)return;
-    onSave({actType:at,year:yr,description:desc,comments:cm,isExp,expCargo:ec,expEmpresa:ee,expInicio:ei,expFin:ef,expVigente:ev});
+    onSave({actType:at,year:yr,description:desc,comments:cm,isExp,expCargo:ec,expEmpresa:ee,expInicio:ei,expFin:ef,expVigente:ev,evidenceLink:link});
   };
   const ph=at==="pub_paper"?"Título | Revista | DOI o enlace":at==="consultoria_alta"?"Proyecto | Cliente | Rol | Período":"Describa la actividad con el mayor detalle posible";
+  const evPh=at==="pub_paper"?"https://doi.org/10.xxxx o enlace al artículo":at==="conf_ext"?"Enlace al programa de la conferencia":at==="proy_comp"?"Enlace al proyecto o resolución de adjudicación":at==="cargo_academico"?"Enlace a resolución de nombramiento":at==="consultoria_alta"?"Enlace a sitio del proyecto o cliente":at==="media_regular"?"Enlace a la nota o columna publicada":at==="exp_laboral"?"Enlace a perfil LinkedIn o sitio de la organización":"DOI, URL o enlace a Google Drive/OneDrive con el documento";
 
   return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card">
     <h2 className="st">Agregar nueva actividad</h2>
@@ -463,8 +467,15 @@ function ScreenAdd({data,rut,onSave,onCancel}){
       <div className="fg" style={{maxWidth:200}}><label className="fm">Año</label><input className="input" value={yr} onChange={e=>setYr(e.target.value)} placeholder="2024"/></div>
       <div className="fg"><label className="fm">Descripción *</label><textarea className="ta" value={desc} onChange={e=>setDesc(e.target.value)} placeholder={ph} rows={4}/></div>
     </>}
-    {at&&<div className="fg"><label className="fm">Comentarios adicionales (opcional)</label>
-      <textarea className="ta" value={cm} onChange={e=>setCm(e.target.value)} placeholder="Cualquier información adicional" rows={2}/></div>}
+    {at&&<>
+      <div className="fg">
+        <label className="fm">Enlace a evidencia (opcional)</label>
+        <input className="input" value={link} onChange={e=>setLink(e.target.value)} placeholder={evPh}/>
+        <span style={{fontSize:12,color:"#6b7280",marginTop:4,display:"block"}}>Si tiene archivos PDF u otros documentos de respaldo, adjúntelos al correo al momento de enviar.</span>
+      </div>
+      <div className="fg"><label className="fm">Comentarios adicionales (opcional)</label>
+      <textarea className="ta" value={cm} onChange={e=>setCm(e.target.value)} placeholder="Cualquier información adicional" rows={2}/></div>
+    </>}
     <div className="fa">
       <button className="btn-p" style={{maxWidth:300,opacity:ok?1:.5}} onClick={save} disabled={!ok}>Agregar</button>
       <button className="btn-s" style={{maxWidth:150}} onClick={onCancel}>Cancelar</button>
@@ -490,7 +501,7 @@ function ScreenDone({data,onBack}){
   return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card card-c">
     <div className="suc">✓</div>
     <h2 className="st" style={{marginTop:16}}>¡Gracias, {tc(data.name.split(" ")[0])}!</h2>
-    <p className="ss">Se abrió su correo con toda la información y se descargó un archivo CSV de respaldo. <strong>Por favor adjunte el CSV al correo antes de enviarlo.</strong></p>
+    <p className="ss">Se abrió su correo con toda la información y se descargó un archivo CSV de respaldo. <strong>Por favor adjunte el CSV y cualquier documento de evidencia (certificados, PDFs, etc.) al correo antes de enviarlo.</strong></p>
     <p className="ss" style={{marginTop:8}}>Puede volver en cualquier momento si necesita agregar más actividades.</p>
     <button className="btn-o" style={{marginTop:24}} onClick={onBack}>Volver al inicio</button>
   </div></div></div>;
