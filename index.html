@@ -227,7 +227,7 @@ function ScreenNewUser({rut,onSave,onCancel}){
   if(saved)return <div className="main"><Header email=""/><div className="cnt"><div className="card card-c">
     <div className="suc">✓</div>
     <h2 className="st" style={{marginTop:16}}>Registro enviado</h2>
-    <p className="ss">Se abrió su correo con los datos pre-llenados. Haga click en enviar. También se descargó un CSV de respaldo.</p>
+    <p className="ss">Se abrió su correo con los datos pre-llenados y se descargó un CSV de respaldo. <strong>Por favor adjunte el CSV al correo antes de enviarlo.</strong></p>
     <button className="btn-o" style={{marginTop:24}} onClick={onCancel}>Volver al inicio</button>
   </div></div></div>;
 
@@ -490,7 +490,7 @@ function ScreenDone({data,onBack}){
   return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card card-c">
     <div className="suc">✓</div>
     <h2 className="st" style={{marginTop:16}}>¡Gracias, {tc(data.name.split(" ")[0])}!</h2>
-    <p className="ss">Se abrió su correo con toda la información. Solo debe hacer click en enviar. También se descargó un CSV de respaldo.</p>
+    <p className="ss">Se abrió su correo con toda la información y se descargó un archivo CSV de respaldo. <strong>Por favor adjunte el CSV al correo antes de enviarlo.</strong></p>
     <p className="ss" style={{marginTop:8}}>Puede volver en cualquier momento si necesita agregar más actividades.</p>
     <button className="btn-o" style={{marginTop:24}} onClick={onBack}>Volver al inicio</button>
   </div></div></div>;
