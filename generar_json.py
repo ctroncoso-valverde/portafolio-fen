@@ -23,15 +23,33 @@ SALIDA:
 import csv
 import json
 import os
+import re
 import sys
 from collections import defaultdict
+
+
+def extract_year(e):
+    """Extrae el año buscando en múltiples campos."""
+    for field in ['AnioPublicacion', 'Anio', 'FechaEvento', 'AnioConvocatoria']:
+        val = e.get(field, '').replace(',', '').strip()
+        if val:
+            match = re.search(r'(20\d{2}|19\d{2})', val)
+            if match:
+                return match.group(1)
+    for field in ['FechaInicio', 'FechaFin', 'FechaAdjudicacion', 'FechaPostulacion']:
+        val = e.get(field, '').strip()
+        if val:
+            match = re.search(r'(20\d{2}|19\d{2})', val)
+            if match:
+                return match.group(1)
+    return ''
 
 
 def parse_evidencia(e):
     """Convierte un registro de Evidencias en formato display."""
     code = e.get('ActividadCodigo', '')
     cat = e.get('DescripcionActividad', '')
-    yr = (e.get('Anio') or e.get('AnioPublicacion') or '').replace(',', '').strip()
+    yr = extract_year(e)
 
     desc = ''
     if code == 'pub_paper':
