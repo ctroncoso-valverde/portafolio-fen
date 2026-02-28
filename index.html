@@ -10,844 +10,389 @@
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <style>
-:root {
-  --bg: #f5f3ef;
-  --card: #ffffff;
-  --border: #e5e0d8;
-  --text: #2c2825;
-  --text2: #6b6460;
-  --accent: #1a5276;
-  --accent2: #2980b9;
-  --accent-light: #eaf2f8;
-  --warm: #c0793c;
-  --warm-light: #fdf6ee;
-  --green: #1e8449;
-  --green-light: #eafaf1;
-  --red: #c0392b;
-  --red-light: #fdedec;
-  --font: 'DM Sans', -apple-system, system-ui, sans-serif;
-  --font-display: 'DM Serif Display', Georgia, serif;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; }
-
-/* Header */
-.header { background: var(--accent); color: #fff; padding: 20px 0; }
-.header-inner { max-width: 960px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
-.header h1 { font-family: var(--font-display); font-size: 22px; font-weight: 400; letter-spacing: .3px; }
-.header-sub { font-size: 12px; opacity: .7; margin-top: 2px; }
-.header-badge { background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-
-/* Container */
-.container { max-width: 960px; margin: 0 auto; padding: 24px; }
-
-/* Cards */
-.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.04); }
-.card-title { font-family: var(--font-display); font-size: 20px; margin-bottom: 16px; color: var(--accent); }
-.card-subtitle { font-size: 14px; color: var(--text2); margin-bottom: 20px; }
-
-/* Login */
-.login-box { max-width: 480px; margin: 60px auto; text-align: center; }
-.login-box .card { padding: 40px; }
-.login-logo { font-family: var(--font-display); font-size: 32px; color: var(--accent); margin-bottom: 8px; }
-.login-desc { font-size: 15px; color: var(--text2); margin-bottom: 28px; line-height: 1.7; }
-.input-group { text-align: left; margin-bottom: 16px; }
-.input-group label { display: block; font-size: 12px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
-.input { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 16px; font-family: var(--font); outline: none; transition: border .2s; }
-.input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(26,82,118,.1); }
-.input-sm { padding: 8px 12px; font-size: 14px; }
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; font-family: var(--font); cursor: pointer; border: none; transition: all .15s; }
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: #154360; }
-.btn-warm { background: var(--warm); color: #fff; }
-.btn-warm:hover { background: #a06630; }
-.btn-outline { background: transparent; border: 1.5px solid var(--border); color: var(--text); }
-.btn-outline:hover { background: var(--bg); }
-.btn-sm { padding: 8px 16px; font-size: 13px; }
-.btn-block { width: 100%; justify-content: center; }
-.btn:disabled { opacity: .5; cursor: not-allowed; }
-
-/* Info banner */
-.banner { background: var(--warm-light); border: 1.5px solid var(--warm); border-radius: 10px; padding: 20px 24px; margin-bottom: 20px; }
-.banner-title { font-weight: 700; font-size: 14px; color: var(--warm); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
-.banner-text { font-size: 13px; color: #7d5a2f; line-height: 1.7; }
-.banner-email { font-weight: 700; color: var(--accent); font-size: 14px; }
-.banner-critical { background: #fef3c7; border-color: #f59e0b; }
-
-/* Profesor view */
-.prof-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
-.prof-name { font-family: var(--font-display); font-size: 26px; color: var(--accent); }
-.prof-meta { font-size: 13px; color: var(--text2); margin-top: 4px; }
-.prof-stats { display: flex; gap: 12px; flex-wrap: wrap; }
-.stat-pill { background: var(--accent-light); border: 1px solid #c5d9e8; border-radius: 8px; padding: 10px 18px; text-align: center; min-width: 100px; }
-.stat-pill-v { font-size: 22px; font-weight: 800; color: var(--accent); }
-.stat-pill-l { font-size: 10px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; margin-top: 2px; }
-
-/* Tabs */
-.tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
-.tab { padding: 10px 20px; font-size: 14px; font-weight: 600; color: var(--text2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s; background: none; border-top: none; border-left: none; border-right: none; font-family: var(--font); }
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
-
-/* Evidence list */
-.ev-card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: box-shadow .15s; }
-.ev-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.06); }
-.ev-card.ev-new { border-color: var(--warm); background: var(--warm-light); }
-.ev-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
-.ev-title { font-weight: 600; font-size: 14px; }
-.ev-meta { font-size: 12px; color: var(--text2); }
-.ev-badges { display: flex; gap: 6px; flex-wrap: wrap; }
-.badge { display: inline-block; padding: 2px 10px; border-radius: 5px; font-size: 11px; font-weight: 700; }
-.b-l1 { background: #d5f5e3; color: #1e8449; }
-.b-l2 { background: #d6eaf8; color: #1a5276; }
-.b-l3 { background: #fef9e7; color: #7d6608; }
-.b-none { background: #f2f3f4; color: #909497; }
-.b-new { background: #fdebd0; color: #a04000; }
-.ev-detail { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin-top: 10px; }
-.ev-field { font-size: 12px; }
-.ev-field-label { font-weight: 600; color: var(--text2); }
-
-/* Add form */
-.add-form { background: var(--bg); border: 1.5px dashed var(--border); border-radius: 10px; padding: 24px; margin-bottom: 16px; }
-.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-bottom: 16px; }
-.form-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
-
-/* Discipline badges */
-.disc-badge { display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-.disc-primary { background: #d6eaf8; border: 1px solid #aed6f1; color: #1a5276; }
-.disc-secondary { background: #f2f3f4; border: 1px solid #d5d8dc; color: #6b6460; }
-
-/* Select */
-.sel { padding: 8px 12px; border: 1.5px solid var(--border); border-radius: 6px; font-size: 14px; font-family: var(--font); outline: none; background: #fff; cursor: pointer; }
-.sel:focus { border-color: var(--accent); }
-.sel-sm { padding: 5px 8px; font-size: 12px; }
-
-/* Textarea */
-textarea.input { resize: vertical; min-height: 60px; }
-
-/* Toast */
-.toast { position: fixed; bottom: 24px; right: 24px; background: var(--accent); color: #fff; padding: 14px 24px; border-radius: 10px; font-size: 14px; font-weight: 500; z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,.2); animation: slideUp .3s; }
-@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
-/* Empty state */
-.empty { padding: 40px; text-align: center; color: var(--text2); font-size: 14px; }
-
-/* Responsive */
-@media (max-width: 640px) {
-  .container { padding: 16px; }
-  .card { padding: 20px; }
-  .prof-header { flex-direction: column; }
-  .form-grid { grid-template-columns: 1fr; }
-}
-
-/* Changes counter */
-.changes-bar { position: sticky; bottom: 0; background: var(--accent); color: #fff; padding: 14px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; box-shadow: 0 -4px 20px rgba(0,0,0,.15); z-index: 50; margin: 0 -24px; }
-.changes-bar .pulse { width: 10px; height: 10px; border-radius: 50%; background: #f39c12; animation: pulse 1.5s infinite; }
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
-
-/* Dean dashboard */
-.dean-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 24px; }
-.dean-stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
-.dean-stat-v { font-size: 28px; font-weight: 800; }
-.dean-stat-l { font-size: 10px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; margin-top: 2px; }
-
-/* Table */
-.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
-.tbl th { text-align: left; padding: 10px 12px; font-size: 11px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; background: #fafaf8; border-bottom: 2px solid var(--border); position: sticky; top: 0; z-index: 1; }
-.tbl td { padding: 10px 12px; border-bottom: 1px solid #f5f3ef; }
-.tbl tr:hover { background: #fafaf8; }
-.tbl tr { cursor: pointer; }
-.scroll-table { max-height: 600px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
-
-/* Print hide */
-@media print { .no-print { display: none !important; } }
+:root{--bg:#f5f3ef;--card:#fff;--border:#e5e0d8;--text:#2c2825;--text2:#6b6460;--accent:#1a5276;--accent2:#2980b9;--accent-light:#eaf2f8;--warm:#c0793c;--warm-light:#fdf6ee;--green:#1e8449;--green-light:#eafaf1;--red:#c0392b;--font:'DM Sans',-apple-system,system-ui,sans-serif;--font-display:'DM Serif Display',Georgia,serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6}
+.header{background:var(--accent);color:#fff;padding:20px 0}
+.header-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}
+.header h1{font-family:var(--font-display);font-size:22px;font-weight:400;letter-spacing:.3px}
+.header-sub{font-size:12px;opacity:.7;margin-top:2px}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:28px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.card-title{font-family:var(--font-display);font-size:20px;margin-bottom:16px;color:var(--accent)}
+.login-box{max-width:480px;margin:60px auto;text-align:center}
+.login-box .card{padding:40px}
+.login-logo{font-family:var(--font-display);font-size:32px;color:var(--accent);margin-bottom:8px}
+.login-desc{font-size:15px;color:var(--text2);margin-bottom:28px;line-height:1.7}
+.input-group{text-align:left;margin-bottom:16px}
+.input-group label{display:block;font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.input{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:8px;font-size:16px;font-family:var(--font);outline:none;transition:border .2s}
+.input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(26,82,118,.1)}
+.input-sm{padding:8px 12px;font-size:14px}
+.sel{padding:8px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;font-family:var(--font);outline:none;background:#fff;cursor:pointer}
+textarea.input{resize:vertical;min-height:60px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;font-family:var(--font);cursor:pointer;border:none;transition:all .15s}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:#154360}
+.btn-warm{background:var(--warm);color:#fff}.btn-warm:hover{background:#a06630}
+.btn-outline{background:transparent;border:1.5px solid var(--border);color:var(--text)}.btn-outline:hover{background:var(--bg)}
+.btn-sm{padding:8px 16px;font-size:13px}
+.btn-block{width:100%;justify-content:center}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.banner{background:var(--warm-light);border:1.5px solid var(--warm);border-radius:10px;padding:20px 24px;margin-bottom:20px}
+.banner-title{font-weight:700;font-size:14px;color:var(--warm);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.banner-text{font-size:13px;color:#7d5a2f;line-height:1.7}
+.banner-email{font-weight:700;color:var(--accent);font-size:14px}
+.banner-critical{background:#fef3c7;border-color:#f59e0b}
+.prof-name{font-family:var(--font-display);font-size:26px;color:var(--accent)}
+.prof-meta{font-size:13px;color:var(--text2);margin-top:4px}
+.prof-stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.stat-pill{background:var(--accent-light);border:1px solid #c5d9e8;border-radius:8px;padding:10px 18px;text-align:center;min-width:100px}
+.stat-pill-v{font-size:22px;font-weight:800;color:var(--accent)}.stat-pill-l{font-size:10px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
+.tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:20px}
+.tab{padding:10px 20px;font-size:14px;font-weight:600;color:var(--text2);cursor:pointer;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;background:none;font-family:var(--font)}
+.tab:hover{color:var(--text)}.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.ev-card{border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:8px;transition:box-shadow .15s}
+.ev-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.ev-card.ev-new{border-color:var(--warm);background:var(--warm-light)}
+.edit-panel{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#fffbeb;padding:12px;border-radius:8px;border:1px solid #fde68a}
+.edit-panel .full{grid-column:1/-1}
+.edit-panel label{font-size:11px;font-weight:600;color:#6b7280}
+.add-form{background:var(--bg);border:1.5px dashed var(--border);border-radius:10px;padding:24px;margin-bottom:16px}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:16px}
+.toast{position:fixed;bottom:24px;right:24px;background:var(--accent);color:#fff;padding:14px 24px;border-radius:10px;font-size:14px;font-weight:500;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.2);animation:slideUp .3s}
+@keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+.empty{padding:40px;text-align:center;color:var(--text2);font-size:14px}
+.changes-bar{position:sticky;bottom:0;background:var(--accent);color:#fff;padding:14px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 -4px 20px rgba(0,0,0,.15);z-index:50;margin:0 -24px;flex-wrap:wrap}
+.pulse{width:10px;height:10px;border-radius:50%;background:#f39c12;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.dean-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:24px}
+.dean-stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.dean-stat-v{font-size:28px;font-weight:800}.dean-stat-l{font-size:10px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.4px;margin-top:2px}
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th{text-align:left;padding:10px 12px;font-size:11px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.4px;background:#fafaf8;border-bottom:2px solid var(--border);position:sticky;top:0;z-index:1}
+.tbl td{padding:10px 12px;border-bottom:1px solid #f5f3ef}.tbl tr:hover{background:#fafaf8}.tbl tr{cursor:pointer}
+.scroll-table{max-height:600px;overflow-y:auto;border:1px solid var(--border);border-radius:8px}
+@media(max-width:640px){.container{padding:16px}.card{padding:20px}.form-grid{grid-template-columns:1fr}.edit-panel{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <script type="text/babel">
-const { useState, useEffect, useMemo, useCallback } = React;
+const{useState,useEffect,useMemo}=React;
+const CONTACT_EMAIL='c.troncosovalverde@uandresbello.edu';
+const DEAN_PASS='fen2025';
 
-// ════════════════════════════════════════════════════════════
-// CONSTANTS
-// ════════════════════════════════════════════════════════════
-const CONTACT_EMAIL = 'c.troncosovalverde@uandresbello.edu';
-const DEAN_PASS = 'fen2025'; // simple gate, not real security
+const CATALOGO={pub_paper:'Artículo en revista académica',pub_libro:'Libro o capítulo de libro',pub_caso_editorial:'Caso editorial',pub_pedagogica:'Publicación pedagógica',proy_comp:'Proyecto competitivo',movilidad_inv:'Movilidad investigativa',conf_ext:'Conferencia o ponencia',editor_revista:'Editor/Comité editorial',peer_review:'Peer review',working_paper:'Working paper',sup_tesis:'Supervisión de tesis',policy_brief:'Policy brief',caso_conf_repos:'Caso en conferencia/repositorio',caso_adoptado:'Caso adoptado por otra institución',premio_academico:'Premio académico',patente_pi:'Patente o propiedad intelectual',consultoria_alta:'Consultoría de alto nivel',clase_ed_ejec:'Clase en educación ejecutiva',diseno_ed_ejec:'Diseño de programa ejecutivo',comite_tecnico:'Comité técnico sectorial',puesto_directorio:'Puesto en directorio',asoc_profesional:'Asociación profesional',vcm_proyecto:'Proyecto de vinculación con el medio',media_regular:'Aparición en medios',podcast_blog:'Podcast, blog o columna digital',panelista_foro:'Panelista en foro/seminario',certificacion_prof:'Certificación profesional',perfeccion_acad:'Perfeccionamiento académico',extension_com:'Extensión comunitaria',org_seminario:'Organización de seminario/workshop',premio_sectorial:'Premio profesional/sectorial',perito_arbitro:'Perito o árbitro',cargo_academico:'Cargo de gestión académica',part_comite:'Participación en comité FEN',innovacion_docente:'Innovación docente',material_docente:'Material docente publicado'};
 
-const CATALOGO = {
-  pub_paper:'Artículo en revista académica', pub_libro:'Libro o capítulo de libro', pub_caso_editorial:'Caso editorial',
-  pub_pedagogica:'Publicación pedagógica', proy_comp:'Proyecto competitivo', movilidad_inv:'Movilidad investigativa',
-  conf_ext:'Conferencia o ponencia', editor_revista:'Editor/Comité editorial', peer_review:'Peer review',
-  working_paper:'Working paper', sup_tesis:'Supervisión de tesis', policy_brief:'Policy brief',
-  caso_conf_repos:'Caso en conferencia/repositorio', caso_adoptado:'Caso adoptado por otra institución',
-  premio_academico:'Premio académico', patente_pi:'Patente o propiedad intelectual',
-  consultoria_alta:'Consultoría de alto nivel', clase_ed_ejec:'Clase en educación ejecutiva',
-  diseno_ed_ejec:'Diseño de programa ejecutivo', comite_tecnico:'Comité técnico sectorial',
-  puesto_directorio:'Puesto en directorio', asoc_profesional:'Asociación profesional',
-  vcm_proyecto:'Proyecto de vinculación con el medio', media_regular:'Aparición en medios',
-  podcast_blog:'Podcast, blog o columna digital', panelista_foro:'Panelista en foro/seminario',
-  certificacion_prof:'Certificación profesional', perfeccion_acad:'Perfeccionamiento académico',
-  extension_com:'Extensión comunitaria', org_seminario:'Organización de seminario/workshop',
-  premio_sectorial:'Premio profesional/sectorial', perito_arbitro:'Perito o árbitro',
-  cargo_academico:'Cargo de gestión académica', part_comite:'Participación en comité FEN',
-  innovacion_docente:'Innovación docente', material_docente:'Material docente publicado',
-};
+const EDIT_FIELDS={pub_paper:['titulo_articulo','revista','doi','indice','cuartil','anio_publicacion','anio','url'],pub_libro:['titulo_libro','titulo_capitulo','editorial','anio','url'],pub_caso_editorial:['titulo_articulo','editorial','anio','url'],pub_pedagogica:['titulo_articulo','revista','doi','anio','url'],conf_ext:['titulo_ponencia','nombre_evento','pais_evento','tipo_conferencia','organizador_ponencia','tipo_ponencia','anio','url'],proy_comp:['titulo_proyecto','agencia','rol_proyecto','financiamiento','fecha_adjudicacion','anio','url'],working_paper:['titulo_wp','institucion_serie','nombre_serie','anio','url'],editor_revista:['revista','rol_editorial','anio','url'],peer_review:['revista','anio','url'],sup_tesis:['titulo_tesis','rol_tesis','tipo_tesis','programa_tesis','universidad','anio','url'],movilidad_inv:['nombre_evento','universidad','pais_evento','anio','url'],consultoria_alta:['nombre_cliente','tipo_cliente','alcance','anio','url'],puesto_directorio:['cargo_directorio','tipo_directorio','nombre_cliente','anio_inicio','anio_fin','anio','url'],media_regular:['nombre_medio','titulo_nota','tipo_participacion','alcance_medio','anio','url'],panelista_foro:['nombre_evento','organizador_ponencia','anio','url'],cargo_academico:['cargo_gestion','lider_academico','anio','url'],part_comite:['nombre_comite','rol_comite','convocante_comite','anio','url'],clase_ed_ejec:['tipo_ed_ejecutiva','rol_ed_ejecutiva','modulo_ed_ejecutiva','institucion_ed_ejecutiva','anio','url'],diseno_ed_ejec:['tipo_ed_ejecutiva','rol_ed_ejecutiva','institucion_ed_ejecutiva','anio','url'],comite_tecnico:['nombre_comite','rol_comite','convocante_comite','anio','url'],extension_com:['nombre_evento','organizador_extension','ciudad_extension','anio','url'],org_seminario:['nombre_evento','unidad_seminario','tipo_seminario','anio','url'],perfeccion_acad:['nombre_programa','tipo_perfeccionamiento','anio','url'],vcm_proyecto:['nombre_cliente','alcance','anio','url'],asoc_profesional:['nombre_comite','tipo_directorio','anio','url'],certificacion_prof:['nombre_programa','anio','url'],innovacion_docente:['nombre_curso','anio','url'],material_docente:['nombre_curso','tipo_material','descripcion_material','anio','url'],podcast_blog:['nombre_medio','titulo_nota','anio','url'],caso_conf_repos:['titulo_articulo','nombre_evento','anio','url'],caso_adoptado:['titulo_articulo','universidad','anio','url'],premio_academico:['nombre_evento','anio','url'],patente_pi:['titulo_articulo','anio','url'],policy_brief:['titulo_articulo','nombre_cliente','anio','url'],premio_sectorial:['nombre_evento','anio','url'],perito_arbitro:['nombre_cliente','anio','url'],_default:['anio','url','comentarios']};
 
-const LISTA_LABELS = { LISTA_I: 'Lista I', LISTA_II: 'Lista II', LISTA_III: 'Lista III', NINGUNA: 'No aplica' };
+const FL={titulo_articulo:'Título',revista:'Revista',doi:'DOI',indice:'Índice',cuartil:'Cuartil',anio_publicacion:'Año publicación',anio:'Año',url:'URL',titulo_libro:'Título libro',titulo_capitulo:'Título capítulo',editorial:'Editorial',titulo_ponencia:'Título ponencia',nombre_evento:'Evento',pais_evento:'País',tipo_conferencia:'Tipo conferencia',organizador_ponencia:'Organizador',tipo_ponencia:'Tipo ponencia',titulo_proyecto:'Título proyecto',agencia:'Agencia',rol_proyecto:'Rol',financiamiento:'Financiamiento',fecha_adjudicacion:'Adjudicación',titulo_wp:'Título WP',institucion_serie:'Institución',nombre_serie:'Serie',rol_editorial:'Rol editorial',titulo_tesis:'Título tesis',rol_tesis:'Rol',tipo_tesis:'Tipo tesis',programa_tesis:'Programa',universidad:'Universidad',nombre_cliente:'Cliente/Org.',tipo_cliente:'Tipo',alcance:'Alcance',cargo_directorio:'Cargo',tipo_directorio:'Tipo',nombre_medio:'Medio',titulo_nota:'Título',tipo_participacion:'Tipo participación',alcance_medio:'Alcance',cargo_gestion:'Cargo',lider_academico:'Líder',nombre_comite:'Comité',rol_comite:'Rol',convocante_comite:'Convocante',tipo_ed_ejecutiva:'Tipo',rol_ed_ejecutiva:'Rol',modulo_ed_ejecutiva:'Módulo',institucion_ed_ejecutiva:'Institución',organizador_extension:'Organizador',ciudad_extension:'Ciudad',unidad_seminario:'Unidad',tipo_seminario:'Tipo',nombre_programa:'Programa',tipo_perfeccionamiento:'Tipo',nombre_curso:'Curso',tipo_material:'Tipo material',descripcion_material:'Descripción',comentarios:'Comentarios',anio_inicio:'Año inicio',anio_fin:'Año fin'};
 
-// ════════════════════════════════════════════════════════════
-// DATA LOADING
-// ════════════════════════════════════════════════════════════
-// The portal loads a single JSON file exported from the admin app
-// Expected structure: { academicos:[], evidencias:[], exp_laboral:[], horas_contacto:[], anio_eval:2025 }
+async function loadData(){try{const r=await fetch('portafolio_data.json');if(!r.ok)throw 0;return await r.json();}catch(e){return null;}}
+function normRut(r){return(r||'').replace(/\./g,'').replace(/\s/g,'').toUpperCase().trim();}
+function dl(obj,fn){const b=new Blob([JSON.stringify(obj,null,2)],{type:'application/json'});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download=fn;a.click();URL.revokeObjectURL(u);}
+function desc(ev){return ev.titulo_articulo||ev.titulo_ponencia||ev.cargo_gestion||ev.titulo_nota||ev.nombre_evento||ev.titulo_wp||ev.titulo_tesis||ev.nombre_comite||ev.cargo_directorio||ev.nombre_programa||ev.nombre_cliente||ev.nombre_medio||ev.titulo_libro||ev.titulo_proyecto||'(sin descripción)';}
 
-async function loadPortfolioData() {
-  try {
-    const resp = await fetch('portafolio_data.json');
-    if (!resp.ok) throw new Error('No se encontró portafolio_data.json');
-    return await resp.json();
-  } catch (e) {
-    console.error(e);
-    return null;
-  }
+// ── Login ──
+function Login({onLogin,onDean,ready,err}){
+  const[rut,setRut]=useState('');const[dp,setDp]=useState('');const[sd,setSd]=useState(false);const[e,setE]=useState('');
+  return <div className="login-box"><div className="card">
+    <div className="login-logo">Portafolio Académico</div>
+    <div style={{fontSize:13,color:'var(--text2)',marginBottom:4}}>Facultad de Economía y Negocios · UNAB</div>
+    <div style={{fontSize:12,color:'var(--warm)',fontWeight:600,marginBottom:24}}>Proceso de Acreditación AACSB</div>
+    {err&&<div className="banner" style={{textAlign:'left',marginBottom:20}}><div className="banner-title">⚠ Datos no disponibles</div><div className="banner-text">Contacte a <span className="banner-email">{CONTACT_EMAIL}</span></div></div>}
+    {!sd?<>
+      <div className="login-desc">Ingrese su RUT para revisar su información académica y, si lo desea, complementarla o corregir datos existentes.</div>
+      <div className="input-group"><label>RUT (sin puntos, con guión)</label>
+        <input className="input" placeholder="12345678-9" value={rut} onChange={x=>{setRut(x.target.value);setE('');}} onKeyDown={x=>x.key==='Enter'&&onLogin(normRut(rut))} autoFocus/></div>
+      {e&&<div style={{color:'var(--red)',fontSize:13,marginBottom:12,fontWeight:600}}>{e}</div>}
+      <button className="btn btn-primary btn-block" onClick={()=>{const n=normRut(rut);if(!n||n.length<7){setE('RUT inválido');return;}onLogin(n);}} disabled={!ready} style={{marginBottom:12}}>{ready?'Ingresar':'Cargando...'}</button>
+      <button className="btn btn-outline btn-block btn-sm" onClick={()=>setSd(true)}>Acceso administrador</button>
+    </>:<>
+      <div className="login-desc">Clave de acceso administrativo.</div>
+      <div className="input-group"><label>Clave</label><input className="input" type="password" value={dp} onChange={x=>{setDp(x.target.value);setE('');}} onKeyDown={x=>x.key==='Enter'&&(dp===DEAN_PASS?onDean():setE('Incorrecta'))} autoFocus/></div>
+      {e&&<div style={{color:'var(--red)',fontSize:13,marginBottom:12,fontWeight:600}}>{e}</div>}
+      <button className="btn btn-primary btn-block" onClick={()=>dp===DEAN_PASS?onDean():setE('Incorrecta')} style={{marginBottom:12}}>Ingresar</button>
+      <button className="btn btn-outline btn-block btn-sm" onClick={()=>setSd(false)}>← Volver</button>
+    </>}
+  </div><div style={{textAlign:'center',marginTop:16,fontSize:11,color:'var(--text2)'}}>Dirección de Aseguramiento de la Calidad · FEN-UNAB</div></div>;
 }
 
-// ════════════════════════════════════════════════════════════
-// UTILITY
-// ════════════════════════════════════════════════════════════
-function normalizeRut(rut) {
-  return (rut || '').replace(/\./g, '').replace(/\s/g, '').toUpperCase().trim();
-}
-
-function downloadJSON(obj, filename) {
-  const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url; a.download = filename; a.click();
-  URL.revokeObjectURL(url);
-}
-
-function BadgeLista({ v }) {
-  const m = { LISTA_I: 'b-l1', LISTA_II: 'b-l2', LISTA_III: 'b-l3', LISTA_III_PIEZA: 'b-l3', NINGUNA: 'b-none' };
-  const t = { LISTA_I: 'I', LISTA_II: 'II', LISTA_III: 'III', LISTA_III_PIEZA: 'III·p', NINGUNA: '—' };
-  return <span className={`badge ${m[v] || 'b-none'}`}>{t[v] || v}</span>;
-}
-
-// ════════════════════════════════════════════════════════════
-// COMPONENTS
-// ════════════════════════════════════════════════════════════
-
-// ── Login Screen ──
-function LoginScreen({ onLogin, onDean, dataLoaded, dataError }) {
-  const [rut, setRut] = useState('');
-  const [showDean, setShowDean] = useState(false);
-  const [deanPass, setDeanPass] = useState('');
-  const [error, setError] = useState('');
-
-  const handleLogin = () => {
-    const normalized = normalizeRut(rut);
-    if (!normalized || normalized.length < 7) { setError('Ingrese un RUT válido'); return; }
-    onLogin(normalized);
-  };
-
-  const handleDean = () => {
-    if (deanPass === DEAN_PASS) { onDean(); }
-    else { setError('Clave incorrecta'); }
-  };
-
-  return <div className="login-box">
-    <div className="card">
-      <div className="login-logo">Portafolio Académico</div>
-      <div style={{fontSize:13,color:'var(--text2)',marginBottom:4}}>Facultad de Economía y Negocios · UNAB</div>
-      <div style={{fontSize:12,color:'var(--warm)',fontWeight:600,marginBottom:24}}>Proceso de Acreditación AACSB</div>
-
-      {dataError && <div className="banner" style={{textAlign:'left',marginBottom:20}}>
-        <div className="banner-title">⚠ Datos no disponibles</div>
-        <div className="banner-text">No se pudo cargar la información. Por favor intente más tarde o contacte a <span className="banner-email">{CONTACT_EMAIL}</span></div>
-      </div>}
-
-      {!showDean ? <>
-        <div className="login-desc">
-          Ingrese su RUT para revisar su información académica registrada y, si lo desea, complementarla con nuevas actividades o experiencia laboral.
-        </div>
-        <div className="input-group">
-          <label>RUT (sin puntos, con guión)</label>
-          <input className="input" placeholder="12345678-9" value={rut}
-            onChange={e => { setRut(e.target.value); setError(''); }}
-            onKeyDown={e => e.key === 'Enter' && handleLogin()} autoFocus />
-        </div>
-        {error && <div style={{color:'var(--red)',fontSize:13,marginBottom:12,fontWeight:600}}>{error}</div>}
-        <button className="btn btn-primary btn-block" onClick={handleLogin} disabled={!dataLoaded} style={{marginBottom:12}}>
-          {dataLoaded ? 'Ingresar' : 'Cargando datos...'}
-        </button>
-        <button className="btn btn-outline btn-block btn-sm" onClick={() => { setShowDean(true); setError(''); }}>
-          Acceso administrador
-        </button>
-      </> : <>
-        <div className="login-desc">Ingrese la clave de acceso administrativo.</div>
-        <div className="input-group">
-          <label>Clave</label>
-          <input className="input" type="password" value={deanPass}
-            onChange={e => { setDeanPass(e.target.value); setError(''); }}
-            onKeyDown={e => e.key === 'Enter' && handleDean()} autoFocus />
-        </div>
-        {error && <div style={{color:'var(--red)',fontSize:13,marginBottom:12,fontWeight:600}}>{error}</div>}
-        <button className="btn btn-primary btn-block" onClick={handleDean} style={{marginBottom:12}}>Ingresar</button>
-        <button className="btn btn-outline btn-block btn-sm" onClick={() => { setShowDean(false); setError(''); }}>← Volver a login profesor</button>
-      </>}
-    </div>
-    <div style={{textAlign:'center',marginTop:16,fontSize:11,color:'var(--text2)'}}>
-      Dirección de Aseguramiento de la Calidad · FEN-UNAB
-    </div>
-  </div>;
-}
-
-// ── Professor View ──
-function ProfessorView({ acad, evidencias, expLaboral, horas, data, onLogout, readOnly }) {
-  const [tab, setTab] = useState('evidencias');
-  const [changes, setChanges] = useState({ nuevas_evidencias: [], nuevas_exp: [], comentarios: [] });
-  const [showAddEv, setShowAddEv] = useState(false);
-  const [showAddExp, setShowAddExp] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [toast, setToast] = useState('');
-
-  const showToast = (msg) => { setToast(msg); setTimeout(() => setToast(''), 3000); };
-
-  const totalChanges = changes.nuevas_evidencias.length + changes.nuevas_exp.length + changes.comentarios.length;
-
-  // Discipline distribution
-  const discDist = useMemo(() => {
-    if (!horas) return [];
-    const cols = [
-      { key: 'sch_adm_ni_inn', label: 'ADM_NI_INN', cursos: 'cursos_adm_ni_inn' },
-      { key: 'sch_econ_gp', label: 'ECON_GP', cursos: 'cursos_econ_gp' },
-      { key: 'sch_con_fin_tri', label: 'CON_FIN_TRI', cursos: 'cursos_con_fin_tri' },
-      { key: 'sch_ad_mkt_tur', label: 'AD_MKT_TUR', cursos: 'cursos_ad_mkt_tur' },
-    ];
-    const total = +(horas.sch_total || 0);
-    if (!total) return [];
-    return cols.map(c => ({
-      ...c,
-      sch: +(horas[c.key] || 0),
-      pct: +(horas[c.key] || 0) / total,
-      cursos: (horas[c.cursos] || '').split('|').map(s => s.trim()).filter(Boolean),
-    })).filter(d => d.sch > 0);
-  }, [horas]);
-
-  // Count existing evidences by lista
-  const evStats = useMemo(() => {
-    const s = { LISTA_I: 0, LISTA_II: 0, LISTA_III: 0, total: evidencias.length };
-    evidencias.forEach(e => {
-      const l = e.lista_final || e.lista_auto || '';
-      if (l === 'LISTA_I') s.LISTA_I++;
-      else if (l === 'LISTA_II') s.LISTA_II++;
-      else if (l.startsWith('LISTA_III')) s.LISTA_III++;
-    });
-    return s;
-  }, [evidencias]);
-
-  // ── Add evidence ──
-  const [newEv, setNewEv] = useState({ codigo: 'pub_paper', anio: String(new Date().getFullYear()), descripcion: '', revista: '', doi: '', url: '', comentarios: '' });
-
-  const addEvidence = () => {
-    if (!newEv.descripcion.trim()) { showToast('Ingrese una descripción'); return; }
-    const ev = { ...newEv, id: 'PROF_' + Date.now(), rut: acad.rut, fecha_envio: new Date().toISOString() };
-    setChanges(prev => ({ ...prev, nuevas_evidencias: [...prev.nuevas_evidencias, ev] }));
-    setNewEv({ codigo: 'pub_paper', anio: String(new Date().getFullYear()), descripcion: '', revista: '', doi: '', url: '', comentarios: '' });
-    setShowAddEv(false);
-    showToast('✓ Evidencia agregada a cambios pendientes');
-  };
-
-  // ── Add exp laboral ──
-  const [newExp, setNewExp] = useState({ cargo: '', organizacion: '', anio_inicio: '', anio_fin: '', url_respaldo: '', notas: '' });
-
-  const addExp = () => {
-    if (!newExp.cargo.trim() || !newExp.organizacion.trim()) { showToast('Complete cargo y organización'); return; }
-    const exp = { ...newExp, id: 'PROF_' + Date.now(), rut: acad.rut, fecha_envio: new Date().toISOString() };
-    setChanges(prev => ({ ...prev, nuevas_exp: [...prev.nuevas_exp, exp] }));
-    setNewExp({ cargo: '', organizacion: '', anio_inicio: '', anio_fin: '', url_respaldo: '', notas: '' });
-    setShowAddExp(false);
-    showToast('✓ Experiencia agregada a cambios pendientes');
-  };
-
-  // ── Add comment to existing evidence ──
-  const addComment = (evId, text) => {
-    if (!text.trim()) return;
-    setChanges(prev => ({
-      ...prev,
-      comentarios: [...prev.comentarios.filter(c => c.id_evidencia !== evId), { id_evidencia: evId, rut: acad.rut, comentario: text, fecha: new Date().toISOString() }]
-    }));
-    showToast('✓ Comentario registrado');
-  };
-
-  // ── Download changes file ──
-  const downloadChanges = () => {
-    const payload = {
-      _formato: 'cambios_portafolio_fen_v1',
-      rut: acad.rut,
-      nombre: acad.nombre,
-      fecha_generacion: new Date().toISOString(),
-      ...changes,
-    };
-    const fecha = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-    const rutClean = acad.rut.replace(/[^0-9kK]/g, '');
-    downloadJSON(payload, `cambios_${rutClean}_${fecha}.json`);
-    setSubmitted(true);
-    showToast('✓ Archivo descargado');
-  };
-
-  return <>
-    <div className="header no-print">
-      <div className="header-inner">
-        <div>
-          <h1>Portafolio Académico</h1>
-          <div className="header-sub">FEN-UNAB · Acreditación AACSB</div>
-        </div>
-        <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Cerrar sesión</button>
-      </div>
-    </div>
-
-    <div className="container">
-      {/* Email banner — ALWAYS visible for professors */}
-      {!readOnly && <div className="banner banner-critical">
-        <div className="banner-title">📧 Importante: envío de información</div>
-        <div className="banner-text">
-          Si agrega nuevas evidencias o experiencia laboral, al finalizar debe <strong>descargar el archivo de cambios</strong> y enviarlo por correo electrónico a:<br/>
-          <span className="banner-email" style={{fontSize:16,display:'inline-block',marginTop:6,marginBottom:6}}>{CONTACT_EMAIL}</span><br/>
-          Sin este paso, sus cambios <strong>no serán registrados</strong> en el sistema oficial. El archivo descargado es pequeño y contiene solo lo que usted agregó.
-        </div>
-      </div>}
-
-      {/* Professor header */}
-      <div className="card">
-        <div className="prof-header">
-          <div>
-            <div className="prof-name">{acad.nombre}</div>
-            <div className="prof-meta">
-              RUT: {acad.rut} · {acad.planta || '—'} · {acad.unidad || '—'}
-              {acad.grado && <> · {acad.grado}</>}
-            </div>
-          </div>
-          <div className="prof-stats">
-            <div className="stat-pill">
-              <div className="stat-pill-v">{evStats.total}</div>
-              <div className="stat-pill-l">Evidencias</div>
-            </div>
-            <div className="stat-pill">
-              <div className="stat-pill-v">{expLaboral.length}</div>
-              <div className="stat-pill-l">Exp. Laboral</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      {/* Tabs */}
-      <div className="tabs no-print">
-        <button className={`tab ${tab === 'evidencias' ? 'active' : ''}`} onClick={() => setTab('evidencias')}>
-          Evidencias ({evidencias.length}{changes.nuevas_evidencias.length ? ` + ${changes.nuevas_evidencias.length} nuevas` : ''})
-        </button>
-        <button className={`tab ${tab === 'exp' ? 'active' : ''}`} onClick={() => setTab('exp')}>
-          Exp. Laboral ({expLaboral.length}{changes.nuevas_exp.length ? ` + ${changes.nuevas_exp.length} nuevas` : ''})
-        </button>
-      </div>
-
-      {/* ── Evidencias Tab ── */}
-      {tab === 'evidencias' && <div>
-        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:16,flexWrap:'wrap',gap:8}}>
-          <div style={{fontSize:13,color:'var(--text2)'}}>
-            Lista I: <strong>{evStats.LISTA_I}</strong> · Lista II: <strong>{evStats.LISTA_II}</strong> · Lista III: <strong>{evStats.LISTA_III}</strong>
-          </div>
-          {!readOnly && <button className="btn btn-warm btn-sm" onClick={() => setShowAddEv(!showAddEv)}>
-            {showAddEv ? '✕ Cancelar' : '＋ Agregar evidencia'}
-          </button>}
-        </div>
-
-        {/* Add evidence form */}
-        {showAddEv && <div className="add-form">
-          <div style={{fontWeight:700,fontSize:14,marginBottom:12,color:'var(--warm)'}}>Nueva evidencia</div>
-          <div className="form-grid">
-            <div className="input-group">
-              <label>Tipo de actividad</label>
-              <select className="sel" style={{width:'100%'}} value={newEv.codigo} onChange={e => setNewEv({ ...newEv, codigo: e.target.value })}>
-                {Object.entries(CATALOGO).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
-              </select>
-            </div>
-            <div className="input-group">
-              <label>Año</label>
-              <input className="input input-sm" type="number" value={newEv.anio} onChange={e => setNewEv({ ...newEv, anio: e.target.value })} />
-            </div>
-          </div>
-          <div className="input-group">
-            <label>Descripción (título, nombre del proyecto, cargo, etc.)</label>
-            <input className="input" value={newEv.descripcion} onChange={e => setNewEv({ ...newEv, descripcion: e.target.value })} placeholder="Ej: Artículo sobre impacto de política fiscal..." />
-          </div>
-          {['pub_paper', 'pub_pedagogica'].includes(newEv.codigo) && <div className="form-grid">
-            <div className="input-group">
-              <label>Revista</label>
-              <input className="input input-sm" value={newEv.revista} onChange={e => setNewEv({ ...newEv, revista: e.target.value })} />
-            </div>
-            <div className="input-group">
-              <label>DOI</label>
-              <input className="input input-sm" value={newEv.doi} onChange={e => setNewEv({ ...newEv, doi: e.target.value })} />
-            </div>
-          </div>}
-          <div className="form-grid">
-            <div className="input-group">
-              <label>URL de respaldo (opcional)</label>
-              <input className="input input-sm" value={newEv.url} onChange={e => setNewEv({ ...newEv, url: e.target.value })} placeholder="https://..." />
-            </div>
-            <div className="input-group">
-              <label>Comentarios (opcional)</label>
-              <input className="input input-sm" value={newEv.comentarios} onChange={e => setNewEv({ ...newEv, comentarios: e.target.value })} />
-            </div>
-          </div>
-          <button className="btn btn-warm" onClick={addEvidence}>Agregar evidencia</button>
-        </div>}
-
-        {/* New evidences (pending) */}
-        {changes.nuevas_evidencias.map((ev, i) => <div key={'new-' + i} className="ev-card ev-new">
-          <div className="ev-header">
-            <div>
-              <span className="badge b-new">NUEVA — pendiente de envío</span>
-              <div className="ev-title" style={{marginTop:6}}>{ev.descripcion}</div>
-              <div className="ev-meta">{CATALOGO[ev.codigo] || ev.codigo} · {ev.anio}</div>
-            </div>
-            <button className="btn btn-outline btn-sm" onClick={() => {
-              setChanges(prev => ({ ...prev, nuevas_evidencias: prev.nuevas_evidencias.filter((_, j) => j !== i) }));
-              showToast('Evidencia removida');
-            }}>✕</button>
-          </div>
-        </div>)}
-
-        {/* Existing evidences */}
-        {evidencias.length === 0 && changes.nuevas_evidencias.length === 0 && <div className="empty">No hay evidencias registradas. Use el botón "＋ Agregar evidencia" para comenzar.</div>}
-        {evidencias.map((ev, i) => <EvidenceCardReadonly key={i} ev={ev} onComment={(text) => addComment(ev.id_evidencia, text)}
-          existingComment={changes.comentarios.find(c => c.id_evidencia === ev.id_evidencia)?.comentario || ''} />)}
-      </div>}
-
-      {/* ── Exp. Laboral Tab ── */}
-      {tab === 'exp' && <div>
-        {!readOnly && <div style={{display:'flex',justifyContent:'flex-end',marginBottom:16}}>
-          <button className="btn btn-warm btn-sm" onClick={() => setShowAddExp(!showAddExp)}>
-            {showAddExp ? '✕ Cancelar' : '＋ Agregar experiencia'}
-          </button>
-        </div>}
-
-        {showAddExp && <div className="add-form">
-          <div style={{fontWeight:700,fontSize:14,marginBottom:12,color:'var(--warm)'}}>Nueva experiencia laboral</div>
-          <div className="form-grid">
-            <div className="input-group">
-              <label>Cargo</label>
-              <input className="input input-sm" value={newExp.cargo} onChange={e => setNewExp({ ...newExp, cargo: e.target.value })} placeholder="Ej: Gerente de Finanzas" />
-            </div>
-            <div className="input-group">
-              <label>Organización</label>
-              <input className="input input-sm" value={newExp.organizacion} onChange={e => setNewExp({ ...newExp, organizacion: e.target.value })} />
-            </div>
-          </div>
-          <div className="form-grid">
-            <div className="input-group">
-              <label>Año inicio</label>
-              <input className="input input-sm" type="number" value={newExp.anio_inicio} onChange={e => setNewExp({ ...newExp, anio_inicio: e.target.value })} />
-            </div>
-            <div className="input-group">
-              <label>Año fin (o "vigente")</label>
-              <input className="input input-sm" value={newExp.anio_fin} onChange={e => setNewExp({ ...newExp, anio_fin: e.target.value })} placeholder="2024 o vigente" />
-            </div>
-          </div>
-          <div className="input-group">
-            <label>URL de respaldo o notas (opcional)</label>
-            <input className="input input-sm" value={newExp.notas} onChange={e => setNewExp({ ...newExp, notas: e.target.value })} />
-          </div>
-          <button className="btn btn-warm" onClick={addExp}>Agregar experiencia</button>
-        </div>}
-
-        {changes.nuevas_exp.map((exp, i) => <div key={'new-' + i} className="ev-card ev-new">
-          <div className="ev-header">
-            <div>
-              <span className="badge b-new">NUEVA — pendiente de envío</span>
-              <div className="ev-title" style={{marginTop:6}}>{exp.cargo} — {exp.organizacion}</div>
-              <div className="ev-meta">{exp.anio_inicio}{exp.anio_fin ? ' – ' + exp.anio_fin : ''}</div>
-            </div>
-            <button className="btn btn-outline btn-sm" onClick={() => {
-              setChanges(prev => ({ ...prev, nuevas_exp: prev.nuevas_exp.filter((_, j) => j !== i) }));
-            }}>✕</button>
-          </div>
-        </div>)}
-
-        {expLaboral.length === 0 && changes.nuevas_exp.length === 0 && <div className="empty">No hay experiencia laboral registrada.</div>}
-        {expLaboral.map((exp, i) => <div key={i} className="ev-card">
-          <div className="ev-title">{exp.cargo || '(sin cargo)'} — {exp.organizacion || '(sin organización)'}</div>
-          <div className="ev-meta">
-            {exp.anio_inicio || '?'} – {exp.anio_fin || '?'}
-            {exp.cargo_califica === 'true' && <span style={{marginLeft:8,color:'var(--green)',fontWeight:600}}>✓ Calificante</span>}
-          </div>
-        </div>)}
-      </div>}
-
-      {/* ── Sticky changes bar ── */}
-      {!readOnly && totalChanges > 0 && !submitted && <div className="changes-bar no-print">
-        <div style={{display:'flex',alignItems:'center',gap:12}}>
-          <div className="pulse"></div>
-          <div>
-            <strong>{totalChanges} cambio{totalChanges > 1 ? 's' : ''} pendiente{totalChanges > 1 ? 's' : ''}</strong>
-            <div style={{fontSize:12,opacity:.8}}>Descargue el archivo y envíelo a {CONTACT_EMAIL}</div>
-          </div>
-        </div>
-        <button className="btn" style={{background:'#f39c12',color:'#fff'}} onClick={downloadChanges}>
-          📥 Descargar archivo de cambios
-        </button>
-      </div>}
-
-      {/* ── Post-download confirmation ── */}
-      {!readOnly && submitted && <div className="card" style={{background:'var(--green-light)',border:'1.5px solid var(--green)',textAlign:'center',padding:32}}>
-        <div style={{fontSize:24,marginBottom:8}}>✅</div>
-        <div style={{fontSize:18,fontWeight:700,color:'var(--green)',marginBottom:12}}>Archivo descargado correctamente</div>
-        <div style={{fontSize:14,color:'var(--text)',lineHeight:1.7,maxWidth:500,margin:'0 auto'}}>
-          Ahora envíe el archivo <strong>cambios_*.json</strong> por correo electrónico a:<br/>
-          <span style={{fontSize:18,fontWeight:700,color:'var(--accent)',display:'inline-block',margin:'12px 0'}}>{CONTACT_EMAIL}</span><br/>
-          Si no envía el archivo, sus cambios <strong>no quedarán registrados</strong> en el sistema.
-        </div>
-        <div style={{marginTop:20,display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
-          <button className="btn btn-primary" onClick={() => { window.location.href = `mailto:${CONTACT_EMAIL}?subject=Portafolio%20Académico%20-%20${encodeURIComponent(acad.nombre)}&body=Adjunto%20archivo%20de%20cambios%20de%20portafolio%20académico.`; }}>
-            📧 Abrir correo
-          </button>
-          <button className="btn btn-outline" onClick={() => setSubmitted(false)}>Seguir editando</button>
-        </div>
-      </div>}
-    </div>
-    {toast && <div className="toast">{toast}</div>}
-  </>;
-}
-
-// ── Evidence card (read-only with comment option) ──
-function EvidenceCardReadonly({ ev, onComment, existingComment, hideComments }) {
-  const [showComment, setShowComment] = useState(false);
-  const [comment, setComment] = useState(existingComment);
-
-  const desc = ev.titulo_articulo || ev.titulo_ponencia || ev.cargo_gestion || ev.titulo_nota ||
-    ev.nombre_evento || ev.titulo_wp || ev.titulo_tesis || ev.nombre_comite ||
-    ev.cargo_directorio || ev.nombre_programa || ev.nombre_cliente || ev.nombre_medio || '(sin descripción)';
-
-  const lista = ev.lista_final || ev.lista_auto || '';
+// ── Evidence Card (mirrors old gestion_evidencias.html display) ──
+function EvCard({ev,readOnly,onEdit}){
+  const[editing,setEditing]=useState(false);
+  const[edits,setEdits]=useState({});
+  const fields=EDIT_FIELDS[ev.codigo]||EDIT_FIELDS._default;
+  const allFields=fields.includes('comentarios')?fields:[...fields,'comentarios'];
+  const d=desc(ev);
+  const merged={...ev,...edits};
+  const save=()=>{if(Object.keys(edits).length>0&&onEdit)onEdit(edits);setEditing(false);setEdits({});};
 
   return <div className="ev-card">
-    <div className="ev-header">
-      <div>
-        <div className="ev-badges">
-          <BadgeLista v={lista} />
-          <span style={{fontSize:12,color:'var(--text2)'}}>{ev.anio}</span>
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:12,flexWrap:'wrap'}}>
+      <div style={{flex:1,minWidth:200}}>
+        <div style={{display:'flex',gap:8,alignItems:'center',marginBottom:4}}>
+          <span style={{fontSize:13,fontWeight:700,color:'var(--accent)'}}>{ev.codigo}</span>
+          <span style={{fontSize:12,color:'var(--text2)'}}>({ev.anio||'—'})</span>
         </div>
-        <div className="ev-title" style={{marginTop:6}}>{desc}</div>
-        <div className="ev-meta">{CATALOGO[ev.codigo] || ev.codigo}</div>
+        {!editing&&<>
+          <div style={{fontSize:13,color:'#374151',lineHeight:1.5}}>
+            {d}{ev.revista&&<span style={{color:'var(--text2)'}}> — {ev.revista}</span>}
+          </div>
+          {ev.doi&&<div style={{fontSize:12,marginTop:2}}><a href={ev.doi.startsWith('http')?ev.doi:`https://doi.org/${ev.doi}`} target="_blank" rel="noopener" style={{color:'var(--accent2)'}}>DOI: {ev.doi}</a></div>}
+          {ev.url&&<div style={{fontSize:12,marginTop:2}}><a href={ev.url} target="_blank" rel="noopener" style={{color:'var(--accent2)'}}>🔗 {ev.url.length>70?ev.url.substring(0,70)+'...':ev.url}</a></div>}
+        </>}
       </div>
+      {!readOnly&&<button className={`btn btn-sm ${editing?'btn-warm':'btn-outline'}`} onClick={()=>{if(editing)save();else setEditing(true);}}>
+        {editing?'✓ Guardar':'✎ Editar'}
+      </button>}
     </div>
-    {/* Extra fields */}
-    <div className="ev-detail">
-      {ev.revista && <div className="ev-field"><span className="ev-field-label">Revista:</span> {ev.revista}</div>}
-      {ev.doi && <div className="ev-field"><span className="ev-field-label">DOI:</span> {ev.doi}</div>}
-      {ev.indice && <div className="ev-field"><span className="ev-field-label">Índice:</span> {ev.indice}</div>}
-      {ev.cuartil && <div className="ev-field"><span className="ev-field-label">Cuartil:</span> {ev.cuartil}</div>}
-      {ev.editorial && <div className="ev-field"><span className="ev-field-label">Editorial:</span> {ev.editorial}</div>}
-      {ev.nombre_evento && ev.codigo !== 'media_regular' && <div className="ev-field"><span className="ev-field-label">Evento:</span> {ev.nombre_evento}</div>}
-      {ev.nombre_cliente && <div className="ev-field"><span className="ev-field-label">Cliente:</span> {ev.nombre_cliente}</div>}
-      {ev.url && <div className="ev-field"><span className="ev-field-label">URL:</span> <a href={ev.url} target="_blank" rel="noopener" style={{color:'var(--accent2)'}}>{ev.url.length > 50 ? ev.url.slice(0, 50) + '...' : ev.url}</a></div>}
-    </div>
-    {/* Comment button */}
-    {!hideComments && <>
-      <div style={{marginTop:10,display:'flex',gap:8,alignItems:'center'}}>
-        {existingComment && <span style={{fontSize:12,color:'var(--warm)',fontWeight:600}}>💬 Comentario agregado</span>}
-        <button className="btn btn-outline btn-sm" style={{fontSize:11}} onClick={() => setShowComment(!showComment)}>
-          {showComment ? 'Cerrar' : existingComment ? 'Editar comentario' : '💬 Agregar observación'}
-        </button>
+    {editing&&<>
+      <div className="edit-panel">
+        <div className="full" style={{fontSize:12,fontWeight:600,color:'#92400e',marginBottom:4}}>Editando — {CATALOGO[ev.codigo]||ev.codigo}</div>
+        <div className="full"><label>Tipo de actividad</label>
+          <select className="sel" style={{width:'100%'}} value={edits.codigo||ev.codigo} onChange={x=>setEdits({...edits,codigo:x.target.value})}>
+            {Object.entries(CATALOGO).map(([k,v])=><option key={k} value={k}>{k} — {v}</option>)}
+          </select>
+        </div>
+        {allFields.map(f=>{const val=merged[f]||'';const isLink=(f==='url'||f==='doi')&&val;
+          const href=f==='doi'&&val&&!val.startsWith('http')?`https://doi.org/${val}`:val;
+          return <div key={f} style={(f==='url'||f==='comentarios')?{gridColumn:'1/-1'}:{}}>
+            <label>{FL[f]||f}{isLink&&<a href={href} target="_blank" rel="noopener" style={{marginLeft:6,color:'var(--accent2)',fontWeight:400}}>abrir ↗</a>}</label>
+            <input className="input input-sm" value={val} onChange={x=>setEdits({...edits,[f]:x.target.value})}/>
+          </div>;
+        })}
       </div>
-      {showComment && <div style={{marginTop:8,display:'flex',gap:8}}>
-        <textarea className="input input-sm" style={{flex:1,minHeight:40}} value={comment} onChange={e => setComment(e.target.value)}
-          placeholder="Ej: Este artículo también fue presentado en conferencia X..." />
-        <button className="btn btn-warm btn-sm" onClick={() => { onComment(comment); setShowComment(false); }}>Guardar</button>
-      </div>}
+      <div style={{marginTop:8,display:'flex',gap:8}}>
+        <button className="btn btn-warm btn-sm" onClick={save}>✓ Guardar</button>
+        <button className="btn btn-outline btn-sm" onClick={()=>{setEditing(false);setEdits({});}}>Cancelar</button>
+      </div>
     </>}
   </div>;
 }
 
-// ── Dean View (read-only dashboard) ──
-function DeanView({ data, onLogout }) {
-  const [selectedRut, setSelectedRut] = useState(null);
-  const [filter, setFilter] = useState('');
-  const [deanTab, setDeanTab] = useState('ev');
-
-  const acads = useMemo(() => {
-    const list = (data.academicos || []).filter(a => {
-      if (!filter) return true;
-      const q = filter.toLowerCase();
-      return (a.nombre || '').toLowerCase().includes(q) || (a.rut || '').includes(q) || (a.unidad || '').toLowerCase().includes(q);
-    });
-    return list.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || ''));
-  }, [data, filter]);
-
-  const horasMap = useMemo(() => {
-    const m = {};
-    (data.horas_contacto || []).forEach(h => { m[h.rut] = h; });
-    return m;
-  }, [data]);
-
-  const evByRut = useMemo(() => {
-    const m = {};
-    (data.evidencias || []).forEach(e => { if (!m[e.rut]) m[e.rut] = []; m[e.rut].push(e); });
-    return m;
-  }, [data]);
-
-  const expByRut = useMemo(() => {
-    const m = {};
-    (data.exp_laboral || []).forEach(e => { if (!m[e.rut]) m[e.rut] = []; m[e.rut].push(e); });
-    return m;
-  }, [data]);
-
-  // Stats
-  const totalEvs = (data.evidencias || []).length;
-  const totalExps = (data.exp_laboral || []).length;
-  const plantaR = acads.filter(a => (a.planta || '').toLowerCase().includes('regular')).length;
-
-  if (selectedRut) {
-    const acad = data.academicos.find(a => a.rut === selectedRut);
-    if (!acad) { setSelectedRut(null); return null; }
-    const evs = evByRut[selectedRut] || [];
-    const exps = expByRut[selectedRut] || [];
-    const horas = horasMap[selectedRut];
-    return <>
-      <div className="header no-print">
-        <div className="header-inner">
-          <div><h1>Vista Administrador</h1><div className="header-sub">FEN-UNAB · Solo lectura</div></div>
-          <div style={{display:'flex',gap:8}}>
-            <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={() => setSelectedRut(null)}>← Lista</button>
-            <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Salir</button>
-          </div>
-        </div>
+// ── Exp Card (editable) ──
+function ExpCard({exp,onEdit}){
+  const[editing,setEditing]=useState(false);const[edits,setEdits]=useState({});
+  const merged={...exp,...edits};const EF=['cargo','organizacion','anio_inicio','anio_fin'];
+  const EL={cargo:'Cargo',organizacion:'Organización',anio_inicio:'Año inicio',anio_fin:'Año fin'};
+  const save=()=>{if(Object.keys(edits).length>0&&onEdit)onEdit(edits);setEditing(false);setEdits({});};
+  return <div className="ev-card">
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:12}}>
+      <div><div style={{fontWeight:600,fontSize:14}}>{exp.cargo||'(sin cargo)'} — {exp.organizacion||'(sin organización)'}</div>
+        <div style={{fontSize:12,color:'var(--text2)'}}>{exp.anio_inicio||'?'} – {exp.anio_fin||'?'}</div></div>
+      {onEdit&&<button className={`btn btn-sm ${editing?'btn-warm':'btn-outline'}`} onClick={()=>{if(editing)save();else setEditing(true);}}>
+        {editing?'✓ Guardar':'✎ Editar'}</button>}
+    </div>
+    {editing&&<div className="edit-panel" style={{gridTemplateColumns:'1fr 1fr'}}>
+      {EF.map(f=><div key={f}><label>{EL[f]}</label><input className="input input-sm" value={merged[f]||''} onChange={x=>setEdits({...edits,[f]:x.target.value})}/></div>)}
+      <div style={{gridColumn:'1/-1',display:'flex',gap:8,marginTop:4}}>
+        <button className="btn btn-warm btn-sm" onClick={save}>✓ Guardar</button>
+        <button className="btn btn-outline btn-sm" onClick={()=>{setEditing(false);setEdits({});}}>Cancelar</button>
       </div>
-      <div className="container">
-        <div className="card">
-          <div className="prof-header">
-            <div>
-              <div className="prof-name">{acad.nombre}</div>
-              <div className="prof-meta">RUT: {acad.rut} · {acad.planta || '—'} · {acad.unidad || '—'}{acad.grado && <> · {acad.grado}</>}</div>
-            </div>
-          </div>
-        </div>
-        <div className="tabs">
-          <button className={`tab ${deanTab==='ev'?'active':''}`} onClick={()=>setDeanTab('ev')}>Evidencias ({evs.length})</button>
-          <button className={`tab ${deanTab==='exp'?'active':''}`} onClick={()=>setDeanTab('exp')}>Exp. Laboral ({exps.length})</button>
-        </div>
-        {deanTab==='ev' && <div>
-          {evs.length === 0 && <div className="empty">Sin evidencias registradas.</div>}
-          {evs.map((ev, i) => <EvidenceCardReadonly key={i} ev={ev} onComment={()=>{}} existingComment="" hideComments={true} />)}
-        </div>}
-        {deanTab==='exp' && <div>
-          {exps.length === 0 && <div className="empty">Sin experiencia laboral registrada.</div>}
-          {exps.map((exp, i) => <div key={i} className="ev-card">
-            <div className="ev-title">{exp.cargo || '(sin cargo)'} — {exp.organizacion || '(sin organización)'}</div>
-            <div className="ev-meta">{exp.anio_inicio || '?'} – {exp.anio_fin || '?'}
-              {exp.cargo_califica === 'true' && <span style={{marginLeft:8,color:'var(--green)',fontWeight:600}}>✓ Calificante</span>}
-            </div>
-          </div>)}
-        </div>}
-      </div>
-    </>;
-  }
+    </div>}
+  </div>;
+}
+
+// ── Professor View ──
+function ProfView({acad,evs,exps,onLogout}){
+  const[tab,setTab]=useState('ev');
+  const[ch,setCh]=useState({nuevas_evidencias:[],nuevas_exp:[],modificaciones_ev:[],modificaciones_exp:[]});
+  const[showAddEv,setShowAddEv]=useState(false);const[showAddExp,setShowAddExp]=useState(false);
+  const[submitted,setSubmitted]=useState(false);const[toast,setToast]=useState('');
+  const st=(m)=>{setToast(m);setTimeout(()=>setToast(''),3000);};
+  const total=ch.nuevas_evidencias.length+ch.nuevas_exp.length+ch.modificaciones_ev.length+ch.modificaciones_exp.length;
+
+  const editEv=(evId,edits)=>{setCh(p=>{const i=p.modificaciones_ev.findIndex(m=>m.id_evidencia===evId);
+    const mod={id_evidencia:evId,rut:acad.rut,cambios:edits,fecha:new Date().toISOString()};
+    if(i>=0){const u=[...p.modificaciones_ev];u[i]={...u[i],cambios:{...u[i].cambios,...edits}};return{...p,modificaciones_ev:u};}
+    return{...p,modificaciones_ev:[...p.modificaciones_ev,mod]};});st('✓ Modificación registrada');};
+
+  const editExp=(idx,edits)=>{setCh(p=>{const i=p.modificaciones_exp.findIndex(m=>m.idx===idx);
+    const mod={idx,rut:acad.rut,cambios:edits,cargo_original:exps[idx]?.cargo||'',fecha:new Date().toISOString()};
+    if(i>=0){const u=[...p.modificaciones_exp];u[i]={...u[i],cambios:{...u[i].cambios,...edits}};return{...p,modificaciones_exp:u};}
+    return{...p,modificaciones_exp:[...p.modificaciones_exp,mod]};});st('✓ Modificación registrada');};
+
+  const[nev,setNev]=useState({codigo:'pub_paper',anio:String(new Date().getFullYear()),descripcion:'',revista:'',doi:'',url:'',comentarios:''});
+  const addEv=()=>{if(!nev.descripcion.trim()){st('Ingrese descripción');return;}
+    setCh(p=>({...p,nuevas_evidencias:[...p.nuevas_evidencias,{...nev,id:'PROF_'+Date.now(),rut:acad.rut,fecha_envio:new Date().toISOString()}]}));
+    setNev({codigo:'pub_paper',anio:String(new Date().getFullYear()),descripcion:'',revista:'',doi:'',url:'',comentarios:''});setShowAddEv(false);st('✓ Evidencia agregada');};
+
+  const[nexp,setNexp]=useState({cargo:'',organizacion:'',anio_inicio:'',anio_fin:'',notas:''});
+  const addExp=()=>{if(!nexp.cargo.trim()||!nexp.organizacion.trim()){st('Complete cargo y organización');return;}
+    setCh(p=>({...p,nuevas_exp:[...p.nuevas_exp,{...nexp,id:'PROF_'+Date.now(),rut:acad.rut,fecha_envio:new Date().toISOString()}]}));
+    setNexp({cargo:'',organizacion:'',anio_inicio:'',anio_fin:'',notas:''});setShowAddExp(false);st('✓ Experiencia agregada');};
+
+  const download=()=>{const payload={_formato:'cambios_portafolio_fen_v1',rut:acad.rut,nombre:acad.nombre,fecha_generacion:new Date().toISOString(),...ch};
+    dl(payload,`cambios_${acad.rut.replace(/[^0-9kK]/g,'')}_${new Date().toISOString().slice(0,10).replace(/-/g,'')}.json`);setSubmitted(true);st('✓ Descargado');};
 
   return <>
-    <div className="header no-print">
-      <div className="header-inner">
-        <div><h1>Vista Administrador</h1><div className="header-sub">FEN-UNAB · Solo lectura</div></div>
-        <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Salir</button>
+    <div className="header"><div className="header-inner">
+      <div><h1>Portafolio Académico</h1><div className="header-sub">FEN-UNAB · Acreditación AACSB</div></div>
+      <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Cerrar sesión</button>
+    </div></div>
+    <div className="container">
+      <div className="banner banner-critical"><div className="banner-title">📧 Importante: envío de información</div>
+        <div className="banner-text">Si modifica o agrega información, al finalizar debe <strong>descargar el archivo de cambios</strong> y enviarlo a:<br/>
+          <span className="banner-email" style={{fontSize:16,display:'inline-block',margin:'6px 0'}}>{CONTACT_EMAIL}</span><br/>
+          Sin este paso, sus cambios <strong>no serán registrados</strong> en el sistema.</div></div>
+
+      <div className="card">
+        <div className="prof-name">{acad.nombre}</div>
+        <div className="prof-meta">RUT: {acad.rut} · {acad.planta||'—'} · {acad.unidad||'—'}{acad.grado&&<> · {acad.grado}</>}</div>
+        <div className="prof-stats">
+          <div className="stat-pill"><div className="stat-pill-v">{evs.length}</div><div className="stat-pill-l">Evidencias</div></div>
+          <div className="stat-pill"><div className="stat-pill-v">{exps.length}</div><div className="stat-pill-l">Exp. Laboral</div></div>
+        </div>
       </div>
+
+      <div className="tabs">
+        <button className={`tab ${tab==='ev'?'active':''}`} onClick={()=>setTab('ev')}>Evidencias ({evs.length}{ch.nuevas_evidencias.length?` + ${ch.nuevas_evidencias.length}`:''}{ch.modificaciones_ev.length?` · ${ch.modificaciones_ev.length} mod.`:''})</button>
+        <button className={`tab ${tab==='exp'?'active':''}`} onClick={()=>setTab('exp')}>Exp. Laboral ({exps.length}{ch.nuevas_exp.length?` + ${ch.nuevas_exp.length}`:''}{ch.modificaciones_exp.length?` · ${ch.modificaciones_exp.length} mod.`:''})</button>
+      </div>
+
+      {tab==='ev'&&<div>
+        <div style={{display:'flex',justifyContent:'flex-end',marginBottom:12}}>
+          <button className="btn btn-warm btn-sm" onClick={()=>setShowAddEv(!showAddEv)}>{showAddEv?'✕ Cancelar':'＋ Agregar evidencia'}</button>
+        </div>
+        {showAddEv&&<div className="add-form">
+          <div style={{fontWeight:700,fontSize:14,marginBottom:12,color:'var(--warm)'}}>Nueva evidencia</div>
+          <div className="form-grid">
+            <div className="input-group"><label>Tipo de actividad</label><select className="sel" style={{width:'100%'}} value={nev.codigo} onChange={x=>setNev({...nev,codigo:x.target.value})}>{Object.entries(CATALOGO).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></div>
+            <div className="input-group"><label>Año</label><input className="input input-sm" type="number" value={nev.anio} onChange={x=>setNev({...nev,anio:x.target.value})}/></div>
+          </div>
+          <div className="input-group"><label>Descripción</label><input className="input" value={nev.descripcion} onChange={x=>setNev({...nev,descripcion:x.target.value})} placeholder="Título, nombre del proyecto, cargo, etc."/></div>
+          {['pub_paper','pub_pedagogica'].includes(nev.codigo)&&<div className="form-grid">
+            <div className="input-group"><label>Revista</label><input className="input input-sm" value={nev.revista} onChange={x=>setNev({...nev,revista:x.target.value})}/></div>
+            <div className="input-group"><label>DOI</label><input className="input input-sm" value={nev.doi} onChange={x=>setNev({...nev,doi:x.target.value})}/></div>
+          </div>}
+          <div className="form-grid">
+            <div className="input-group"><label>URL de respaldo</label><input className="input input-sm" value={nev.url} onChange={x=>setNev({...nev,url:x.target.value})}/></div>
+            <div className="input-group"><label>Comentarios</label><input className="input input-sm" value={nev.comentarios} onChange={x=>setNev({...nev,comentarios:x.target.value})}/></div>
+          </div>
+          <button className="btn btn-warm" onClick={addEv}>Agregar</button>
+        </div>}
+        {ch.nuevas_evidencias.map((ev,i)=><div key={'n'+i} className="ev-card ev-new"><div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start'}}>
+          <div><span style={{fontSize:11,fontWeight:700,color:'#a04000',background:'#fdebd0',padding:'2px 8px',borderRadius:4}}>NUEVA — pendiente de envío</span>
+            <div style={{marginTop:6,fontWeight:600,fontSize:14}}>{ev.descripcion}</div>
+            <div style={{fontSize:12,color:'var(--text2)'}}>{CATALOGO[ev.codigo]||ev.codigo} · {ev.anio}</div></div>
+          <button className="btn btn-outline btn-sm" onClick={()=>{setCh(p=>({...p,nuevas_evidencias:p.nuevas_evidencias.filter((_,j)=>j!==i)}));st('Removida');}}>✕</button>
+        </div></div>)}
+        {evs.length===0&&ch.nuevas_evidencias.length===0&&<div className="empty">No hay evidencias registradas.</div>}
+        {evs.map((ev,i)=><EvCard key={ev.id_evidencia||i} ev={ev} readOnly={false} onEdit={(edits)=>editEv(ev.id_evidencia,edits)}/>)}
+      </div>}
+
+      {tab==='exp'&&<div>
+        <div style={{display:'flex',justifyContent:'flex-end',marginBottom:12}}>
+          <button className="btn btn-warm btn-sm" onClick={()=>setShowAddExp(!showAddExp)}>{showAddExp?'✕ Cancelar':'＋ Agregar experiencia'}</button>
+        </div>
+        {showAddExp&&<div className="add-form">
+          <div style={{fontWeight:700,fontSize:14,marginBottom:12,color:'var(--warm)'}}>Nueva experiencia laboral</div>
+          <div className="form-grid">
+            <div className="input-group"><label>Cargo</label><input className="input input-sm" value={nexp.cargo} onChange={x=>setNexp({...nexp,cargo:x.target.value})}/></div>
+            <div className="input-group"><label>Organización</label><input className="input input-sm" value={nexp.organizacion} onChange={x=>setNexp({...nexp,organizacion:x.target.value})}/></div>
+          </div>
+          <div className="form-grid">
+            <div className="input-group"><label>Año inicio</label><input className="input input-sm" type="number" value={nexp.anio_inicio} onChange={x=>setNexp({...nexp,anio_inicio:x.target.value})}/></div>
+            <div className="input-group"><label>Año fin (o "vigente")</label><input className="input input-sm" value={nexp.anio_fin} onChange={x=>setNexp({...nexp,anio_fin:x.target.value})}/></div>
+          </div>
+          <div className="input-group"><label>Notas</label><input className="input input-sm" value={nexp.notas} onChange={x=>setNexp({...nexp,notas:x.target.value})}/></div>
+          <button className="btn btn-warm" onClick={addExp}>Agregar</button>
+        </div>}
+        {ch.nuevas_exp.map((exp,i)=><div key={'n'+i} className="ev-card ev-new"><div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start'}}>
+          <div><span style={{fontSize:11,fontWeight:700,color:'#a04000',background:'#fdebd0',padding:'2px 8px',borderRadius:4}}>NUEVA — pendiente de envío</span>
+            <div style={{marginTop:6,fontWeight:600,fontSize:14}}>{exp.cargo} — {exp.organizacion}</div>
+            <div style={{fontSize:12,color:'var(--text2)'}}>{exp.anio_inicio}{exp.anio_fin?' – '+exp.anio_fin:''}</div></div>
+          <button className="btn btn-outline btn-sm" onClick={()=>setCh(p=>({...p,nuevas_exp:p.nuevas_exp.filter((_,j)=>j!==i)}))}>✕</button>
+        </div></div>)}
+        {exps.length===0&&ch.nuevas_exp.length===0&&<div className="empty">Sin experiencia laboral.</div>}
+        {exps.map((exp,i)=><ExpCard key={i} exp={exp} onEdit={(edits)=>editExp(i,edits)}/>)}
+      </div>}
+
+      {total>0&&!submitted&&<div className="changes-bar">
+        <div style={{display:'flex',alignItems:'center',gap:12}}><div className="pulse"/>
+          <div><strong>{total} cambio{total>1?'s':''} pendiente{total>1?'s':''}</strong><div style={{fontSize:12,opacity:.8}}>Descargue y envíe a {CONTACT_EMAIL}</div></div>
+        </div>
+        <button className="btn" style={{background:'#f39c12',color:'#fff'}} onClick={download}>📥 Descargar archivo</button>
+      </div>}
+
+      {submitted&&<div className="card" style={{background:'var(--green-light)',border:'1.5px solid var(--green)',textAlign:'center',padding:32}}>
+        <div style={{fontSize:24,marginBottom:8}}>✅</div>
+        <div style={{fontSize:18,fontWeight:700,color:'var(--green)',marginBottom:12}}>Archivo descargado</div>
+        <div style={{fontSize:14,lineHeight:1.7,maxWidth:500,margin:'0 auto'}}>
+          Envíe <strong>cambios_*.json</strong> a:<br/>
+          <span style={{fontSize:18,fontWeight:700,color:'var(--accent)',display:'inline-block',margin:'12px 0'}}>{CONTACT_EMAIL}</span><br/>
+          Sin esto, sus cambios <strong>no quedarán registrados</strong>.</div>
+        <div style={{marginTop:20,display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
+          <button className="btn btn-primary" onClick={()=>{window.location.href=`mailto:${CONTACT_EMAIL}?subject=Portafolio%20-%20${encodeURIComponent(acad.nombre)}&body=Adjunto%20archivo%20de%20cambios.`;}}>📧 Abrir correo</button>
+          <button className="btn btn-outline" onClick={()=>setSubmitted(false)}>Seguir editando</button>
+        </div>
+      </div>}
     </div>
+    {toast&&<div className="toast">{toast}</div>}
+  </>;
+}
+
+// ── Dean View ──
+function DeanView({data,onLogout}){
+  const[sel,setSel]=useState(null);const[filter,setFilter]=useState('');
+  const acads=useMemo(()=>(data.academicos||[]).filter(a=>{if(!filter)return true;const q=filter.toLowerCase();return(a.nombre||'').toLowerCase().includes(q)||(a.rut||'').includes(q)||(a.unidad||'').toLowerCase().includes(q);}).sort((a,b)=>(a.nombre||'').localeCompare(b.nombre||'')),[data,filter]);
+  const evm=useMemo(()=>{const m={};(data.evidencias||[]).forEach(e=>{if(!m[e.rut])m[e.rut]=[];m[e.rut].push(e);});return m;},[data]);
+  const exm=useMemo(()=>{const m={};(data.exp_laboral||[]).forEach(e=>{if(!m[e.rut])m[e.rut]=[];m[e.rut].push(e);});return m;},[data]);
+
+  if(sel){const acad=data.academicos.find(a=>a.rut===sel);if(!acad){setSel(null);return null;}
+    const evs=evm[sel]||[];const exps=exm[sel]||[];
+    return <><div className="header"><div className="header-inner"><div><h1>Vista Administrador</h1><div className="header-sub">Solo lectura</div></div>
+      <div style={{display:'flex',gap:8}}><button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={()=>setSel(null)}>← Lista</button>
+        <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Salir</button></div>
+    </div></div><div className="container">
+      <div className="card"><div className="prof-name">{acad.nombre}</div><div className="prof-meta">RUT: {acad.rut} · {acad.planta||'—'} · {acad.unidad||'—'}{acad.grado&&<> · {acad.grado}</>}</div></div>
+      <div style={{fontWeight:700,fontSize:14,color:'var(--accent)',marginBottom:12}}>Evidencias ({evs.length})</div>
+      {evs.length===0&&<div className="empty">Sin evidencias.</div>}
+      {evs.map((ev,i)=><EvCard key={i} ev={ev} readOnly={true}/>)}
+      <div style={{fontWeight:700,fontSize:14,color:'var(--accent)',marginTop:24,marginBottom:12}}>Experiencia Laboral ({exps.length})</div>
+      {exps.length===0&&<div className="empty">Sin experiencia laboral.</div>}
+      {exps.map((exp,i)=><div key={i} className="ev-card"><div style={{fontWeight:600,fontSize:14}}>{exp.cargo||'—'} — {exp.organizacion||'—'}</div><div style={{fontSize:12,color:'var(--text2)'}}>{exp.anio_inicio||'?'} – {exp.anio_fin||'?'}</div></div>)}
+    </div></>;
+  }
+
+  const te=(data.evidencias||[]).length;const tx=(data.exp_laboral||[]).length;const pr=acads.filter(a=>(a.planta||'').toLowerCase().includes('regular')).length;
+  return <><div className="header"><div className="header-inner"><div><h1>Vista Administrador</h1><div className="header-sub">Solo lectura</div></div>
+    <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Salir</button></div></div>
     <div className="container">
       <div className="dean-stats">
         <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--accent)'}}>{acads.length}</div><div className="dean-stat-l">Académicos</div></div>
-        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--green)'}}>{plantaR}</div><div className="dean-stat-l">Regulares</div></div>
-        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--warm)'}}>{totalEvs}</div><div className="dean-stat-l">Evidencias</div></div>
-        <div className="dean-stat"><div className="dean-stat-v">{totalExps}</div><div className="dean-stat-l">Exp. Laboral</div></div>
+        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--green)'}}>{pr}</div><div className="dean-stat-l">Regulares</div></div>
+        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--warm)'}}>{te}</div><div className="dean-stat-l">Evidencias</div></div>
+        <div className="dean-stat"><div className="dean-stat-v">{tx}</div><div className="dean-stat-l">Exp. Laboral</div></div>
       </div>
-
-      <div className="card">
-        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:16,gap:12,flexWrap:'wrap'}}>
-          <div className="card-title" style={{margin:0}}>Académicos</div>
-          <input className="input input-sm" style={{maxWidth:300}} placeholder="Buscar por nombre, RUT o unidad..." value={filter} onChange={e => setFilter(e.target.value)} />
-        </div>
-        <div className="scroll-table">
-          <table className="tbl">
-            <thead><tr><th>Nombre</th><th>RUT</th><th>Planta</th><th>Unidad</th><th>Evidencias</th><th>SCH</th></tr></thead>
-            <tbody>
-              {acads.map(a => {
-                const nEvs = (evByRut[a.rut] || []).length;
-                const sch = horasMap[a.rut] ? (+horasMap[a.rut].sch_total).toFixed(1) : '—';
-                return <tr key={a.rut} onClick={() => setSelectedRut(a.rut)}>
-                  <td style={{fontWeight:600}}>{a.nombre}</td>
-                  <td style={{fontFamily:'monospace',fontSize:12}}>{a.rut}</td>
-                  <td>{a.planta || '—'}</td>
-                  <td>{a.unidad || '—'}</td>
-                  <td>{nEvs}</td>
-                  <td>{sch}</td>
-                </tr>;
-              })}
-            </tbody>
-          </table>
-        </div>
+      <div className="card"><div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:16,gap:12,flexWrap:'wrap'}}>
+        <div className="card-title" style={{margin:0}}>Académicos</div>
+        <input className="input input-sm" style={{maxWidth:300}} placeholder="Buscar..." value={filter} onChange={x=>setFilter(x.target.value)}/></div>
+        <div className="scroll-table"><table className="tbl"><thead><tr><th>Nombre</th><th>RUT</th><th>Planta</th><th>Unidad</th><th>Evid.</th></tr></thead>
+        <tbody>{acads.map(a=><tr key={a.rut} onClick={()=>setSel(a.rut)}>
+          <td style={{fontWeight:600}}>{a.nombre}</td><td style={{fontFamily:'monospace',fontSize:12}}>{a.rut}</td>
+          <td>{a.planta||'—'}</td><td>{a.unidad||'—'}</td><td>{(evm[a.rut]||[]).length}</td>
+        </tr>)}</tbody></table></div>
       </div>
     </div>
   </>;
 }
 
-// ── Main App ──
-function App() {
-  const [data, setData] = useState(null);
-  const [dataError, setDataError] = useState(false);
-  const [mode, setMode] = useState('login'); // login | professor | dean
-  const [currentAcad, setCurrentAcad] = useState(null);
-
-  useEffect(() => {
-    loadPortfolioData().then(d => {
-      if (d) setData(d);
-      else setDataError(true);
-    });
-  }, []);
-
-  const handleLogin = (rut) => {
-    if (!data) return;
-    const acad = data.academicos.find(a => normalizeRut(a.rut) === rut);
-    if (!acad) {
-      alert('RUT no encontrado en la base de datos. Verifique que ingresó correctamente su RUT.\n\nSi cree que esto es un error, contacte a:\n' + CONTACT_EMAIL);
-      return;
-    }
-    setCurrentAcad(acad);
-    setMode('professor');
-  };
-
-  const handleDean = () => setMode('dean');
-  const handleLogout = () => { setMode('login'); setCurrentAcad(null); };
-
-  if (mode === 'login') {
-    return <LoginScreen onLogin={handleLogin} onDean={handleDean} dataLoaded={!!data} dataError={dataError} />;
-  }
-
-  if (mode === 'dean') {
-    return <DeanView data={data} onLogout={handleLogout} />;
-  }
-
-  if (mode === 'professor' && currentAcad) {
-    const evs = (data.evidencias || []).filter(e => e.rut === currentAcad.rut);
-    const exps = (data.exp_laboral || []).filter(e => e.rut === currentAcad.rut);
-    const horasMap = {};
-    (data.horas_contacto || []).forEach(h => { horasMap[h.rut] = h; });
-    const horas = horasMap[currentAcad.rut];
-    return <ProfessorView acad={currentAcad} evidencias={evs} expLaboral={exps} horas={horas} data={data} onLogout={handleLogout} />;
-  }
-
+// ── App ──
+function App(){
+  const[data,setData]=useState(null);const[err,setErr]=useState(false);const[mode,setMode]=useState('login');const[acad,setAcad]=useState(null);
+  useEffect(()=>{loadData().then(d=>{if(d)setData(d);else setErr(true);});},[]);
+  const login=(rut)=>{if(!data)return;const a=data.academicos.find(x=>normRut(x.rut)===rut);
+    if(!a){alert('RUT no encontrado.\n\nContacte a:\n'+CONTACT_EMAIL);return;}setAcad(a);setMode('prof');};
+  const logout=()=>{setMode('login');setAcad(null);};
+  if(mode==='login')return <Login onLogin={login} onDean={()=>setMode('dean')} ready={!!data} err={err}/>;
+  if(mode==='dean')return <DeanView data={data} onLogout={logout}/>;
+  if(mode==='prof'&&acad){const evs=(data.evidencias||[]).filter(e=>e.rut===acad.rut);const exps=(data.exp_laboral||[]).filter(e=>e.rut===acad.rut);
+    return <ProfView acad={acad} evs={evs} exps={exps} onLogout={logout}/>;}
   return null;
 }
-
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
 </script>
 </body>
 </html>
