@@ -118,24 +118,115 @@ function tc(s){return(s||'').toLowerCase().split(" ").map(w=>w.charAt(0).toUpper
 function normRut(r){return(r||'').replace(/\./g,'').replace(/\s/g,'').toUpperCase().trim()}
 
 function getDesc(ev){
-  return ev.titulo_articulo||ev.titulo_ponencia||ev.cargo_gestion||ev.titulo_nota||
-    ev.nombre_evento||ev.titulo_wp||ev.titulo_tesis||ev.nombre_comite||ev.cargo_directorio||
-    ev.nombre_programa||ev.nombre_cliente||ev.nombre_medio||ev.titulo_libro||ev.titulo_proyecto||
-    ev.titulo_capitulo||ev.nombre_curso||ev.comentarios||'(sin descripción)';
+  const c = ev.codigo;
+  if (c==='pub_paper') return ev.titulo_articulo||ev.comentarios||'(sin descripción)';
+  if (c==='pub_libro'||c==='pub_caso_editorial') return ev.titulo_capitulo||ev.titulo_libro||ev.comentarios||'(sin descripción)';
+  if (c==='pub_pedagogica') return ev.titulo_articulo||ev.titulo_capitulo||ev.comentarios||'(sin descripción)';
+  if (c==='conf_ext') return ev.titulo_ponencia||ev.comentarios||'(sin descripción)';
+  if (c==='editor_revista') return ev.revista||ev.comentarios||'(sin descripción)';
+  if (c==='peer_review') return ev.revista||ev.comentarios||'(sin descripción)';
+  if (c==='working_paper') return ev.titulo_wp||ev.comentarios||'(sin descripción)';
+  if (c==='proy_comp') return ev.titulo_proyecto||ev.comentarios||'(sin descripción)';
+  if (c==='cargo_academico') return ev.cargo_gestion||ev.comentarios||'(sin descripción)';
+  if (c==='sup_tesis') return ev.titulo_tesis||ev.comentarios||'(sin descripción)';
+  if (c==='material_ensenanza'||c==='material_docente') return ev.descripcion_material||ev.nombre_curso||ev.comentarios||'(sin descripción)';
+  if (c==='proy_innov_doc'||c==='innovacion_docente') return ev.nombre_proyecto_vcm||ev.comentarios||'(sin descripción)';
+  if (c==='perfeccion_acad') return ev.nombre_programa||ev.comentarios||'(sin descripción)';
+  if (c==='part_comite') return ev.nombre_comite||ev.comentarios||'(sin descripción)';
+  if (c==='consultoria_alta') return ev.nombre_cliente||ev.comentarios||'(sin descripción)';
+  if (c==='puesto_directorio') return ev.cargo_directorio||ev.comentarios||'(sin descripción)';
+  if (c==='media_regular') return ev.titulo_nota||ev.comentarios||'(sin descripción)';
+  if (c==='panelista_foro') return ev.titulo_ponencia||ev.comentarios||'(sin descripción)';
+  if (c==='extension_com') return ev.nombre_evento||ev.comentarios||'(sin descripción)';
+  if (c==='org_seminario') return ev.nombre_evento||ev.comentarios||'(sin descripción)';
+  if (c==='clase_ed_ejec'||c==='diseno_ed_ejec') return ev.nombre_programa||ev.comentarios||'(sin descripción)';
+  if (c==='comite_tecnico') return ev.nombre_comite||ev.comentarios||'(sin descripción)';
+  if (c==='podcast_blog') return ev.nombre_podcast_blog||ev.comentarios||'(sin descripción)';
+  if (c==='movilidad_inv'||c==='movilidad_acad') return ev.universidad||ev.comentarios||'(sin descripción)';
+  if (c==='coord_multisede') return ev.nombre_curso||ev.comentarios||'(sin descripción)';
+  if (c==='certificacion_prof') return ev.nombre_programa||ev.comentarios||'(sin descripción)';
+  if (c==='mentor_equipos') return ev.nombre_proyecto_vcm||ev.comentarios||'(sin descripción)';
+  if (c==='vcm_alumni') return ev.nombre_evento||ev.comentarios||'(sin descripción)';
+  if (c==='premio_academico'||c==='premio_sectorial') return ev.nombre_evento||ev.comentarios||'(sin descripción)';
+  if (c==='patente_pi') return ev.titulo_proyecto||ev.comentarios||'(sin descripción)';
+  if (c==='policy_brief') return ev.titulo_wp||ev.titulo_articulo||ev.comentarios||'(sin descripción)';
+  if (c==='rediseno_curso'||c==='diseno_programa') return ev.nombre_curso||ev.nombre_programa||ev.comentarios||'(sin descripción)';
+  if (c==='caso_conf_repos'||c==='caso_adoptado') return ev.titulo_capitulo||ev.titulo_articulo||ev.comentarios||'(sin descripción)';
+  return ev.comentarios||'(sin descripción)';
 }
 
 function getEvExtra(ev){
+  const c = ev.codigo;
   const parts=[];
-  if(ev.revista) parts.push(ev.revista);
-  if(ev.indice && ev.indice!=='NO APLICA' && ev.indice!=='N/A'){
-    let s=ev.indice;
-    if(ev.cuartil) s+=' '+ev.cuartil;
-    parts.push('['+s+']');
+  // pub_paper: journal + real index + DOI
+  if (c==='pub_paper') {
+    if(ev.revista) parts.push(ev.revista);
+    if(ev.indice && !['NO APLICA','N/A'].includes(ev.indice)){
+      let s=ev.indice; if(ev.cuartil) s+=' '+ev.cuartil; parts.push('['+s+']');
+    }
+    if(ev.doi) parts.push('DOI: '+ev.doi);
   }
-  if(ev.doi){
-    const href=ev.doi.startsWith('http')?ev.doi:'https://doi.org/'+ev.doi;
-    parts.push('DOI: '+ev.doi);
+  // pub_libro: editorial only (indice/cuartil are fake SharePoint defaults)
+  else if (c==='pub_libro'||c==='pub_caso_editorial') {
+    if(ev.editorial) parts.push(ev.editorial);
   }
+  // pub_pedagogica: journal + DOI
+  else if (c==='pub_pedagogica') {
+    if(ev.revista) parts.push(ev.revista); if(ev.doi) parts.push('DOI: '+ev.doi);
+  }
+  // working_paper: institution + series (NOT fake index)
+  else if (c==='working_paper') {
+    if(ev.institucion_serie) parts.push(ev.institucion_serie);
+    if(ev.nombre_serie) parts.push(ev.nombre_serie);
+  }
+  // conf_ext: event name
+  else if (c==='conf_ext') { if(ev.nombre_evento) parts.push(ev.nombre_evento); }
+  // editor_revista: role
+  else if (c==='editor_revista') { if(ev.rol_editorial) parts.push(ev.rol_editorial); }
+  // sup_tesis: type · program
+  else if (c==='sup_tesis') {
+    const tp=[]; if(ev.tipo_tesis) tp.push(ev.tipo_tesis); if(ev.programa_tesis) tp.push(ev.programa_tesis);
+    if(tp.length) parts.push(tp.join(' · '));
+  }
+  // proy_comp: agency
+  else if (c==='proy_comp') { if(ev.agencia) parts.push(ev.agencia); }
+  // consultoria_alta: project name
+  else if (c==='consultoria_alta') { if(ev.nombre_proyecto_vcm) parts.push(ev.nombre_proyecto_vcm); }
+  // puesto_directorio: organization + type
+  else if (c==='puesto_directorio') {
+    if(ev.nombre_cliente) parts.push(ev.nombre_cliente); if(ev.tipo_directorio) parts.push(ev.tipo_directorio);
+  }
+  // media_regular: outlet
+  else if (c==='media_regular') { if(ev.nombre_medio) parts.push(ev.nombre_medio); }
+  // panelista_foro: organizer
+  else if (c==='panelista_foro') { if(ev.organizador_ponencia) parts.push(ev.organizador_ponencia); }
+  // extension_com: organizer
+  else if (c==='extension_com') { if(ev.organizador_extension) parts.push(ev.organizador_extension); }
+  // org_seminario: type
+  else if (c==='org_seminario') { if(ev.tipo_seminario) parts.push(ev.tipo_seminario); }
+  // clase_ed_ejec: institution + module
+  else if (c==='clase_ed_ejec') {
+    if(ev.institucion_ed_ejecutiva) parts.push(ev.institucion_ed_ejecutiva);
+    if(ev.modulo_ed_ejecutiva) parts.push(ev.modulo_ed_ejecutiva);
+  }
+  // perfeccion_acad: university + type
+  else if (c==='perfeccion_acad') {
+    if(ev.universidad) parts.push(ev.universidad); if(ev.tipo_perfeccionamiento) parts.push(ev.tipo_perfeccionamiento);
+  }
+  // comite_tecnico: convocante
+  else if (c==='comite_tecnico') { if(ev.convocante_comite) parts.push(ev.convocante_comite); }
+  // part_comite: role
+  else if (c==='part_comite') { if(ev.rol_comite) parts.push(ev.rol_comite); }
+  // movilidad: country
+  else if (c==='movilidad_inv'||c==='movilidad_acad') { if(ev.pais_evento) parts.push(ev.pais_evento); }
+  // coord_multisede: sedes
+  else if (c==='coord_multisede') { if(ev.sedes) parts.push(ev.sedes); }
+  // podcast_blog: platform
+  else if (c==='podcast_blog') { if(ev.plataforma) parts.push(ev.plataforma); }
+  // cargo_academico: leader
+  else if (c==='cargo_academico') { if(ev.lider_academico&&ev.lider_academico.toLowerCase()==='sí') parts.push('Líder académico'); }
+  // material_ensenanza: type
+  else if (c==='material_ensenanza'||c==='material_docente') { if(ev.tipo_material) parts.push(ev.tipo_material); }
   return parts.join(' — ');
 }
 
@@ -308,7 +399,7 @@ function ScreenProfile({data,onContinue,onError}){
       <div className="pg">
         <div className="pf"><span className="fl">Unidad</span><span className="fv">{data.unidad||"(sin asignar)"}</span></div>
         <div className="pf"><span className="fl">Contrato</span><span className="fv">{data.contrato||"(sin asignar)"}</span></div>
-        <div className="pf"><span className="fl">Grado</span><span className="fv">{data.gradoDetalle||data.grado||"(sin asignar)"}</span></div>
+        <div className="pf"><span className="fl">Grado</span><span className="fv">{data.grado}{data.gradoDetalle?' — '+data.gradoDetalle:''}{!data.grado&&!data.gradoDetalle?'(sin asignar)':''}</span></div>
       </div>
       <div className="act-col">
         <button className="btn-p" onClick={onContinue}>Sí, mis datos son correctos → Continuar</button>
