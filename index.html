@@ -1,549 +1,853 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="google" content="notranslate">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portafolio Académico · FEN-UNAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',-apple-system,system-ui,sans-serif;background:#f1f5f9}
-.login-bg{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0c1829 0%,#1a365d 50%,#1e3a5f 100%);padding:20px}
-.login-card{background:#fff;border-radius:16px;padding:48px 40px;max-width:440px;width:100%;box-shadow:0 25px 60px rgba(0,0,0,.3)}
-.login-card h1{font-size:22px;font-weight:700;color:#111827;margin:0 0 8px}
-.login-card .sub{font-size:14px;color:#6b7280;margin:0 0 28px;line-height:1.5}
-.login-card .foot{font-size:12px;color:#9ca3af;text-align:center;margin-top:20px}
-.demo-box{margin-top:20px;padding:12px 16px;background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;font-size:12px;color:#0369a1;line-height:1.6}
-.ig{margin-bottom:20px}
-.ig label{display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px}
-.input,.sel,.ta{width:100%;padding:10px 14px;border:1.5px solid #d1d5db;border-radius:8px;font-size:15px;outline:none;font-family:inherit;box-sizing:border-box;transition:border .2s}
-.input:focus,.sel:focus,.ta:focus{border-color:#0d4f8b;box-shadow:0 0 0 3px rgba(13,79,139,.1)}
-.sel{font-size:14px;background:#fff}.ta{font-size:14px;resize:vertical}
-.btn-p{width:100%;padding:12px;background:#0d4f8b;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;transition:background .2s}
-.btn-p:hover{background:#093d6b}.btn-p:disabled{opacity:.5;cursor:not-allowed}
-.btn-s{width:100%;padding:12px;background:#f3f4f6;color:#374151;border:1px solid #d1d5db;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit}
-.btn-o{display:inline-block;padding:10px 24px;background:transparent;color:#0d4f8b;border:1.5px solid #0d4f8b;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
-.btn-sm{padding:6px 12px;font-size:12px;border-radius:6px;cursor:pointer;font-family:inherit;border:1px solid #d1d5db;background:#fff;color:#374151}
-.btn-sm:hover{background:#f3f4f6}
-.btn-warn{padding:6px 14px;font-size:12px;border-radius:6px;cursor:pointer;font-family:inherit;border:1px solid #fbbf24;background:#fffbeb;color:#92400e}
-.err{padding:10px 14px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;color:#991b1b;font-size:13px;margin-bottom:16px;line-height:1.5}
-.main{min-height:100vh;background:#f1f5f9}
-.hdr{background:#0c1829;padding:0 24px;height:56px;display:flex;align-items:center;position:sticky;top:0;z-index:100}
-.hdr-in{max-width:1100px;width:100%;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-.hdr-t{font-size:14px;color:#94a3b8;font-weight:500}.hdr-u{font-size:13px;color:#64748b}
-.cnt{max-width:1100px;margin:0 auto;padding:32px 24px}
-.card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,.08);border:1px solid #e2e8f0}
-.card-c{text-align:center;padding:60px 40px}
-.ph{display:flex;align-items:center;gap:20px;margin-bottom:28px}
-.av{width:56px;height:56px;border-radius:50%;background:#0d4f8b;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0}
-.pn{font-size:22px;font-weight:700;color:#111827;margin:0}.pe{font-size:14px;color:#6b7280;margin:4px 0 0}
-.pg{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
-.pf{display:flex;flex-direction:column;gap:4px}
-.pf-r{display:flex;gap:32px}
-.fl{font-size:12px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.5px}
-.fv{font-size:15px;color:#111827}
-.act-col{display:flex;flex-direction:column;gap:10px}
-.badge{display:inline-block;padding:3px 10px;border-radius:6px;font-size:13px;font-weight:700;color:#fff;letter-spacing:.3px}
-.port-h{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;flex-wrap:wrap;gap:16px}
-.st{font-size:20px;font-weight:700;color:#111827;margin:0}
-.ss{font-size:14px;color:#6b7280;margin:6px 0 0;line-height:1.5}
-.stats{display:flex;gap:16px}
-.stat{background:#fff;border-radius:10px;padding:16px 20px;min-width:100px;text-align:center;border:1px solid #e2e8f0}
-.stat-v{font-size:24px;font-weight:800}.stat-l{font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;margin-top:4px}
-.tabs{display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid #e2e8f0}
-.tab{padding:10px 20px;font-size:14px;background:none;border:none;cursor:pointer;font-family:inherit;margin-bottom:-2px}
-.tab-a{font-weight:600;border-bottom:2px solid #0d4f8b;color:#0d4f8b}
-.tab-i{font-weight:500;border-bottom:2px solid transparent;color:#6b7280}
-.flts{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
-.chip{padding:5px 14px;font-size:13px;border-radius:20px;cursor:pointer;font-family:inherit;border:none}
-.chip-a{font-weight:600;background:#0d4f8b;color:#fff}
-.chip-i{font-weight:500;background:#f1f5f9;color:#475569;border:1px solid #cbd5e1}
-.tc{background:#fff;border-radius:10px;border:1px solid #e2e8f0;overflow-x:auto}
-table{width:100%;border-collapse:collapse}
-th{text-align:left;padding:10px 14px;font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;background:#f8fafc;border-bottom:1px solid #e2e8f0}
-td{padding:10px 14px;font-size:14px;color:#1e293b;border-bottom:1px solid #f1f5f9}
-.tr-e{background:#fff}.tr-o{background:#fafbfc}
-.empty{padding:32px;text-align:center;color:#9ca3af;font-size:14px}
-.ctag{display:inline-block;padding:2px 8px;background:#eff6ff;color:#1d4ed8;border-radius:4px;font-size:12px;font-weight:600;white-space:nowrap}
-.pa{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
-.fg{margin-bottom:20px}.fm{display:block;font-size:13px;font-weight:600;color:#374151;margin-bottom:6px}
-.fr{display:flex;gap:16px}.fa{display:flex;gap:12px;margin-top:8px}
-.fu{border:2px dashed #d1d5db;border-radius:8px;padding:24px;text-align:center;cursor:pointer;display:flex;flex-direction:column;align-items:center;color:#6b7280}
-.suc{width:64px;height:64px;border-radius:50%;background:#dcfce7;color:#16a34a;display:inline-flex;align-items:center;justify-content:center;font-size:32px;font-weight:700}
-.em-hi{font-size:18px;font-weight:600;color:#0d6efd;margin:16px 0}
-.exp-sec{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin-bottom:20px}
-.exp-hdr{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:#1e293b;margin-bottom:16px}
-.cb-l{display:flex;align-items:center;gap:10px;cursor:pointer;margin-top:-8px;margin-bottom:8px}
-.cb{width:18px;height:18px;accent-color:#0d4f8b;cursor:pointer}
-.cb-t{font-size:14px;font-weight:500;color:#374151}
-.vig-note{padding:10px 14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;color:#166534;font-size:13px;line-height:1.5;margin-bottom:8px}
-.vig-badge{display:inline-block;padding:2px 10px;background:#dcfce7;color:#166534;border-radius:12px;font-size:12px;font-weight:600}
-.logo-login{margin-bottom:28px}
-.logo-login img{height:52px;width:auto}
-.logo-hdr img{height:28px;width:auto;filter:brightness(0) invert(1)}
-.loading-spin{display:inline-block;width:20px;height:20px;border:3px solid rgba(255,255,255,.3);border-radius:50%;border-top-color:#fff;animation:spin .6s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-/* Report modal */
-.modal-bg{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:200;padding:20px}
-.modal{background:#fff;border-radius:12px;padding:32px;max-width:500px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-.flag-btn{background:none;border:none;cursor:pointer;font-size:16px;opacity:.4;transition:opacity .2s;padding:2px 6px;border-radius:4px}
-.flag-btn:hover{opacity:1;background:#fef2f2}
-.flagged{background:#fef2f2;border-left:3px solid #f87171}
-/* New user section */
-.new-user-sec{background:#f0f9ff;border:1px solid #bae6fd;border-radius:10px;padding:20px 24px;margin-bottom:20px}
-.new-user-hdr{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:#0369a1;margin-bottom:16px}
-@media(max-width:768px){
-  .login-card{padding:32px 24px}
-  .port-h{flex-direction:column}.stats{flex-wrap:wrap}
-  .pf-r{flex-direction:column;gap:16px}
-  .fr{flex-direction:column}
-  .cnt{padding:20px 16px}
-  .card{padding:24px 20px}
+:root {
+  --bg: #f5f3ef;
+  --card: #ffffff;
+  --border: #e5e0d8;
+  --text: #2c2825;
+  --text2: #6b6460;
+  --accent: #1a5276;
+  --accent2: #2980b9;
+  --accent-light: #eaf2f8;
+  --warm: #c0793c;
+  --warm-light: #fdf6ee;
+  --green: #1e8449;
+  --green-light: #eafaf1;
+  --red: #c0392b;
+  --red-light: #fdedec;
+  --font: 'DM Sans', -apple-system, system-ui, sans-serif;
+  --font-display: 'DM Serif Display', Georgia, serif;
 }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; }
+
+/* Header */
+.header { background: var(--accent); color: #fff; padding: 20px 0; }
+.header-inner { max-width: 960px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+.header h1 { font-family: var(--font-display); font-size: 22px; font-weight: 400; letter-spacing: .3px; }
+.header-sub { font-size: 12px; opacity: .7; margin-top: 2px; }
+.header-badge { background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+
+/* Container */
+.container { max-width: 960px; margin: 0 auto; padding: 24px; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 28px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.04); }
+.card-title { font-family: var(--font-display); font-size: 20px; margin-bottom: 16px; color: var(--accent); }
+.card-subtitle { font-size: 14px; color: var(--text2); margin-bottom: 20px; }
+
+/* Login */
+.login-box { max-width: 480px; margin: 60px auto; text-align: center; }
+.login-box .card { padding: 40px; }
+.login-logo { font-family: var(--font-display); font-size: 32px; color: var(--accent); margin-bottom: 8px; }
+.login-desc { font-size: 15px; color: var(--text2); margin-bottom: 28px; line-height: 1.7; }
+.input-group { text-align: left; margin-bottom: 16px; }
+.input-group label { display: block; font-size: 12px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 6px; }
+.input { width: 100%; padding: 12px 16px; border: 1.5px solid var(--border); border-radius: 8px; font-size: 16px; font-family: var(--font); outline: none; transition: border .2s; }
+.input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(26,82,118,.1); }
+.input-sm { padding: 8px 12px; font-size: 14px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; font-family: var(--font); cursor: pointer; border: none; transition: all .15s; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: #154360; }
+.btn-warm { background: var(--warm); color: #fff; }
+.btn-warm:hover { background: #a06630; }
+.btn-outline { background: transparent; border: 1.5px solid var(--border); color: var(--text); }
+.btn-outline:hover { background: var(--bg); }
+.btn-sm { padding: 8px 16px; font-size: 13px; }
+.btn-block { width: 100%; justify-content: center; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+
+/* Info banner */
+.banner { background: var(--warm-light); border: 1.5px solid var(--warm); border-radius: 10px; padding: 20px 24px; margin-bottom: 20px; }
+.banner-title { font-weight: 700; font-size: 14px; color: var(--warm); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+.banner-text { font-size: 13px; color: #7d5a2f; line-height: 1.7; }
+.banner-email { font-weight: 700; color: var(--accent); font-size: 14px; }
+.banner-critical { background: #fef3c7; border-color: #f59e0b; }
+
+/* Profesor view */
+.prof-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.prof-name { font-family: var(--font-display); font-size: 26px; color: var(--accent); }
+.prof-meta { font-size: 13px; color: var(--text2); margin-top: 4px; }
+.prof-stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.stat-pill { background: var(--accent-light); border: 1px solid #c5d9e8; border-radius: 8px; padding: 10px 18px; text-align: center; min-width: 100px; }
+.stat-pill-v { font-size: 22px; font-weight: 800; color: var(--accent); }
+.stat-pill-l { font-size: 10px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; margin-top: 2px; }
+
+/* Tabs */
+.tabs { display: flex; gap: 0; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+.tab { padding: 10px 20px; font-size: 14px; font-weight: 600; color: var(--text2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: all .15s; background: none; border-top: none; border-left: none; border-right: none; font-family: var(--font); }
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Evidence list */
+.ev-card { border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: box-shadow .15s; }
+.ev-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.ev-card.ev-new { border-color: var(--warm); background: var(--warm-light); }
+.ev-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px; }
+.ev-title { font-weight: 600; font-size: 14px; }
+.ev-meta { font-size: 12px; color: var(--text2); }
+.ev-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 5px; font-size: 11px; font-weight: 700; }
+.b-l1 { background: #d5f5e3; color: #1e8449; }
+.b-l2 { background: #d6eaf8; color: #1a5276; }
+.b-l3 { background: #fef9e7; color: #7d6608; }
+.b-none { background: #f2f3f4; color: #909497; }
+.b-new { background: #fdebd0; color: #a04000; }
+.ev-detail { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin-top: 10px; }
+.ev-field { font-size: 12px; }
+.ev-field-label { font-weight: 600; color: var(--text2); }
+
+/* Add form */
+.add-form { background: var(--bg); border: 1.5px dashed var(--border); border-radius: 10px; padding: 24px; margin-bottom: 16px; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.form-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+
+/* Discipline badges */
+.disc-badge { display: inline-flex; align-items: center; gap: 4px; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+.disc-primary { background: #d6eaf8; border: 1px solid #aed6f1; color: #1a5276; }
+.disc-secondary { background: #f2f3f4; border: 1px solid #d5d8dc; color: #6b6460; }
+
+/* Select */
+.sel { padding: 8px 12px; border: 1.5px solid var(--border); border-radius: 6px; font-size: 14px; font-family: var(--font); outline: none; background: #fff; cursor: pointer; }
+.sel:focus { border-color: var(--accent); }
+.sel-sm { padding: 5px 8px; font-size: 12px; }
+
+/* Textarea */
+textarea.input { resize: vertical; min-height: 60px; }
+
+/* Toast */
+.toast { position: fixed; bottom: 24px; right: 24px; background: var(--accent); color: #fff; padding: 14px 24px; border-radius: 10px; font-size: 14px; font-weight: 500; z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,.2); animation: slideUp .3s; }
+@keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+/* Empty state */
+.empty { padding: 40px; text-align: center; color: var(--text2); font-size: 14px; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .container { padding: 16px; }
+  .card { padding: 20px; }
+  .prof-header { flex-direction: column; }
+  .form-grid { grid-template-columns: 1fr; }
+}
+
+/* Changes counter */
+.changes-bar { position: sticky; bottom: 0; background: var(--accent); color: #fff; padding: 14px 24px; border-radius: 12px 12px 0 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; box-shadow: 0 -4px 20px rgba(0,0,0,.15); z-index: 50; margin: 0 -24px; }
+.changes-bar .pulse { width: 10px; height: 10px; border-radius: 50%; background: #f39c12; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
+
+/* Dean dashboard */
+.dean-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.dean-stat { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+.dean-stat-v { font-size: 28px; font-weight: 800; }
+.dean-stat-l { font-size: 10px; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; margin-top: 2px; }
+
+/* Table */
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th { text-align: left; padding: 10px 12px; font-size: 11px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: .4px; background: #fafaf8; border-bottom: 2px solid var(--border); position: sticky; top: 0; z-index: 1; }
+.tbl td { padding: 10px 12px; border-bottom: 1px solid #f5f3ef; }
+.tbl tr:hover { background: #fafaf8; }
+.tbl tr { cursor: pointer; }
+.scroll-table { max-height: 600px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
+
+/* Print hide */
+@media print { .no-print { display: none !important; } }
 </style>
 </head>
 <body>
 <div id="root"></div>
-<script>const LOGO_URL='data:image/png;base64,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';</script>
 <script type="text/babel">
-const{useState,useEffect,useRef}=React;
+const { useState, useEffect, useMemo, useCallback } = React;
 
-const CL={pub_paper:"Publicación en revista indexada",pub_libro:"Libro o capítulo de libro",conf_ext:"Presentación en conferencia",editor_revista:"Editor / comité editorial",peer_review:"Revisión de manuscrito",working_paper:"Working paper",proy_comp:"Proyecto adjudicado competitivamente",movilidad_inv:"Pasantía de investigación",cargo_academico:"Cargo de gestión académica",sup_tesis:"Supervisión de tesis",material_ensenanza:"Material de enseñanza",proy_innov_doc:"Proyecto de innovación docente",perfeccion_acad:"Perfeccionamiento académico",coord_multisede:"Coordinación multisede",part_comite:"Participación en comité",movilidad_acad:"Movilidad académica",consultoria_alta:"Consultoría",puesto_directorio:"Directorio / alta dirección",media_regular:"Contribución en medios",extension_com:"Extensión y vinculación",panelista_foro:"Panelista en foro / seminario",comite_tecnico:"Comité técnico",clase_ed_ejec:"Clase en educación ejecutiva",diseno_ed_ejec:"Diseño programa ed. ejecutiva",org_seminario:"Organización de seminario",podcast_blog:"Podcast / blog profesional"};
+// ════════════════════════════════════════════════════════════
+// CONSTANTS
+// ════════════════════════════════════════════════════════════
+const CONTACT_EMAIL = 'c.troncosovalverde@uandresbello.edu';
+const DEAN_PASS = 'fen2025'; // simple gate, not real security
 
-const AG=[
-  {label:"Investigación — Lista I",items:["pub_paper","pub_libro"]},
-  {label:"Investigación — Lista II",items:["conf_ext","editor_revista","peer_review","working_paper","proy_comp","movilidad_inv"]},
-  {label:"Formación y Docencia",items:["cargo_academico","sup_tesis","material_ensenanza","proy_innov_doc","perfeccion_acad","coord_multisede","part_comite","movilidad_acad"]},
-  {label:"Experiencia Profesional — Lista III",items:["consultoria_alta","puesto_directorio"]},
-  {label:"Vinculación y Debate Público — Lista III",items:["media_regular","extension_com","panelista_foro","comite_tecnico","clase_ed_ejec","diseno_ed_ejec","org_seminario","podcast_blog"]}
-];
+const CATALOGO = {
+  pub_paper:'Artículo en revista académica', pub_libro:'Libro o capítulo de libro', pub_caso_editorial:'Caso editorial',
+  pub_pedagogica:'Publicación pedagógica', proy_comp:'Proyecto competitivo', movilidad_inv:'Movilidad investigativa',
+  conf_ext:'Conferencia o ponencia', editor_revista:'Editor/Comité editorial', peer_review:'Peer review',
+  working_paper:'Working paper', sup_tesis:'Supervisión de tesis', policy_brief:'Policy brief',
+  caso_conf_repos:'Caso en conferencia/repositorio', caso_adoptado:'Caso adoptado por otra institución',
+  premio_academico:'Premio académico', patente_pi:'Patente o propiedad intelectual',
+  consultoria_alta:'Consultoría de alto nivel', clase_ed_ejec:'Clase en educación ejecutiva',
+  diseno_ed_ejec:'Diseño de programa ejecutivo', comite_tecnico:'Comité técnico sectorial',
+  puesto_directorio:'Puesto en directorio', asoc_profesional:'Asociación profesional',
+  vcm_proyecto:'Proyecto de vinculación con el medio', media_regular:'Aparición en medios',
+  podcast_blog:'Podcast, blog o columna digital', panelista_foro:'Panelista en foro/seminario',
+  certificacion_prof:'Certificación profesional', perfeccion_acad:'Perfeccionamiento académico',
+  extension_com:'Extensión comunitaria', org_seminario:'Organización de seminario/workshop',
+  premio_sectorial:'Premio profesional/sectorial', perito_arbitro:'Perito o árbitro',
+  cargo_academico:'Cargo de gestión académica', part_comite:'Participación en comité FEN',
+  innovacion_docente:'Innovación docente', material_docente:'Material docente publicado',
+};
 
-const CC={SA:"#0d6efd",PA:"#6f42c1",SP:"#0dcaf0",IP:"#fd7e14",A:"#dc3545"};
-const SC={Participating:"#198754",Supporting:"#6c757d"};
-function tc(s){return s.toLowerCase().split(" ").map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(" ")}
+const LISTA_LABELS = { LISTA_I: 'Lista I', LISTA_II: 'Lista II', LISTA_III: 'Lista III', NINGUNA: 'No aplica' };
 
-const DEST_EMAIL="c.troncosovalverde@uandresbello.edu";
+// ════════════════════════════════════════════════════════════
+// DATA LOADING
+// ════════════════════════════════════════════════════════════
+// The portal loads a single JSON file exported from the admin app
+// Expected structure: { academicos:[], evidencias:[], exp_laboral:[], horas_contacto:[], anio_eval:2025 }
 
-function downloadCSV(rows, filename) {
-  const csv=rows.map(r=>r.map(c=>`"${String(c).replace(/"/g,'""')}"`).join(",")).join("\n");
-  const blob=new Blob(["\uFEFF"+csv],{type:"text/csv;charset=utf-8"});
-  const url=URL.createObjectURL(blob);const a=document.createElement("a");
-  a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url);
-}
-
-function sendMailto(subject, body) {
-  const s=encodeURIComponent(subject);
-  const b=encodeURIComponent(body);
-  window.open(`mailto:${DEST_EMAIL}?subject=${s}&body=${b}`,"_blank");
-}
-
-function Logo({h=36,cls=""}){return <span className={cls}><img src={LOGO_URL} alt="FEN UNAB" style={{height:h,width:"auto"}}/></span>}
-function Badge({label,color}){return <span className="badge" style={{backgroundColor:color}}>{label}</span>}
-function Header({email}){
-  return <div className="hdr"><div className="hdr-in">
-    <div style={{display:"flex",alignItems:"center",gap:14}}>
-      <Logo h={28} cls="logo-hdr"/><span className="hdr-t">Portafolio Académico</span>
-    </div><span className="hdr-u">{email||""}</span>
-  </div></div>;
-}
-
-// ── REPORT MODAL ────────────────────────────────────────
-function ReportModal({item, isExp, onClose, onSubmit}){
-  const [msg,setMsg]=useState("");
-  return <div className="modal-bg" onClick={onClose}><div className="modal" onClick={e=>e.stopPropagation()}>
-    <h3 style={{fontSize:18,fontWeight:700,color:"#111827",marginBottom:8}}>Reportar error en {isExp?"experiencia laboral":"evidencia"}</h3>
-    <div style={{padding:"12px 16px",background:"#f8fafc",borderRadius:8,marginBottom:16,fontSize:13,lineHeight:1.5}}>
-      {isExp?<><strong>{item.cargo||"(sin cargo)"}</strong> — {item.empresa}{item.inicio?` (${item.inicio}–${item.fin==="0"?"presente":item.fin})`:""}</>
-      :<><strong>{CL[item.code]||item.code}</strong>{item.year?` (${item.year})`:""}<br/>{item.desc||"(sin descripción)"}</>}
-    </div>
-    <div className="fg"><label className="fm">¿Qué error detectó? *</label>
-      <textarea className="ta" value={msg} onChange={e=>setMsg(e.target.value)} rows={3}
-        placeholder={isExp?"Ej: El cargo es incorrecto / Las fechas no corresponden / Esta experiencia no me pertenece":"Ej: El título está incompleto / Falta el nombre de la revista / El año es incorrecto"}/></div>
-    <div style={{display:"flex",gap:12}}>
-      <button className="btn-p" style={{maxWidth:200}} disabled={!msg.trim()} onClick={()=>onSubmit(msg)}>Enviar reporte</button>
-      <button className="btn-s" style={{maxWidth:150}} onClick={onClose}>Cancelar</button>
-    </div>
-  </div></div>;
-}
-
-// ── LOGIN ───────────────────────────────────────────────
-function ScreenLogin({db,onSearch,onNewUser}){
-  const [rut,setRut]=useState("");const [err,setErr]=useState("");const [loading,setLoading]=useState(false);
-  const ref=useRef(null);useEffect(()=>{ref.current?.focus()},[]);
-  const go=()=>{
-    const c=rut.trim();if(!c){setErr("Ingrese su RUT.");return}
-    setLoading(true);setErr("");
-    setTimeout(()=>{
-      const d=db[c];
-      if(!d){
-        setErr("NOT_FOUND");setLoading(false);return;
-      }
-      onSearch(c,d);setLoading(false);
-    },500);
-  };
-  const isNotFound=err==="NOT_FOUND";
-  return <div className="login-bg"><div className="login-card">
-    <div className="logo-login"><Logo h={52}/></div>
-    <h1>Portafolio Académico</h1>
-    <p className="sub">Ingrese su RUT para acceder a su información y reportar nuevas actividades.</p>
-    <div className="ig"><label>RUT (con guión)</label>
-      <input ref={ref} className="input" value={rut} onChange={e=>{setRut(e.target.value);setErr("")}} onKeyDown={e=>e.key==="Enter"&&go()} placeholder="12345678-9"/>
-    </div>
-    {err&&!isNotFound&&<div className="err">{err}</div>}
-    {isNotFound&&<div style={{padding:"16px",background:"#fffbeb",border:"1px solid #fbbf24",borderRadius:8,marginBottom:16}}>
-      <p style={{fontSize:14,fontWeight:600,color:"#92400e",marginBottom:8}}>RUT no encontrado en nuestros registros.</p>
-      <p style={{fontSize:13,color:"#92400e",lineHeight:1.5,marginBottom:12}}>Si usted es académico FEN-UNAB y es la primera vez que ingresa, puede registrarse a continuación.</p>
-      <button className="btn-warn" onClick={()=>onNewUser(rut.trim())}>Registrarme como nuevo académico</button>
-    </div>}
-    <button className="btn-p" onClick={go} disabled={loading}>{loading?"Buscando…":"Ingresar"}</button>
-    <p className="foot">Acceso exclusivo para académicos FEN-UNAB</p>
-  </div></div>;
-}
-
-// ── NEW USER REGISTRATION ───────────────────────────────
-function ScreenNewUser({rut,onSave,onCancel}){
-  const [name,setName]=useState("");const [email,setEmail]=useState("");
-  const [saved,setSaved]=useState(false);
-  const ok=name.trim()&&email.trim();
-  const save=()=>{
-    if(!ok)return;
-    const ts=new Date().toISOString().slice(0,19).replace(/[T:]/g,'-');
-    // CSV backup
-    downloadCSV(
-      [["RUT","NombreCompleto","Email","Tipo","FechaRegistro"],
-       [rut,name.trim(),email.trim(),"NUEVO_ACADEMICO",new Date().toISOString()]],
-      `nuevo_academico_${rut}_${ts}.csv`
-    );
-    // Open email
-    sendMailto(
-      `[Portafolio FEN] Nuevo académico: ${rut}`,
-      `Estimado equipo de Aseguramiento de la Calidad,\n\nSolicito mi incorporación al sistema de Portafolio Académico.\n\nRUT: ${rut}\nNombre: ${name.trim()}\nEmail: ${email.trim()}\n\nQuedo atento.\nSaludos.`
-    );
-    setSaved(true);
-  };
-  if(saved)return <div className="main"><Header email=""/><div className="cnt"><div className="card card-c">
-    <div className="suc">✓</div>
-    <h2 className="st" style={{marginTop:16}}>Registro enviado</h2>
-    <p className="ss">Se abrió su correo con los datos pre-llenados y se descargó un CSV de respaldo. <strong>Por favor adjunte el CSV al correo antes de enviarlo.</strong></p>
-    <button className="btn-o" style={{marginTop:24}} onClick={onCancel}>Volver al inicio</button>
-  </div></div></div>;
-
-  return <div className="main"><Header email=""/><div className="cnt"><div className="card">
-    <h2 className="st">Registro de nuevo académico</h2>
-    <p className="ss" style={{marginBottom:24}}>Su RUT <strong>{rut}</strong> no está en nuestros registros. Complete los datos básicos a continuación.</p>
-    <div className="new-user-sec">
-      <div className="new-user-hdr"><span>📋</span><span>Datos básicos</span></div>
-      <div className="fg"><label className="fm">Nombre completo *</label><input className="input" value={name} onChange={e=>setName(e.target.value)} placeholder="Nombre Apellido Apellido"/></div>
-      <div className="fg"><label className="fm">Email institucional *</label><input className="input" value={email} onChange={e=>setEmail(e.target.value)} placeholder="nombre@uandresbello.edu"/></div>
-    </div>
-    <div className="fa">
-      <button className="btn-p" style={{maxWidth:300}} onClick={save} disabled={!ok}>Enviar registro</button>
-      <button className="btn-s" style={{maxWidth:150}} onClick={onCancel}>Cancelar</button>
-    </div>
-  </div></div></div>;
-}
-
-// ── PROFILE ─────────────────────────────────────────────
-function ScreenProfile({data,onContinue,onError}){
-  const ini=data.name.split(" ").map(n=>n[0]).slice(0,2).join("");
-  return <div className="main"><Header email={data.email}/>
-    <div className="cnt"><div className="card">
-      <div className="ph"><div className="av">{ini}</div><div><h2 className="pn">{tc(data.name)}</h2><p className="pe">{data.email}</p></div></div>
-      <div className="pg">
-        <div className="pf"><span className="fl">Unidad</span><span className="fv">{data.unidad||"(sin asignar)"}</span></div>
-        <div className="pf"><span className="fl">Planta</span><span className="fv">{data.contrato?data.contrato.replace(/ \(FT\)| \(PT\)/g,''):"(sin asignar)"}</span></div>
-        <div className="pf"><span className="fl">Grado</span><span className="fv">{data.gradoDetalle||data.grado||"(sin asignar)"}</span></div>
-      </div>
-      <div className="act-col">
-        <button className="btn-p" onClick={onContinue}>Sí, mis datos son correctos → Continuar</button>
-        <button className="btn-s" onClick={onError}>Hay un error en mis datos</button>
-      </div>
-    </div></div>
-  </div>;
-}
-
-// ── PORTFOLIO ───────────────────────────────────────────
-function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,setReports}){
-  const [tab,setTab]=useState("ev");const [flt,setFlt]=useState("all");
-  const [reportIdx,setReportIdx]=useState(null);
-  const cats=[...new Set(data.evidencias.map(e=>e.cat))];
-  const filtered=flt==="all"?data.evidencias:data.evidencias.filter(e=>e.cat===flt);
-
-  const handleReport=(msg)=>{
-    const isExp=String(reportIdx).startsWith("exp_");
-    const item=isExp?data.expLaboral[parseInt(String(reportIdx).split("_")[1])]:data.evidencias[reportIdx];
-    setReports(prev=>[...prev,{idx:reportIdx,item,isExp,msg}]);
-    setReportIdx(null);
-  };
-
-  const getOrigIdx=(ev)=>data.evidencias.indexOf(ev);
-  const hasPending=pending.length>0;
-  const hasReports=reports.length>0;
-  const hasAnything=hasPending||hasReports;
-
-  const sendAll=()=>{
-    const ts=new Date().toISOString().slice(0,19).replace(/[T:]/g,'-');
-    // Build unified CSV
-    const rows=[["RUT","NombreCompleto","Email","Tipo_Registro","TipoActividad","TipoActividad_Desc","Anio","Descripcion","EnlaceEvidencia","Comentarios","ExpCargo","ExpEmpresa","ExpInicio","ExpFin","ExpVigente","Error_Reportado","FechaRegistro"]];
-    pending.forEach(p=>{
-      rows.push([rut,data.name,data.email,"NUEVA_ACTIVIDAD",p.actType,CL[p.actType]||p.actType,p.year||'',p.isExp?'':p.description,p.evidenceLink||'',p.comments||'',p.expCargo||'',p.expEmpresa||'',p.expInicio||'',p.expVigente?'Vigente':(p.expFin||''),p.expVigente?'Sí':'No','',new Date().toISOString()]);
-    });
-    reports.forEach(r=>{
-      if(r.isExp){
-        rows.push([rut,data.name,data.email,"ERROR_REPORTADO","exp_laboral","Experiencia Laboral",r.item.inicio||'',r.item.cargo||'','','','',r.item.empresa||'','','','',r.msg,new Date().toISOString()]);
-      }else{
-        rows.push([rut,data.name,data.email,"ERROR_REPORTADO",r.item.code,CL[r.item.code]||r.item.code,r.item.year||'',r.item.desc||'','','','','','','','',r.msg,new Date().toISOString()]);
-      }
-    });
-    downloadCSV(rows,`portafolio_${rut}_${ts}.csv`);
-
-    // Build email
-    let body=`Estimado equipo,\n\nAdjunto novedades de mi portafolio académico.\n\nRUT: ${rut}\nNombre: ${data.name}\n\n`;
-    if(hasPending){
-      body+=`════════════════════════════\nNUEVAS ACTIVIDADES (${pending.length})\n════════════════════════════\n\n`;
-      pending.forEach((p,i)=>{
-        body+=`${i+1}. `;
-        if(p.isExp){
-          body+=`Experiencia Laboral: ${p.expCargo} — ${p.expEmpresa} (${p.expInicio}–${p.expVigente?"Vigente":(p.expFin||"?")})\n`;
-        }else{
-          body+=`${CL[p.actType]||p.actType}${p.year?` (${p.year})`:""}: ${p.description}\n`;
-        }
-        if(p.evidenceLink)body+=`   Evidencia: ${p.evidenceLink}\n`;
-        if(p.comments)body+=`   Comentario: ${p.comments}\n`;
-        body+=`\n`;
-      });
-    }
-    if(hasReports){
-      body+=`════════════════════════════\nERRORES REPORTADOS (${reports.length})\n════════════════════════════\n\n`;
-      reports.forEach((r,i)=>{
-        body+=`${i+1}. `;
-        if(r.isExp){
-          body+=`Exp. Laboral: ${r.item.cargo||"sin cargo"} — ${r.item.empresa}\n`;
-        }else{
-          body+=`${CL[r.item.code]||r.item.code}${r.item.year?` (${r.item.year})`:""}: ${r.item.desc||"sin desc."}\n`;
-        }
-        body+=`   Error: ${r.msg}\n\n`;
-      });
-    }
-    body+=`Se adjunta CSV de respaldo. Si tiene documentos de evidencia adicionales (certificados, PDFs, resoluciones), por favor adjúntelos a este correo.\n\nSaludos.`;
-    const nAct=pending.length;const nErr=reports.length;
-    const parts=[];
-    if(nAct)parts.push(`${nAct} actividad${nAct>1?"es":""}`);
-    if(nErr)parts.push(`${nErr} error${nErr>1?"es":""}`);
-    sendMailto(`[Portafolio FEN] ${parts.join(" + ")} — ${rut}`,body);
-    onDoneSent();
-  };
-
-  return <div className="main"><Header email={data.email}/>
-    <div className="cnt">
-      <div className="port-h"><div>
-        <h2 className="st">Portafolio de {tc(data.name)}</h2>
-        <p className="ss">Revise su información. Si detecta un error, use el botón ⚑ junto a cada registro.</p>
-      </div>
-      <div className="stats">
-        <div className="stat"><div className="stat-v" style={{color:"#0d6efd"}}>{data.evidencias.length}</div><div className="stat-l">Evidencias</div></div>
-        <div className="stat"><div className="stat-v" style={{color:"#6f42c1"}}>{data.expLaboral.length}</div><div className="stat-l">Exp. Laboral</div></div>
-      </div></div>
-
-      {hasPending&&<div style={{padding:"12px 16px",background:"#eff6ff",border:"1px solid #bfdbfe",borderRadius:8,marginBottom:12}}>
-        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-          <span style={{fontSize:13,color:"#1e40af"}}><strong>{pending.length}</strong> actividad{pending.length>1?"es":""} nueva{pending.length>1?"s":""} pendiente{pending.length>1?"s":""} de envío</span>
-        </div>
-        <div style={{marginTop:8,fontSize:12,color:"#3b82f6"}}>
-          {pending.map((p,i)=><div key={i} style={{padding:"2px 0"}}>
-            • {p.isExp?`Exp. laboral: ${p.expCargo} — ${p.expEmpresa}`:`${CL[p.actType]||p.actType}${p.year?` (${p.year})`:""}`}
-            {p.evidenceLink&&<span style={{color:"#2563eb"}}> 🔗</span>}
-          </div>)}
-        </div>
-      </div>}
-
-      {hasReports&&<div style={{padding:"12px 16px",background:"#fef2f2",border:"1px solid #fecaca",borderRadius:8,marginBottom:12}}>
-        <span style={{fontSize:13,color:"#991b1b"}}><strong>{reports.length}</strong> error{reports.length>1?"es":""} reportado{reports.length>1?"s":""}</span>
-      </div>}
-
-      <div className="tabs">
-        <button className={`tab ${tab==="ev"?"tab-a":"tab-i"}`} onClick={()=>setTab("ev")}>Evidencias ({data.evidencias.length})</button>
-        <button className={`tab ${tab==="ex"?"tab-a":"tab-i"}`} onClick={()=>setTab("ex")}>Experiencia Laboral ({data.expLaboral.length})</button>
-      </div>
-
-      {tab==="ev"&&<><div className="flts">
-        <button className={`chip ${flt==="all"?"chip-a":"chip-i"}`} onClick={()=>setFlt("all")}>Todas</button>
-        {cats.map(c=><button key={c} className={`chip ${flt===c?"chip-a":"chip-i"}`} onClick={()=>setFlt(c)}>{c}</button>)}
-      </div>
-      <div className="tc"><table><thead><tr><th style={{width:"30px"}}></th><th>Tipo</th><th>Categoría</th><th>Año</th><th style={{width:"50%"}}>Descripción</th></tr></thead><tbody>
-        {filtered.length===0&&<tr><td colSpan={5} className="empty">No hay registros en esta categoría.</td></tr>}
-        {filtered.map((ev,i)=>{
-          const origIdx=getOrigIdx(ev);
-          const isReported=reports.some(r=>r.idx===origIdx);
-          return <tr key={i} className={`${i%2===0?"tr-e":"tr-o"} ${isReported?"flagged":""}`}>
-            <td style={{textAlign:"center",padding:"6px"}}>
-              <button className="flag-btn" title="Reportar error" onClick={()=>setReportIdx(origIdx)}
-                style={isReported?{opacity:1,color:"#dc2626"}:{}}>⚑</button>
-            </td>
-            <td><span className="ctag">{CL[ev.code]||ev.code}</span></td>
-            <td>{ev.cat}</td>
-            <td style={{textAlign:"center",fontVariantNumeric:"tabular-nums",color:ev.year?"#1e293b":"#d1d5db"}}>{ev.year||""}</td>
-            <td style={{fontSize:"13px"}}>{ev.desc||<span style={{color:"#d1d5db",fontStyle:"italic"}}>sin descripción</span>}</td>
-          </tr>;})}
-      </tbody></table></div></>}
-
-      {tab==="ex"&&<div className="tc"><table><thead><tr><th style={{width:"30px"}}></th><th>Cargo</th><th>Organización</th><th>Inicio</th><th>Fin</th></tr></thead><tbody>
-        {data.expLaboral.length===0&&<tr><td colSpan={5} className="empty">No hay registros.</td></tr>}
-        {data.expLaboral.map((ex,i)=>{
-          const isReported=reports.some(r=>r.idx===`exp_${i}`);
-          return <tr key={i} className={`${i%2===0?"tr-e":"tr-o"} ${isReported?"flagged":""}`}>
-            <td style={{textAlign:"center",padding:"6px"}}>
-              <button className="flag-btn" title="Reportar error" onClick={()=>setReportIdx(`exp_${i}`)}
-                style={isReported?{opacity:1,color:"#dc2626"}:{}}>⚑</button>
-            </td>
-            <td>{ex.cargo||<span style={{color:"#d1d5db",fontStyle:"italic"}}>sin cargo</span>}</td>
-            <td>{ex.empresa}</td>
-            <td style={{textAlign:"center"}}>{ex.inicio}</td>
-            <td style={{textAlign:"center"}}>{ex.fin==="0"?<span className="vig-badge">Vigente</span>:ex.fin}</td>
-          </tr>;})}
-      </tbody></table></div>}
-
-      <div className="pa">
-        <button className="btn-p" style={{maxWidth:400}} onClick={onAdd}>+ Agregar nueva actividad o experiencia</button>
-        {hasAnything
-          ?<button className="btn-p" style={{maxWidth:400,background:"#16a34a"}} onClick={sendAll}>Finalizar y enviar ({pending.length+reports.length} item{pending.length+reports.length>1?"s":""})</button>
-          :<button className="btn-o" onClick={()=>onDoneEmpty()}>No tengo nada que agregar → Finalizar</button>}
-      </div>
-    </div>
-    {reportIdx!==null&&(()=>{
-      const isExp=String(reportIdx).startsWith("exp_");
-      const item=isExp?data.expLaboral[parseInt(String(reportIdx).split("_")[1])]:data.evidencias[reportIdx];
-      return <ReportModal item={item} isExp={isExp} onClose={()=>setReportIdx(null)} onSubmit={handleReport}/>;
-    })()}
-  </div>;
-}
-
-// ── ADD ACTIVITY ────────────────────────────────────────
-function ScreenAdd({data,rut,onSave,onCancel}){
-  const [at,setAt]=useState("");const [yr,setYr]=useState("");const [desc,setDesc]=useState("");const [cm,setCm]=useState("");
-  const [ec,setEc]=useState("");const [ee,setEe]=useState("");const [ei,setEi]=useState("");const [ef,setEf]=useState("");const [ev,setEv]=useState(false);
-  const [link,setLink]=useState("");
-  const isExp=at==="exp_laboral";
-  const ok=isExp?(ec&&ee&&ei):(at&&desc);
-  const save=()=>{
-    if(!ok)return;
-    onSave({actType:at,year:yr,description:desc,comments:cm,isExp,expCargo:ec,expEmpresa:ee,expInicio:ei,expFin:ef,expVigente:ev,evidenceLink:link});
-  };
-  const ph=at==="pub_paper"?"Título | Revista | DOI o enlace":at==="consultoria_alta"?"Proyecto | Cliente | Rol | Período":"Describa la actividad con el mayor detalle posible";
-  const evPh=at==="pub_paper"?"https://doi.org/10.xxxx o enlace al artículo":at==="conf_ext"?"Enlace al programa de la conferencia":at==="proy_comp"?"Enlace al proyecto o resolución de adjudicación":at==="cargo_academico"?"Enlace a resolución de nombramiento":at==="consultoria_alta"?"Enlace a sitio del proyecto o cliente":at==="media_regular"?"Enlace a la nota o columna publicada":at==="exp_laboral"?"Enlace a perfil LinkedIn o sitio de la organización":"DOI, URL o enlace a Google Drive/OneDrive con el documento";
-
-  return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card">
-    <h2 className="st">Agregar nueva actividad</h2>
-    <p className="ss" style={{marginBottom:24}}>Complete los campos. Puede agregar varias actividades antes de enviar.</p>
-    <div className="fg"><label className="fm">Tipo de actividad *</label>
-      <select value={at} onChange={e=>setAt(e.target.value)} className="sel">
-        <option value="">Seleccione...</option>
-        {AG.map(g=><optgroup key={g.label} label={g.label}>{g.items.map(c=><option key={c} value={c}>{CL[c]}</option>)}</optgroup>)}
-        <optgroup label="Experiencia Laboral"><option value="exp_laboral">Nueva experiencia laboral</option></optgroup>
-      </select>
-    </div>
-
-    {isExp&&<div className="exp-sec">
-      <div className="exp-hdr"><span>💼</span><span>Datos de la experiencia laboral</span></div>
-      <div className="fg"><label className="fm">Cargo o posición *</label><input className="input" value={ec} onChange={e=>setEc(e.target.value)} placeholder="Ej: Gerente de Finanzas"/></div>
-      <div className="fg"><label className="fm">Organización *</label><input className="input" value={ee} onChange={e=>setEe(e.target.value)} placeholder="Ej: Banco de Chile"/></div>
-      <div className="fr">
-        <div className="fg" style={{flex:1}}><label className="fm">Año inicio *</label><input className="input" value={ei} onChange={e=>setEi(e.target.value)} placeholder="2018"/></div>
-        <div className="fg" style={{flex:1}}><label className="fm">Año fin</label><input className="input" value={ef} onChange={e=>setEf(e.target.value)} placeholder="2024" disabled={ev} style={{opacity:ev?.4:1,backgroundColor:ev?"#f3f4f6":"#fff"}}/></div>
-      </div>
-      <label className="cb-l"><input type="checkbox" className="cb" checked={ev} onChange={e=>{setEv(e.target.checked);if(e.target.checked)setEf("")}}/><span className="cb-t">Cargo vigente (a la fecha)</span></label>
-      {ev&&<div className="vig-note">Este cargo será marcado como vigente. Relevante para clasificación PA e IP.</div>}
-    </div>}
-
-    {!isExp&&at&&<>
-      <div className="fg" style={{maxWidth:200}}><label className="fm">Año</label><input className="input" value={yr} onChange={e=>setYr(e.target.value)} placeholder="2024"/></div>
-      <div className="fg"><label className="fm">Descripción *</label><textarea className="ta" value={desc} onChange={e=>setDesc(e.target.value)} placeholder={ph} rows={4}/></div>
-    </>}
-    {at&&<>
-      <div className="fg">
-        <label className="fm">Enlace a evidencia (opcional)</label>
-        <input className="input" value={link} onChange={e=>setLink(e.target.value)} placeholder={evPh}/>
-        <span style={{fontSize:12,color:"#6b7280",marginTop:4,display:"block"}}>Si tiene archivos PDF u otros documentos de respaldo, adjúntelos al correo al momento de enviar.</span>
-      </div>
-      <div className="fg"><label className="fm">Comentarios adicionales (opcional)</label>
-      <textarea className="ta" value={cm} onChange={e=>setCm(e.target.value)} placeholder="Cualquier información adicional" rows={2}/></div>
-    </>}
-    <div className="fa">
-      <button className="btn-p" style={{maxWidth:300,opacity:ok?1:.5}} onClick={save} disabled={!ok}>Agregar</button>
-      <button className="btn-s" style={{maxWidth:150}} onClick={onCancel}>Cancelar</button>
-    </div>
-  </div></div></div>;
-}
-
-function ScreenError({onBack,onContinue}){
-  return <div className="main"><Header email=""/><div className="cnt"><div className="card card-c">
-    <div style={{fontSize:48,marginBottom:16}}>📧</div>
-    <h2 className="st">Solicitud de corrección</h2>
-    <p className="ss">Para solicitar correcciones en sus datos base, envíe un correo a:</p>
-    <p className="em-hi">c.troncosovalverde@uandresbello.edu</p>
-    <p className="ss">Indique su RUT, el dato a corregir y la información correcta.</p>
-    <div style={{marginTop:24,display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-      <button className="btn-p" style={{maxWidth:300}} onClick={onContinue}>Continuar al portafolio →</button>
-      <button className="btn-o" onClick={onBack}>← Volver al inicio</button>
-    </div>
-  </div></div></div>;
-}
-
-function ScreenDone({data,onBack}){
-  return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card card-c">
-    <div className="suc">✓</div>
-    <h2 className="st" style={{marginTop:16}}>¡Gracias, {tc(data.name.split(" ")[0])}!</h2>
-    <p className="ss">Se abrió su correo con toda la información y se descargó un archivo CSV de respaldo. <strong>Por favor adjunte el CSV y cualquier documento de evidencia (certificados, PDFs, etc.) al correo antes de enviarlo.</strong></p>
-    <p className="ss" style={{marginTop:8}}>Puede volver en cualquier momento si necesita agregar más actividades.</p>
-    <button className="btn-o" style={{marginTop:24}} onClick={onBack}>Volver al inicio</button>
-  </div></div></div>;
-}
-
-function ScreenDoneEmpty({data,onBack}){
-  return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card card-c">
-    <div className="suc">✓</div>
-    <h2 className="st" style={{marginTop:16}}>¡Gracias, {tc(data.name.split(" ")[0])}!</h2>
-    <p className="ss">Su portafolio ha sido confirmado. Puede volver en cualquier momento.</p>
-    <button className="btn-o" style={{marginTop:24}} onClick={onBack}>Volver al inicio</button>
-  </div></div></div>;
-}
-
-function App(){
-  const [db,setDb]=useState(null);const [err,setErr]=useState("");
-  const [scr,setScr]=useState("login");const [data,setData]=useState(null);const [rut,setRut]=useState("");
-  const [pending,setPending]=useState([]);
-  const [reports,setReports]=useState([]);
-
-  useEffect(()=>{
-    fetch("academicos.json").then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
-      .then(d=>setDb(d)).catch(e=>setErr("Error cargando datos. Verifique que academicos.json esté disponible."));
-  },[]);
-
-  if(err)return <div className="login-bg"><div className="login-card"><h1>Error</h1><div className="err" style={{marginTop:16}}>{err}</div></div></div>;
-  if(!db)return <div className="login-bg"><div className="login-card" style={{textAlign:"center"}}><div className="loading-spin" style={{borderColor:"rgba(13,79,139,.3)",borderTopColor:"#0d4f8b",margin:"20px auto"}}></div><p className="sub">Cargando datos...</p></div></div>;
-
-  const search=(r,d)=>{setRut(r);setData(d);setScr("profile")};
-  const reset=()=>{setScr("login");setData(null);setRut("");setPending([]);setReports([])};
-  const addActivity=(item)=>{setPending(prev=>[...prev,item]);setScr("portfolio")};
-
-  switch(scr){
-    case "login":return <ScreenLogin db={db} onSearch={search} onNewUser={(r)=>{setRut(r);setScr("newuser")}}/>;
-    case "newuser":return <ScreenNewUser rut={rut} onSave={()=>{}} onCancel={reset}/>;
-    case "profile":return <ScreenProfile data={data} onContinue={()=>setScr("portfolio")} onError={()=>setScr("error")}/>;
-    case "portfolio":return <ScreenPortfolio data={data} rut={rut} pending={pending} reports={reports} setReports={setReports}
-      onAdd={()=>setScr("add")} onDoneSent={()=>setScr("done")} onDoneEmpty={()=>setScr("doneEmpty")}/>;
-    case "add":return <ScreenAdd data={data} rut={rut} onSave={addActivity} onCancel={()=>setScr("portfolio")}/>;
-    case "error":return <ScreenError onBack={reset} onContinue={()=>setScr("portfolio")}/>;
-    case "done":return <ScreenDone data={data} onBack={reset}/>;
-    case "doneEmpty":return <ScreenDoneEmpty data={data} onBack={reset}/>;
-    default:return <ScreenLogin db={db} onSearch={search} onNewUser={(r)=>{setRut(r);setScr("newuser")}}/>;
+async function loadPortfolioData() {
+  try {
+    const resp = await fetch('portafolio_data.json');
+    if (!resp.ok) throw new Error('No se encontró portafolio_data.json');
+    return await resp.json();
+  } catch (e) {
+    console.error(e);
+    return null;
   }
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+// ════════════════════════════════════════════════════════════
+// UTILITY
+// ════════════════════════════════════════════════════════════
+function normalizeRut(rut) {
+  return (rut || '').replace(/\./g, '').replace(/\s/g, '').toUpperCase().trim();
+}
+
+function downloadJSON(obj, filename) {
+  const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  URL.revokeObjectURL(url);
+}
+
+function BadgeLista({ v }) {
+  const m = { LISTA_I: 'b-l1', LISTA_II: 'b-l2', LISTA_III: 'b-l3', LISTA_III_PIEZA: 'b-l3', NINGUNA: 'b-none' };
+  const t = { LISTA_I: 'I', LISTA_II: 'II', LISTA_III: 'III', LISTA_III_PIEZA: 'III·p', NINGUNA: '—' };
+  return <span className={`badge ${m[v] || 'b-none'}`}>{t[v] || v}</span>;
+}
+
+// ════════════════════════════════════════════════════════════
+// COMPONENTS
+// ════════════════════════════════════════════════════════════
+
+// ── Login Screen ──
+function LoginScreen({ onLogin, onDean, dataLoaded, dataError }) {
+  const [rut, setRut] = useState('');
+  const [showDean, setShowDean] = useState(false);
+  const [deanPass, setDeanPass] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = () => {
+    const normalized = normalizeRut(rut);
+    if (!normalized || normalized.length < 7) { setError('Ingrese un RUT válido'); return; }
+    onLogin(normalized);
+  };
+
+  const handleDean = () => {
+    if (deanPass === DEAN_PASS) { onDean(); }
+    else { setError('Clave incorrecta'); }
+  };
+
+  return <div className="login-box">
+    <div className="card">
+      <div className="login-logo">Portafolio Académico</div>
+      <div style={{fontSize:13,color:'var(--text2)',marginBottom:4}}>Facultad de Economía y Negocios · UNAB</div>
+      <div style={{fontSize:12,color:'var(--warm)',fontWeight:600,marginBottom:24}}>Proceso de Acreditación AACSB</div>
+
+      {dataError && <div className="banner" style={{textAlign:'left',marginBottom:20}}>
+        <div className="banner-title">⚠ Datos no disponibles</div>
+        <div className="banner-text">No se pudo cargar la información. Por favor intente más tarde o contacte a <span className="banner-email">{CONTACT_EMAIL}</span></div>
+      </div>}
+
+      {!showDean ? <>
+        <div className="login-desc">
+          Ingrese su RUT para revisar su información académica registrada y, si lo desea, complementarla con nuevas actividades o experiencia laboral.
+        </div>
+        <div className="input-group">
+          <label>RUT (sin puntos, con guión)</label>
+          <input className="input" placeholder="12345678-9" value={rut}
+            onChange={e => { setRut(e.target.value); setError(''); }}
+            onKeyDown={e => e.key === 'Enter' && handleLogin()} autoFocus />
+        </div>
+        {error && <div style={{color:'var(--red)',fontSize:13,marginBottom:12,fontWeight:600}}>{error}</div>}
+        <button className="btn btn-primary btn-block" onClick={handleLogin} disabled={!dataLoaded} style={{marginBottom:12}}>
+          {dataLoaded ? 'Ingresar' : 'Cargando datos...'}
+        </button>
+        <button className="btn btn-outline btn-block btn-sm" onClick={() => { setShowDean(true); setError(''); }}>
+          Acceso administrador
+        </button>
+      </> : <>
+        <div className="login-desc">Ingrese la clave de acceso administrativo.</div>
+        <div className="input-group">
+          <label>Clave</label>
+          <input className="input" type="password" value={deanPass}
+            onChange={e => { setDeanPass(e.target.value); setError(''); }}
+            onKeyDown={e => e.key === 'Enter' && handleDean()} autoFocus />
+        </div>
+        {error && <div style={{color:'var(--red)',fontSize:13,marginBottom:12,fontWeight:600}}>{error}</div>}
+        <button className="btn btn-primary btn-block" onClick={handleDean} style={{marginBottom:12}}>Ingresar</button>
+        <button className="btn btn-outline btn-block btn-sm" onClick={() => { setShowDean(false); setError(''); }}>← Volver a login profesor</button>
+      </>}
+    </div>
+    <div style={{textAlign:'center',marginTop:16,fontSize:11,color:'var(--text2)'}}>
+      Dirección de Aseguramiento de la Calidad · FEN-UNAB
+    </div>
+  </div>;
+}
+
+// ── Professor View ──
+function ProfessorView({ acad, evidencias, expLaboral, horas, data, onLogout, readOnly }) {
+  const [tab, setTab] = useState('evidencias');
+  const [changes, setChanges] = useState({ nuevas_evidencias: [], nuevas_exp: [], comentarios: [] });
+  const [showAddEv, setShowAddEv] = useState(false);
+  const [showAddExp, setShowAddExp] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [toast, setToast] = useState('');
+
+  const showToast = (msg) => { setToast(msg); setTimeout(() => setToast(''), 3000); };
+
+  const totalChanges = changes.nuevas_evidencias.length + changes.nuevas_exp.length + changes.comentarios.length;
+
+  // Discipline distribution
+  const discDist = useMemo(() => {
+    if (!horas) return [];
+    const cols = [
+      { key: 'sch_adm_ni_inn', label: 'ADM_NI_INN', cursos: 'cursos_adm_ni_inn' },
+      { key: 'sch_econ_gp', label: 'ECON_GP', cursos: 'cursos_econ_gp' },
+      { key: 'sch_con_fin_tri', label: 'CON_FIN_TRI', cursos: 'cursos_con_fin_tri' },
+      { key: 'sch_ad_mkt_tur', label: 'AD_MKT_TUR', cursos: 'cursos_ad_mkt_tur' },
+    ];
+    const total = +(horas.sch_total || 0);
+    if (!total) return [];
+    return cols.map(c => ({
+      ...c,
+      sch: +(horas[c.key] || 0),
+      pct: +(horas[c.key] || 0) / total,
+      cursos: (horas[c.cursos] || '').split('|').map(s => s.trim()).filter(Boolean),
+    })).filter(d => d.sch > 0);
+  }, [horas]);
+
+  // Count existing evidences by lista
+  const evStats = useMemo(() => {
+    const s = { LISTA_I: 0, LISTA_II: 0, LISTA_III: 0, total: evidencias.length };
+    evidencias.forEach(e => {
+      const l = e.lista_final || e.lista_auto || '';
+      if (l === 'LISTA_I') s.LISTA_I++;
+      else if (l === 'LISTA_II') s.LISTA_II++;
+      else if (l.startsWith('LISTA_III')) s.LISTA_III++;
+    });
+    return s;
+  }, [evidencias]);
+
+  // ── Add evidence ──
+  const [newEv, setNewEv] = useState({ codigo: 'pub_paper', anio: String(new Date().getFullYear()), descripcion: '', revista: '', doi: '', url: '', comentarios: '' });
+
+  const addEvidence = () => {
+    if (!newEv.descripcion.trim()) { showToast('Ingrese una descripción'); return; }
+    const ev = { ...newEv, id: 'PROF_' + Date.now(), rut: acad.rut, fecha_envio: new Date().toISOString() };
+    setChanges(prev => ({ ...prev, nuevas_evidencias: [...prev.nuevas_evidencias, ev] }));
+    setNewEv({ codigo: 'pub_paper', anio: String(new Date().getFullYear()), descripcion: '', revista: '', doi: '', url: '', comentarios: '' });
+    setShowAddEv(false);
+    showToast('✓ Evidencia agregada a cambios pendientes');
+  };
+
+  // ── Add exp laboral ──
+  const [newExp, setNewExp] = useState({ cargo: '', organizacion: '', anio_inicio: '', anio_fin: '', url_respaldo: '', notas: '' });
+
+  const addExp = () => {
+    if (!newExp.cargo.trim() || !newExp.organizacion.trim()) { showToast('Complete cargo y organización'); return; }
+    const exp = { ...newExp, id: 'PROF_' + Date.now(), rut: acad.rut, fecha_envio: new Date().toISOString() };
+    setChanges(prev => ({ ...prev, nuevas_exp: [...prev.nuevas_exp, exp] }));
+    setNewExp({ cargo: '', organizacion: '', anio_inicio: '', anio_fin: '', url_respaldo: '', notas: '' });
+    setShowAddExp(false);
+    showToast('✓ Experiencia agregada a cambios pendientes');
+  };
+
+  // ── Add comment to existing evidence ──
+  const addComment = (evId, text) => {
+    if (!text.trim()) return;
+    setChanges(prev => ({
+      ...prev,
+      comentarios: [...prev.comentarios.filter(c => c.id_evidencia !== evId), { id_evidencia: evId, rut: acad.rut, comentario: text, fecha: new Date().toISOString() }]
+    }));
+    showToast('✓ Comentario registrado');
+  };
+
+  // ── Download changes file ──
+  const downloadChanges = () => {
+    const payload = {
+      _formato: 'cambios_portafolio_fen_v1',
+      rut: acad.rut,
+      nombre: acad.nombre,
+      fecha_generacion: new Date().toISOString(),
+      ...changes,
+    };
+    const fecha = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+    const rutClean = acad.rut.replace(/[^0-9kK]/g, '');
+    downloadJSON(payload, `cambios_${rutClean}_${fecha}.json`);
+    setSubmitted(true);
+    showToast('✓ Archivo descargado');
+  };
+
+  return <>
+    <div className="header no-print">
+      <div className="header-inner">
+        <div>
+          <h1>Portafolio Académico</h1>
+          <div className="header-sub">FEN-UNAB · Acreditación AACSB</div>
+        </div>
+        <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Cerrar sesión</button>
+      </div>
+    </div>
+
+    <div className="container">
+      {/* Email banner — ALWAYS visible for professors */}
+      {!readOnly && <div className="banner banner-critical">
+        <div className="banner-title">📧 Importante: envío de información</div>
+        <div className="banner-text">
+          Si agrega nuevas evidencias o experiencia laboral, al finalizar debe <strong>descargar el archivo de cambios</strong> y enviarlo por correo electrónico a:<br/>
+          <span className="banner-email" style={{fontSize:16,display:'inline-block',marginTop:6,marginBottom:6}}>{CONTACT_EMAIL}</span><br/>
+          Sin este paso, sus cambios <strong>no serán registrados</strong> en el sistema oficial. El archivo descargado es pequeño y contiene solo lo que usted agregó.
+        </div>
+      </div>}
+
+      {/* Professor header */}
+      <div className="card">
+        <div className="prof-header">
+          <div>
+            <div className="prof-name">{acad.nombre}</div>
+            <div className="prof-meta">
+              RUT: {acad.rut} · {acad.planta || '—'} · {acad.unidad || '—'}
+              {acad.grado && <> · {acad.grado}</>}
+            </div>
+          </div>
+          <div className="prof-stats">
+            <div className="stat-pill">
+              <div className="stat-pill-v">{evStats.total}</div>
+              <div className="stat-pill-l">Evidencias</div>
+            </div>
+            <div className="stat-pill">
+              <div className="stat-pill-v">{expLaboral.length}</div>
+              <div className="stat-pill-l">Exp. Laboral</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Tabs */}
+      <div className="tabs no-print">
+        <button className={`tab ${tab === 'evidencias' ? 'active' : ''}`} onClick={() => setTab('evidencias')}>
+          Evidencias ({evidencias.length}{changes.nuevas_evidencias.length ? ` + ${changes.nuevas_evidencias.length} nuevas` : ''})
+        </button>
+        <button className={`tab ${tab === 'exp' ? 'active' : ''}`} onClick={() => setTab('exp')}>
+          Exp. Laboral ({expLaboral.length}{changes.nuevas_exp.length ? ` + ${changes.nuevas_exp.length} nuevas` : ''})
+        </button>
+      </div>
+
+      {/* ── Evidencias Tab ── */}
+      {tab === 'evidencias' && <div>
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:16,flexWrap:'wrap',gap:8}}>
+          <div style={{fontSize:13,color:'var(--text2)'}}>
+            Lista I: <strong>{evStats.LISTA_I}</strong> · Lista II: <strong>{evStats.LISTA_II}</strong> · Lista III: <strong>{evStats.LISTA_III}</strong>
+          </div>
+          {!readOnly && <button className="btn btn-warm btn-sm" onClick={() => setShowAddEv(!showAddEv)}>
+            {showAddEv ? '✕ Cancelar' : '＋ Agregar evidencia'}
+          </button>}
+        </div>
+
+        {/* Add evidence form */}
+        {showAddEv && <div className="add-form">
+          <div style={{fontWeight:700,fontSize:14,marginBottom:12,color:'var(--warm)'}}>Nueva evidencia</div>
+          <div className="form-grid">
+            <div className="input-group">
+              <label>Tipo de actividad</label>
+              <select className="sel" style={{width:'100%'}} value={newEv.codigo} onChange={e => setNewEv({ ...newEv, codigo: e.target.value })}>
+                {Object.entries(CATALOGO).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+              </select>
+            </div>
+            <div className="input-group">
+              <label>Año</label>
+              <input className="input input-sm" type="number" value={newEv.anio} onChange={e => setNewEv({ ...newEv, anio: e.target.value })} />
+            </div>
+          </div>
+          <div className="input-group">
+            <label>Descripción (título, nombre del proyecto, cargo, etc.)</label>
+            <input className="input" value={newEv.descripcion} onChange={e => setNewEv({ ...newEv, descripcion: e.target.value })} placeholder="Ej: Artículo sobre impacto de política fiscal..." />
+          </div>
+          {['pub_paper', 'pub_pedagogica'].includes(newEv.codigo) && <div className="form-grid">
+            <div className="input-group">
+              <label>Revista</label>
+              <input className="input input-sm" value={newEv.revista} onChange={e => setNewEv({ ...newEv, revista: e.target.value })} />
+            </div>
+            <div className="input-group">
+              <label>DOI</label>
+              <input className="input input-sm" value={newEv.doi} onChange={e => setNewEv({ ...newEv, doi: e.target.value })} />
+            </div>
+          </div>}
+          <div className="form-grid">
+            <div className="input-group">
+              <label>URL de respaldo (opcional)</label>
+              <input className="input input-sm" value={newEv.url} onChange={e => setNewEv({ ...newEv, url: e.target.value })} placeholder="https://..." />
+            </div>
+            <div className="input-group">
+              <label>Comentarios (opcional)</label>
+              <input className="input input-sm" value={newEv.comentarios} onChange={e => setNewEv({ ...newEv, comentarios: e.target.value })} />
+            </div>
+          </div>
+          <button className="btn btn-warm" onClick={addEvidence}>Agregar evidencia</button>
+        </div>}
+
+        {/* New evidences (pending) */}
+        {changes.nuevas_evidencias.map((ev, i) => <div key={'new-' + i} className="ev-card ev-new">
+          <div className="ev-header">
+            <div>
+              <span className="badge b-new">NUEVA — pendiente de envío</span>
+              <div className="ev-title" style={{marginTop:6}}>{ev.descripcion}</div>
+              <div className="ev-meta">{CATALOGO[ev.codigo] || ev.codigo} · {ev.anio}</div>
+            </div>
+            <button className="btn btn-outline btn-sm" onClick={() => {
+              setChanges(prev => ({ ...prev, nuevas_evidencias: prev.nuevas_evidencias.filter((_, j) => j !== i) }));
+              showToast('Evidencia removida');
+            }}>✕</button>
+          </div>
+        </div>)}
+
+        {/* Existing evidences */}
+        {evidencias.length === 0 && changes.nuevas_evidencias.length === 0 && <div className="empty">No hay evidencias registradas. Use el botón "＋ Agregar evidencia" para comenzar.</div>}
+        {evidencias.map((ev, i) => <EvidenceCardReadonly key={i} ev={ev} onComment={(text) => addComment(ev.id_evidencia, text)}
+          existingComment={changes.comentarios.find(c => c.id_evidencia === ev.id_evidencia)?.comentario || ''} />)}
+      </div>}
+
+      {/* ── Exp. Laboral Tab ── */}
+      {tab === 'exp' && <div>
+        {!readOnly && <div style={{display:'flex',justifyContent:'flex-end',marginBottom:16}}>
+          <button className="btn btn-warm btn-sm" onClick={() => setShowAddExp(!showAddExp)}>
+            {showAddExp ? '✕ Cancelar' : '＋ Agregar experiencia'}
+          </button>
+        </div>}
+
+        {showAddExp && <div className="add-form">
+          <div style={{fontWeight:700,fontSize:14,marginBottom:12,color:'var(--warm)'}}>Nueva experiencia laboral</div>
+          <div className="form-grid">
+            <div className="input-group">
+              <label>Cargo</label>
+              <input className="input input-sm" value={newExp.cargo} onChange={e => setNewExp({ ...newExp, cargo: e.target.value })} placeholder="Ej: Gerente de Finanzas" />
+            </div>
+            <div className="input-group">
+              <label>Organización</label>
+              <input className="input input-sm" value={newExp.organizacion} onChange={e => setNewExp({ ...newExp, organizacion: e.target.value })} />
+            </div>
+          </div>
+          <div className="form-grid">
+            <div className="input-group">
+              <label>Año inicio</label>
+              <input className="input input-sm" type="number" value={newExp.anio_inicio} onChange={e => setNewExp({ ...newExp, anio_inicio: e.target.value })} />
+            </div>
+            <div className="input-group">
+              <label>Año fin (o "vigente")</label>
+              <input className="input input-sm" value={newExp.anio_fin} onChange={e => setNewExp({ ...newExp, anio_fin: e.target.value })} placeholder="2024 o vigente" />
+            </div>
+          </div>
+          <div className="input-group">
+            <label>URL de respaldo o notas (opcional)</label>
+            <input className="input input-sm" value={newExp.notas} onChange={e => setNewExp({ ...newExp, notas: e.target.value })} />
+          </div>
+          <button className="btn btn-warm" onClick={addExp}>Agregar experiencia</button>
+        </div>}
+
+        {changes.nuevas_exp.map((exp, i) => <div key={'new-' + i} className="ev-card ev-new">
+          <div className="ev-header">
+            <div>
+              <span className="badge b-new">NUEVA — pendiente de envío</span>
+              <div className="ev-title" style={{marginTop:6}}>{exp.cargo} — {exp.organizacion}</div>
+              <div className="ev-meta">{exp.anio_inicio}{exp.anio_fin ? ' – ' + exp.anio_fin : ''}</div>
+            </div>
+            <button className="btn btn-outline btn-sm" onClick={() => {
+              setChanges(prev => ({ ...prev, nuevas_exp: prev.nuevas_exp.filter((_, j) => j !== i) }));
+            }}>✕</button>
+          </div>
+        </div>)}
+
+        {expLaboral.length === 0 && changes.nuevas_exp.length === 0 && <div className="empty">No hay experiencia laboral registrada.</div>}
+        {expLaboral.map((exp, i) => <div key={i} className="ev-card">
+          <div className="ev-title">{exp.cargo || '(sin cargo)'} — {exp.organizacion || '(sin organización)'}</div>
+          <div className="ev-meta">
+            {exp.anio_inicio || '?'} – {exp.anio_fin || '?'}
+            {exp.cargo_califica === 'true' && <span style={{marginLeft:8,color:'var(--green)',fontWeight:600}}>✓ Calificante</span>}
+          </div>
+        </div>)}
+      </div>}
+
+      {/* ── Sticky changes bar ── */}
+      {!readOnly && totalChanges > 0 && !submitted && <div className="changes-bar no-print">
+        <div style={{display:'flex',alignItems:'center',gap:12}}>
+          <div className="pulse"></div>
+          <div>
+            <strong>{totalChanges} cambio{totalChanges > 1 ? 's' : ''} pendiente{totalChanges > 1 ? 's' : ''}</strong>
+            <div style={{fontSize:12,opacity:.8}}>Descargue el archivo y envíelo a {CONTACT_EMAIL}</div>
+          </div>
+        </div>
+        <button className="btn" style={{background:'#f39c12',color:'#fff'}} onClick={downloadChanges}>
+          📥 Descargar archivo de cambios
+        </button>
+      </div>}
+
+      {/* ── Post-download confirmation ── */}
+      {!readOnly && submitted && <div className="card" style={{background:'var(--green-light)',border:'1.5px solid var(--green)',textAlign:'center',padding:32}}>
+        <div style={{fontSize:24,marginBottom:8}}>✅</div>
+        <div style={{fontSize:18,fontWeight:700,color:'var(--green)',marginBottom:12}}>Archivo descargado correctamente</div>
+        <div style={{fontSize:14,color:'var(--text)',lineHeight:1.7,maxWidth:500,margin:'0 auto'}}>
+          Ahora envíe el archivo <strong>cambios_*.json</strong> por correo electrónico a:<br/>
+          <span style={{fontSize:18,fontWeight:700,color:'var(--accent)',display:'inline-block',margin:'12px 0'}}>{CONTACT_EMAIL}</span><br/>
+          Si no envía el archivo, sus cambios <strong>no quedarán registrados</strong> en el sistema.
+        </div>
+        <div style={{marginTop:20,display:'flex',gap:12,justifyContent:'center',flexWrap:'wrap'}}>
+          <button className="btn btn-primary" onClick={() => { window.location.href = `mailto:${CONTACT_EMAIL}?subject=Portafolio%20Académico%20-%20${encodeURIComponent(acad.nombre)}&body=Adjunto%20archivo%20de%20cambios%20de%20portafolio%20académico.`; }}>
+            📧 Abrir correo
+          </button>
+          <button className="btn btn-outline" onClick={() => setSubmitted(false)}>Seguir editando</button>
+        </div>
+      </div>}
+    </div>
+    {toast && <div className="toast">{toast}</div>}
+  </>;
+}
+
+// ── Evidence card (read-only with comment option) ──
+function EvidenceCardReadonly({ ev, onComment, existingComment, hideComments }) {
+  const [showComment, setShowComment] = useState(false);
+  const [comment, setComment] = useState(existingComment);
+
+  const desc = ev.titulo_articulo || ev.titulo_ponencia || ev.cargo_gestion || ev.titulo_nota ||
+    ev.nombre_evento || ev.titulo_wp || ev.titulo_tesis || ev.nombre_comite ||
+    ev.cargo_directorio || ev.nombre_programa || ev.nombre_cliente || ev.nombre_medio || '(sin descripción)';
+
+  const lista = ev.lista_final || ev.lista_auto || '';
+
+  return <div className="ev-card">
+    <div className="ev-header">
+      <div>
+        <div className="ev-badges">
+          <BadgeLista v={lista} />
+          <span style={{fontSize:12,color:'var(--text2)'}}>{ev.anio}</span>
+        </div>
+        <div className="ev-title" style={{marginTop:6}}>{desc}</div>
+        <div className="ev-meta">{CATALOGO[ev.codigo] || ev.codigo}</div>
+      </div>
+    </div>
+    {/* Extra fields */}
+    <div className="ev-detail">
+      {ev.revista && <div className="ev-field"><span className="ev-field-label">Revista:</span> {ev.revista}</div>}
+      {ev.doi && <div className="ev-field"><span className="ev-field-label">DOI:</span> {ev.doi}</div>}
+      {ev.indice && <div className="ev-field"><span className="ev-field-label">Índice:</span> {ev.indice}</div>}
+      {ev.cuartil && <div className="ev-field"><span className="ev-field-label">Cuartil:</span> {ev.cuartil}</div>}
+      {ev.editorial && <div className="ev-field"><span className="ev-field-label">Editorial:</span> {ev.editorial}</div>}
+      {ev.nombre_evento && ev.codigo !== 'media_regular' && <div className="ev-field"><span className="ev-field-label">Evento:</span> {ev.nombre_evento}</div>}
+      {ev.nombre_cliente && <div className="ev-field"><span className="ev-field-label">Cliente:</span> {ev.nombre_cliente}</div>}
+      {ev.url && <div className="ev-field"><span className="ev-field-label">URL:</span> <a href={ev.url} target="_blank" rel="noopener" style={{color:'var(--accent2)'}}>{ev.url.length > 50 ? ev.url.slice(0, 50) + '...' : ev.url}</a></div>}
+    </div>
+    {/* Comment button */}
+    {!hideComments && <>
+      <div style={{marginTop:10,display:'flex',gap:8,alignItems:'center'}}>
+        {existingComment && <span style={{fontSize:12,color:'var(--warm)',fontWeight:600}}>💬 Comentario agregado</span>}
+        <button className="btn btn-outline btn-sm" style={{fontSize:11}} onClick={() => setShowComment(!showComment)}>
+          {showComment ? 'Cerrar' : existingComment ? 'Editar comentario' : '💬 Agregar observación'}
+        </button>
+      </div>
+      {showComment && <div style={{marginTop:8,display:'flex',gap:8}}>
+        <textarea className="input input-sm" style={{flex:1,minHeight:40}} value={comment} onChange={e => setComment(e.target.value)}
+          placeholder="Ej: Este artículo también fue presentado en conferencia X..." />
+        <button className="btn btn-warm btn-sm" onClick={() => { onComment(comment); setShowComment(false); }}>Guardar</button>
+      </div>}
+    </>}
+  </div>;
+}
+
+// ── Dean View (read-only dashboard) ──
+function DeanView({ data, onLogout }) {
+  const [selectedRut, setSelectedRut] = useState(null);
+  const [filter, setFilter] = useState('');
+  const [deanTab, setDeanTab] = useState('ev');
+
+  const acads = useMemo(() => {
+    const list = (data.academicos || []).filter(a => {
+      if (!filter) return true;
+      const q = filter.toLowerCase();
+      return (a.nombre || '').toLowerCase().includes(q) || (a.rut || '').includes(q) || (a.unidad || '').toLowerCase().includes(q);
+    });
+    return list.sort((a, b) => (a.nombre || '').localeCompare(b.nombre || ''));
+  }, [data, filter]);
+
+  const horasMap = useMemo(() => {
+    const m = {};
+    (data.horas_contacto || []).forEach(h => { m[h.rut] = h; });
+    return m;
+  }, [data]);
+
+  const evByRut = useMemo(() => {
+    const m = {};
+    (data.evidencias || []).forEach(e => { if (!m[e.rut]) m[e.rut] = []; m[e.rut].push(e); });
+    return m;
+  }, [data]);
+
+  const expByRut = useMemo(() => {
+    const m = {};
+    (data.exp_laboral || []).forEach(e => { if (!m[e.rut]) m[e.rut] = []; m[e.rut].push(e); });
+    return m;
+  }, [data]);
+
+  // Stats
+  const totalEvs = (data.evidencias || []).length;
+  const totalExps = (data.exp_laboral || []).length;
+  const plantaR = acads.filter(a => (a.planta || '').toLowerCase().includes('regular')).length;
+
+  if (selectedRut) {
+    const acad = data.academicos.find(a => a.rut === selectedRut);
+    if (!acad) { setSelectedRut(null); return null; }
+    const evs = evByRut[selectedRut] || [];
+    const exps = expByRut[selectedRut] || [];
+    const horas = horasMap[selectedRut];
+    return <>
+      <div className="header no-print">
+        <div className="header-inner">
+          <div><h1>Vista Administrador</h1><div className="header-sub">FEN-UNAB · Solo lectura</div></div>
+          <div style={{display:'flex',gap:8}}>
+            <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={() => setSelectedRut(null)}>← Lista</button>
+            <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Salir</button>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="card">
+          <div className="prof-header">
+            <div>
+              <div className="prof-name">{acad.nombre}</div>
+              <div className="prof-meta">RUT: {acad.rut} · {acad.planta || '—'} · {acad.unidad || '—'}{acad.grado && <> · {acad.grado}</>}</div>
+            </div>
+          </div>
+        </div>
+        <div className="tabs">
+          <button className={`tab ${deanTab==='ev'?'active':''}`} onClick={()=>setDeanTab('ev')}>Evidencias ({evs.length})</button>
+          <button className={`tab ${deanTab==='exp'?'active':''}`} onClick={()=>setDeanTab('exp')}>Exp. Laboral ({exps.length})</button>
+        </div>
+        {deanTab==='ev' && <div>
+          {evs.length === 0 && <div className="empty">Sin evidencias registradas.</div>}
+          {evs.map((ev, i) => <EvidenceCardReadonly key={i} ev={ev} onComment={()=>{}} existingComment="" hideComments={true} />)}
+        </div>}
+        {deanTab==='exp' && <div>
+          {exps.length === 0 && <div className="empty">Sin experiencia laboral registrada.</div>}
+          {exps.map((exp, i) => <div key={i} className="ev-card">
+            <div className="ev-title">{exp.cargo || '(sin cargo)'} — {exp.organizacion || '(sin organización)'}</div>
+            <div className="ev-meta">{exp.anio_inicio || '?'} – {exp.anio_fin || '?'}
+              {exp.cargo_califica === 'true' && <span style={{marginLeft:8,color:'var(--green)',fontWeight:600}}>✓ Calificante</span>}
+            </div>
+          </div>)}
+        </div>}
+      </div>
+    </>;
+  }
+
+  return <>
+    <div className="header no-print">
+      <div className="header-inner">
+        <div><h1>Vista Administrador</h1><div className="header-sub">FEN-UNAB · Solo lectura</div></div>
+        <button className="btn btn-outline btn-sm" style={{color:'#fff',borderColor:'rgba(255,255,255,.3)'}} onClick={onLogout}>Salir</button>
+      </div>
+    </div>
+    <div className="container">
+      <div className="dean-stats">
+        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--accent)'}}>{acads.length}</div><div className="dean-stat-l">Académicos</div></div>
+        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--green)'}}>{plantaR}</div><div className="dean-stat-l">Regulares</div></div>
+        <div className="dean-stat"><div className="dean-stat-v" style={{color:'var(--warm)'}}>{totalEvs}</div><div className="dean-stat-l">Evidencias</div></div>
+        <div className="dean-stat"><div className="dean-stat-v">{totalExps}</div><div className="dean-stat-l">Exp. Laboral</div></div>
+      </div>
+
+      <div className="card">
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:16,gap:12,flexWrap:'wrap'}}>
+          <div className="card-title" style={{margin:0}}>Académicos</div>
+          <input className="input input-sm" style={{maxWidth:300}} placeholder="Buscar por nombre, RUT o unidad..." value={filter} onChange={e => setFilter(e.target.value)} />
+        </div>
+        <div className="scroll-table">
+          <table className="tbl">
+            <thead><tr><th>Nombre</th><th>RUT</th><th>Planta</th><th>Unidad</th><th>Evidencias</th><th>SCH</th></tr></thead>
+            <tbody>
+              {acads.map(a => {
+                const nEvs = (evByRut[a.rut] || []).length;
+                const sch = horasMap[a.rut] ? (+horasMap[a.rut].sch_total).toFixed(1) : '—';
+                return <tr key={a.rut} onClick={() => setSelectedRut(a.rut)}>
+                  <td style={{fontWeight:600}}>{a.nombre}</td>
+                  <td style={{fontFamily:'monospace',fontSize:12}}>{a.rut}</td>
+                  <td>{a.planta || '—'}</td>
+                  <td>{a.unidad || '—'}</td>
+                  <td>{nEvs}</td>
+                  <td>{sch}</td>
+                </tr>;
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </>;
+}
+
+// ── Main App ──
+function App() {
+  const [data, setData] = useState(null);
+  const [dataError, setDataError] = useState(false);
+  const [mode, setMode] = useState('login'); // login | professor | dean
+  const [currentAcad, setCurrentAcad] = useState(null);
+
+  useEffect(() => {
+    loadPortfolioData().then(d => {
+      if (d) setData(d);
+      else setDataError(true);
+    });
+  }, []);
+
+  const handleLogin = (rut) => {
+    if (!data) return;
+    const acad = data.academicos.find(a => normalizeRut(a.rut) === rut);
+    if (!acad) {
+      alert('RUT no encontrado en la base de datos. Verifique que ingresó correctamente su RUT.\n\nSi cree que esto es un error, contacte a:\n' + CONTACT_EMAIL);
+      return;
+    }
+    setCurrentAcad(acad);
+    setMode('professor');
+  };
+
+  const handleDean = () => setMode('dean');
+  const handleLogout = () => { setMode('login'); setCurrentAcad(null); };
+
+  if (mode === 'login') {
+    return <LoginScreen onLogin={handleLogin} onDean={handleDean} dataLoaded={!!data} dataError={dataError} />;
+  }
+
+  if (mode === 'dean') {
+    return <DeanView data={data} onLogout={handleLogout} />;
+  }
+
+  if (mode === 'professor' && currentAcad) {
+    const evs = (data.evidencias || []).filter(e => e.rut === currentAcad.rut);
+    const exps = (data.exp_laboral || []).filter(e => e.rut === currentAcad.rut);
+    const horasMap = {};
+    (data.horas_contacto || []).forEach(h => { horasMap[h.rut] = h; });
+    const horas = horasMap[currentAcad.rut];
+    return <ProfessorView acad={currentAcad} evidencias={evs} expLaboral={exps} horas={horas} data={data} onLogout={handleLogout} />;
+  }
+
+  return null;
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 </script>
 </body>
 </html>
