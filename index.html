@@ -110,6 +110,7 @@ const AG=[
   {label:"Experiencia Profesional — Lista III",items:["consultoria_alta","puesto_directorio","certificacion_prof","perfeccion_acad","asoc_profesional"]},
   {label:"Vinculación y Debate Público — Lista III",items:["media_regular","extension_com","panelista_foro","comite_tecnico","clase_ed_ejec","diseno_ed_ejec","org_seminario","podcast_blog","vcm_proyecto","premio_sectorial","perito_arbitro"]}
 ];
+const DURATION_TYPES=new Set(["puesto_directorio","editor_revista","cargo_academico","part_comite","coord_multisede","comite_tecnico","certificacion_prof","asoc_profesional"]);
 
 const DEST_EMAIL="c.troncosovalverde@uandresbello.edu";
 
@@ -436,14 +437,20 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
     // 1. Build JSON importable by admin app
     const nuevas_ev=pending.filter(p=>!p.isExp).map(p=>{
       const ev={id_evidencia:'PORTAL_'+Date.now()+'_'+Math.random().toString(36).slice(2,6),
-        rut,codigo:p.actType,anio:p.year||'',titulo_articulo:'',titulo_ponencia:'',cargo_gestion:'',
+        rut,codigo:p.actType==='otra_actividad'?'otra_actividad':p.actType,
+        anio:p.isDuration?(p.duraInicio||''):p.year||'',
+        anio_inicio:p.isDuration?(p.duraInicio||''):'',
+        anio_fin:p.isDuration?(p.duraVigente?'vigente':(p.duraFin||'')):'',
+        categoria_cercana:p.otraCercana||'',
+        titulo_articulo:'',titulo_ponencia:'',cargo_gestion:'',
         titulo_nota:'',nombre_evento:'',titulo_wp:'',titulo_tesis:'',nombre_comite:'',cargo_directorio:'',
         nombre_programa:'',nombre_cliente:'',nombre_medio:'',titulo_libro:'',titulo_proyecto:'',
         revista:'',doi:'',indice:'',cuartil:'',url:p.evidenceLink||'',comentarios:p.comments||'',
         estado:'pendiente',fecha_envio:now};
       // Put description in right field
       const c=p.actType;
-      if(['pub_paper','pub_libro'].includes(c))ev.titulo_articulo=p.description;
+      if(c==='otra_actividad')ev.comentarios='[OTRA — cercana a: '+(CL[p.otraCercana]||p.otraCercana)+'] '+p.description+(p.comments?' | '+p.comments:'');
+      else if(['pub_paper','pub_libro'].includes(c))ev.titulo_articulo=p.description;
       else if(c==='conf_ext')ev.titulo_ponencia=p.description;
       else if(['cargo_academico','part_comite'].includes(c))ev.cargo_gestion=p.description;
       else if(c==='media_regular')ev.titulo_nota=p.description;
@@ -486,8 +493,8 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
     const csvRows=[["RUT","Nombre","Tipo","Actividad","Año","Descripción","Enlace","Comentario","Error"]];
     pending.forEach(p=>{
       csvRows.push([rut,data.name,p.isExp?"NUEVA_EXP":"NUEVA_ACTIVIDAD",
-        p.isExp?`${p.expCargo} — ${p.expEmpresa}`:(CL[p.actType]||p.actType),
-        p.isExp?p.expInicio:p.year,p.isExp?'':(p.description||''),p.evidenceLink||'',p.comments||'','']);
+        p.isExp?`${p.expCargo} — ${p.expEmpresa}`:p.actType==='otra_actividad'?`OTRA → ${CL[p.otraCercana]||'?'}`:(CL[p.actType]||p.actType),
+        p.isExp?p.expInicio:p.isDuration?(p.duraInicio||''):p.year,p.isExp?'':(p.description||''),p.evidenceLink||'',p.comments||'','']);
     });
     reports.forEach(r=>{
       csvRows.push([rut,data.name,"ERROR",
@@ -504,6 +511,8 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
       pending.forEach((p,i)=>{
         body+=`${i+1}. `;
         if(p.isExp) body+=`Exp. Laboral: ${p.expCargo} — ${p.expEmpresa} (${p.expInicio}–${p.expVigente?"Vigente":(p.expFin||"?")})\n`;
+        else if(p.actType==='otra_actividad') body+=`OTRA (cercana a: ${CL[p.otraCercana]||p.otraCercana})${p.year?` (${p.year})`:""}: ${p.description}\n`;
+        else if(p.isDuration) body+=`${CL[p.actType]||p.actType} (${p.duraInicio||"?"}–${p.duraVigente?"vigente":(p.duraFin||"?")}): ${p.description}\n`;
         else body+=`${CL[p.actType]||p.actType}${p.year?` (${p.year})`:""}: ${p.description}\n`;
         if(p.evidenceLink) body+=`   Evidencia: ${p.evidenceLink}\n`;
         if(p.comments) body+=`   Comentario: ${p.comments}\n`;
@@ -543,7 +552,7 @@ function ScreenPortfolio({data,rut,onAdd,onDoneSent,onDoneEmpty,pending,reports,
         <span style={{fontSize:13,color:"#1e40af"}}><strong>{pending.length}</strong> actividad{pending.length>1?"es":""} nueva{pending.length>1?"s":""} pendiente{pending.length>1?"s":""} de envío</span>
         <div style={{marginTop:8,fontSize:12,color:"#3b82f6"}}>
           {pending.map((p,i)=><div key={i} style={{padding:"2px 0"}}>
-            • {p.isExp?`Exp. laboral: ${p.expCargo} — ${p.expEmpresa}`:`${CL[p.actType]||p.actType}${p.year?` (${p.year})`:""}`}
+            • {p.isExp?`Exp. laboral: ${p.expCargo} — ${p.expEmpresa}`:p.actType==='otra_actividad'?`Otra (→ ${CL[p.otraCercana]||'?'})${p.year?` (${p.year})`:""}`:`${CL[p.actType]||p.actType}${p.isDuration?` (${p.duraInicio||"?"}–${p.duraVigente?"vigente":(p.duraFin||"?")})`:(p.year?` (${p.year})`:"")}` }
           </div>)}
         </div>
       </div>}
@@ -615,18 +624,22 @@ function ScreenAdd({data,rut,onSave,onCancel}){
   const[at,setAt]=useState("");const[yr,setYr]=useState("");const[desc,setDesc]=useState("");const[cm,setCm]=useState("");
   const[ec,setEc]=useState("");const[ee,setEe]=useState("");const[ei,setEi]=useState("");const[ef,setEf]=useState("");const[ev,setEv]=useState(false);
   const[link,setLink]=useState("");
+  const[otraCercana,setOtraCercana]=useState("");
   const isExp=at==="exp_laboral";
-  const ok=isExp?(ec&&ee&&ei):(at&&desc);
-  const save=()=>{if(!ok)return;onSave({actType:at,year:yr,description:desc,comments:cm,isExp,expCargo:ec,expEmpresa:ee,expInicio:ei,expFin:ef,expVigente:ev,evidenceLink:link});};
+  const isOtra=at==="otra_actividad";
+  const isDuration=DURATION_TYPES.has(at);
+  const ok=isExp?(ec&&ee&&ei):isOtra?(desc&&otraCercana):(at&&desc);
+  const save=()=>{if(!ok)return;onSave({actType:at,year:isDuration?ei:yr,description:desc,comments:cm,isExp,expCargo:ec,expEmpresa:ee,expInicio:ei,expFin:ef,expVigente:ev,evidenceLink:link,isDuration,duraInicio:ei,duraFin:ef,duraVigente:ev,otraCercana});};
 
   return <div className="main"><Header email={data.email}/><div className="cnt"><div className="card">
     <h2 className="st">Agregar nueva actividad</h2>
     <p className="ss" style={{marginBottom:24}}>Complete los campos. Puede agregar varias actividades antes de enviar.</p>
     <div className="fg"><label className="fm">Tipo de actividad *</label>
-      <select value={at} onChange={e=>setAt(e.target.value)} className="sel">
+      <select value={at} onChange={e=>{setAt(e.target.value);setEv(false);setEi("");setEf("");}} className="sel">
         <option value="">Seleccione...</option>
         {AG.map(g=><optgroup key={g.label} label={g.label}>{g.items.map(c=><option key={c} value={c}>{CL[c]}</option>)}</optgroup>)}
         <optgroup label="Experiencia Laboral"><option value="exp_laboral">Nueva experiencia laboral</option></optgroup>
+        <optgroup label="Otra"><option value="otra_actividad">Mi actividad no aparece en la lista</option></optgroup>
       </select>
     </div>
 
@@ -642,7 +655,30 @@ function ScreenAdd({data,rut,onSave,onCancel}){
       {ev&&<div className="vig-note">Este cargo será marcado como vigente.</div>}
     </div>}
 
-    {!isExp&&at&&<>
+    {isOtra&&<div className="exp-sec" style={{borderLeft:"3px solid #f59e0b",background:"#fffbeb"}}>
+      <div className="exp-hdr"><span>❓</span><span>Actividad no catalogada</span></div>
+      <p style={{fontSize:13,color:"#92400e",margin:"0 0 12px"}}>Describa su actividad con el mayor detalle posible. Luego seleccione a cuál de las actividades existentes cree que se asemeja más. Esto nos ayudará a clasificarla correctamente.</p>
+      <div className="fg"><label className="fm">Descripción detallada de la actividad *</label><textarea className="ta" value={desc} onChange={e=>setDesc(e.target.value)} placeholder="Describa qué hizo, en qué contexto, para quién, y qué resultado tuvo" rows={4}/></div>
+      <div className="fg"><label className="fm">¿A cuál actividad de la lista se acerca más? *</label>
+        <select value={otraCercana} onChange={e=>setOtraCercana(e.target.value)} className="sel">
+          <option value="">Seleccione la más cercana...</option>
+          {AG.map(g=><optgroup key={g.label} label={g.label}>{g.items.map(c=><option key={c} value={c}>{CL[c]}</option>)}</optgroup>)}
+        </select>
+      </div>
+      <div className="fg" style={{maxWidth:200}}><label className="fm">Año</label><input className="input" value={yr} onChange={e=>setYr(e.target.value)} placeholder="2024"/></div>
+    </div>}
+
+    {!isExp&&!isOtra&&at&&isDuration&&<>
+      <div className="fg"><label className="fm">Descripción *</label><textarea className="ta" value={desc} onChange={e=>setDesc(e.target.value)} placeholder="Describa el cargo, rol o actividad" rows={3}/></div>
+      <div className="fr">
+        <div className="fg" style={{flex:1}}><label className="fm">Año inicio</label><input className="input" value={ei} onChange={e=>setEi(e.target.value)} placeholder="2020"/></div>
+        <div className="fg" style={{flex:1}}><label className="fm">Año fin</label><input className="input" value={ef} onChange={e=>setEf(e.target.value)} placeholder="2025" disabled={ev} style={{opacity:ev?.4:1,backgroundColor:ev?"#f3f4f6":"#fff"}}/></div>
+      </div>
+      <label className="cb-l"><input type="checkbox" className="cb" checked={ev} onChange={e=>{setEv(e.target.checked);if(e.target.checked)setEf("")}}/><span className="cb-t">Vigente a la fecha</span></label>
+      {ev&&<div className="vig-note">Esta actividad será marcada como vigente.</div>}
+    </>}
+
+    {!isExp&&!isOtra&&at&&!isDuration&&<>
       <div className="fg" style={{maxWidth:200}}><label className="fm">Año</label><input className="input" value={yr} onChange={e=>setYr(e.target.value)} placeholder="2024"/></div>
       <div className="fg"><label className="fm">Descripción *</label><textarea className="ta" value={desc} onChange={e=>setDesc(e.target.value)} placeholder="Describa la actividad con el mayor detalle posible" rows={4}/></div>
     </>}
